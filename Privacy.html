@@ -1,0 +1,3896 @@
+<!DOCTYPE html>
+<html lang="vi" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+            shrink-to-fit=no"
+    />
+    <style data-href="/styles.ebb28f049a359a149f15.css" id="gatsby-global-css">
+      @font-face {
+        font-family: Proxima Nova;
+        src: url(/static/proximanova-regular-bcf3bb1b7f7a3436181788e748bae013.woff2)
+            format("woff2"),
+          url(/static/proximanova-regular-54460ea503fd65c9bb26cac92011031e.woff)
+            format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Proxima Nova;
+        src: url(/static/proximanova-medium-445fe48212325deff8ff1d87e5b7e08f.woff2)
+            format("woff2"),
+          url(/static/proximanova-medium-7a79b3dbb9b0990ae4b89034395a1877.woff)
+            format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Proxima Nova;
+        src: url(/static/proximanova-bold-5c92d5d3e39a260d5dd06ced7eca070d.woff2)
+            format("woff2"),
+          url(/static/proximanova-bold-c25c6cfc30268615faf0b2c1a0b5a141.woff)
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: fallback;
+      }
+      @font-face {
+        font-family: Proxima Nova Condensed;
+        src: url(/static/proximanovacond-bold-65abc112c4fd3a0db39fe4be4e3498f5.woff2)
+            format("woff2"),
+          url(/static/proximanovacond-bold-843536743cac3edcd419c5eb8131bf00.woff)
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: fallback;
+      }
+      @font-face {
+        font-family: Proxima Nova Condensed;
+        src: url(/static/proximanovacond-extrabold-9d99f81121fc3cf5b5e0098731da7ccb.woff2)
+            format("woff2"),
+          url(/static/proximanovacond-extrabold-2a53d129f2902b344f2cca830ef8b443.woff)
+            format("woff");
+        font-weight: 800;
+        font-style: normal;
+        font-display: block;
+      }
+      :root {
+        --theme-dark: 0;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #fff;
+        --color--background-secondary: #f0f2f4;
+        --color--background-tertiary: #e9ebee;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #fff;
+        --color--divider-primary: #d4d8de;
+        --color--border-primary: #7c8591;
+        --color--border-secondary: #b9bfc8;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #21262e;
+        --color--text-primary: #21262e;
+        --color--text-primary-inverse: #fff;
+        --color--text-secondary: #505965;
+        --color--text-inactive: #656e7b;
+        --color--text-brand-normal: #d6002f;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #9908e8;
+        --color--text-gold: #896707;
+        --color--text-super-like: #106bd5;
+        --color--text-super-boost: #9908e8;
+        --color--text-overlay: #fff;
+        --color--text-link: #106bd5;
+        --color--text-success: #0b7d58;
+        --color--text-error: #c62c1e;
+        --color--icon-primary: #e9ebee;
+        --color--icon-secondary: #656e7b;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #1786ff;
+        --color--text-datepicker-active: #21262e;
+        --color--text-datepicker-inactive: #656e7b;
+        --color--background-datepicker-selected: #f0f2f4;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(17, 20, 24, 0.16);
+        --color--border-button-secondary: #7c8591;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #505965;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #e9ebee;
+        --color--border-button-disabled: #e9ebee;
+        --color--icon-navigation-secondary-start: #656e7b;
+        --color--icon-navigation-secondary-end: #1786ff;
+        --color--icon-navigation-secondary-disabled: #b9bfc8;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f8a81f, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--super-like: linear-gradient(45deg, #47a1ff, #30f3ef);
+        --gradient--like: linear-gradient(45deg, #21d07c, #30f3ef);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #cc7afb);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__light__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__light__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__light__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__light__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__light__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__light__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__light__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__light__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__light__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__light__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__light__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__light__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__light__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__light__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__light__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__light__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      }
+    </style>
+    <meta name="generator" content="Gatsby 2.32.12" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <title data-react-helmet="true">
+      Chính sách Quyền riêng tư | Tinder | Tương hợp. Trò chuyện. Gặp gỡ. Hẹn hò
+      Hiện đại.
+    </title>
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      href="/assets/img/logo/logotran-87.png"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="x-default"
+      href="https://policies.tinder.com/privacy/intl/vi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ca"
+      href="https://policies.tinder.com/privacy/intl/ca/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ar"
+      href="https://policies.tinder.com/privacy/intl/ar/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="da"
+      href="https://policies.tinder.com/privacy/intl/da/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="bg"
+      href="https://policies.tinder.com/privacy/intl/bg/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="de"
+      href="https://policies.tinder.com/privacy/intl/de/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="cs"
+      href="https://policies.tinder.com/privacy/intl/cs/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="en"
+      href="https://policies.tinder.com/privacy/intl/en/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="es-ar"
+      href="https://policies.tinder.com/privacy/intl/es-ar/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="es"
+      href="https://policies.tinder.com/privacy/intl/es/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="es-es"
+      href="https://policies.tinder.com/privacy/intl/es-es/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="fi"
+      href="https://policies.tinder.com/privacy/intl/fi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="et"
+      href="https://policies.tinder.com/privacy/intl/et/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="fr"
+      href="https://policies.tinder.com/privacy/intl/fr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="he"
+      href="https://policies.tinder.com/privacy/intl/he/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="hr"
+      href="https://policies.tinder.com/privacy/intl/hr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="id"
+      href="https://policies.tinder.com/privacy/intl/id/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="it"
+      href="https://policies.tinder.com/privacy/intl/it/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="hu"
+      href="https://policies.tinder.com/privacy/intl/hu/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ja"
+      href="https://policies.tinder.com/privacy/intl/ja/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ko"
+      href="https://policies.tinder.com/privacy/intl/ko/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="lt"
+      href="https://policies.tinder.com/privacy/intl/lt/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="nl"
+      href="https://policies.tinder.com/privacy/intl/nl/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="lv"
+      href="https://policies.tinder.com/privacy/intl/lv/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ms"
+      href="https://policies.tinder.com/privacy/intl/ms/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="no"
+      href="https://policies.tinder.com/privacy/intl/no/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="pl"
+      href="https://policies.tinder.com/privacy/intl/pl/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://policies.tinder.com/privacy/intl/pt-pt/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="pt"
+      href="https://policies.tinder.com/privacy/intl/pt/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ro"
+      href="https://policies.tinder.com/privacy/intl/ro/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ru"
+      href="https://policies.tinder.com/privacy/intl/ru/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sk"
+      href="https://policies.tinder.com/privacy/intl/sk/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sl"
+      href="https://policies.tinder.com/privacy/intl/sl/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sr"
+      href="https://policies.tinder.com/privacy/intl/sr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="tr"
+      href="https://policies.tinder.com/privacy/intl/tr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sv"
+      href="https://policies.tinder.com/privacy/intl/sv/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://policies.tinder.com/privacy/intl/zh-tw/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="uk"
+      href="https://policies.tinder.com/privacy/intl/uk/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="canonical"
+      hreflang="vi"
+      href="https://policies.tinder.com/privacy/intl/vi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="zh-cn"
+      href="https://policies.tinder.com/privacy/intl/zh-cn/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="el"
+      href="https://policies.tinder.com/privacy/intl/el/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="hi"
+      href="https://policies.tinder.com/privacy/intl/hi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="th"
+      href="https://policies.tinder.com/privacy/intl/th/"
+    />
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Với 43 tỷ lượt
+            tương hợp cho đến nay, Tinder® là ứng dụng hẹn hò phổ biến nhất thế
+            giới, biến đây trở thành nơi gặp gỡ bạn bè mới."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="Chính sách
+            Quyền riêng tư"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Với 43 tỷ lượt tương hợp cho đến
+            nay, Tinder® là ứng dụng hẹn hò phổ biến nhất thế giới, biến đây trở
+            thành nơi gặp gỡ bạn bè mới."
+    />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary" />
+    <meta data-react-helmet="true" name="twitter:creator" content="Tinder" />
+    <meta
+      data-react-helmet="true"
+      name="twitter:title"
+      content="Chính sách
+            Quyền riêng tư"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:description"
+      content="Với 43 tỷ lượt tương hợp cho đến
+            nay, Tinder® là ứng dụng hẹn hò phổ biến nhất thế giới, biến đây trở
+            thành nơi gặp gỡ bạn bè mới."
+    />
+    <style data-styled="" data-styled-version="5.2.3">
+      :root {
+        --theme-dark: 0;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #fff;
+        --color--background-secondary: #f0f2f4;
+        --color--background-tertiary: #e9ebee;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #fff;
+        --color--divider-primary: #d4d8de;
+        --color--border-primary: #7c8591;
+        --color--border-secondary: #b9bfc8;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #21262e;
+        --color--text-primary: #21262e;
+        --color--text-primary-inverse: #fff;
+        --color--text-secondary: #505965;
+        --color--text-inactive: #656e7b;
+        --color--text-brand-normal: #d6002f;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #9908e8;
+        --color--text-gold: #896707;
+        --color--text-super-like: #106bd5;
+        --color--text-super-boost: #9908e8;
+        --color--text-overlay: #fff;
+        --color--text-link: #106bd5;
+        --color--text-success: #0b7d58;
+        --color--text-error: #c62c1e;
+        --color--icon-primary: #e9ebee;
+        --color--icon-secondary: #656e7b;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #1786ff;
+        --color--text-datepicker-active: #21262e;
+        --color--text-datepicker-inactive: #656e7b;
+        --color--background-datepicker-selected: #f0f2f4;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(17, 20, 24, 0.16);
+        --color--border-button-secondary: #7c8591;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #505965;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #e9ebee;
+        --color--border-button-disabled: #e9ebee;
+        --color--icon-navigation-secondary-start: #656e7b;
+        --color--icon-navigation-secondary-end: #1786ff;
+        --color--icon-navigation-secondary-disabled: #b9bfc8;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f8a81f, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--super-like: linear-gradient(45deg, #47a1ff, #30f3ef);
+        --gradient--like: linear-gradient(45deg, #21d07c, #30f3ef);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #cc7afb);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__light__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__light__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__light__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__light__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__light__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__light__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__light__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__light__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__light__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__light__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__light__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__light__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__light__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__light__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__light__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__light__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --letter-casing--display-1: none;
+        --letter-casing--display-2: none;
+        --letter-casing--display-3: none;
+        --letter-casing--heading-1: none;
+        --letter-casing--subheading-1: none;
+        --letter-casing--subheading-2: none;
+        --letter-casing--body-1: none;
+        --letter-casing--body-2: none;
+        --letter-casing--caption-1: none;
+        --letter-casing--button-1: none;
+        --letter-casing--button-2: none;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      } /*!sc*/
+      data-styled.g1[id="sc-global-gWmEJC1"] {
+        content: "sc-global-gWmEJC1,";
+      } /*!sc*/
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      menu,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      } /*!sc*/
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section {
+        display: block;
+      } /*!sc*/
+      *[hidden] {
+        display: none;
+      } /*!sc*/
+      body {
+        line-height: 1;
+      } /*!sc*/
+      menu,
+      ol,
+      ul {
+        list-style: none;
+      } /*!sc*/
+      blockquote,
+      q {
+        quotes: none;
+      } /*!sc*/
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      } /*!sc*/
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      } /*!sc*/
+      html {
+        box-sizing: border-box;
+        direction: ltr;
+      } /*!sc*/
+      body.locked {
+        overflow: hidden;
+      } /*!sc*/
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      } /*!sc*/
+      button {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        text-align: inherit;
+        outline: none;
+        line-height: inherit;
+        -webkit-appearance: none;
+      } /*!sc*/
+      html {
+        font-size: 13pt;
+      } /*!sc*/
+      body {
+        font-family: "Proxima Nova", "Helvetica Neue", Arial, Helvetica,
+          sans-serif;
+        line-height: 1.3125;
+        word-wrap: break-word;
+      } /*!sc*/
+      body {
+        background-color: var(--color--background-primary, inherit);
+        color: var(--color--text-secondary, inherit);
+      } /*!sc*/
+      a {
+        color: var(--color--text-link, inherit);
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      } /*!sc*/
+      a:hover {
+        color: var(--color--text-link, inherit);
+      } /*!sc*/
+      data-styled.g3[id="sc-global-leGCPL1"] {
+        content: "sc-global-leGCPL1,";
+      } /*!sc*/
+      .busVyp {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1.25rem 1.75rem;
+      } /*!sc*/
+      .busVyp > figure {
+        height: 100%;
+      } /*!sc*/
+
+      data-styled.g7[id="Header-h7cxjh-0"] {
+        content: "busVyp,";
+      } /*!sc*/
+      .egCcio {
+        display: grid;
+        gap: 0 1.75rem;
+        grid-template-columns: 1fr;
+      } /*!sc*/
+      @media (min-width: 640px) {
+        .egCcio {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      } /*!sc*/
+      @media (min-width: 960px) {
+        .egCcio {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      } /*!sc*/
+      .egCcio li {
+        line-height: 2;
+      } /*!sc*/
+      .egCcio li.current {
+        font-weight: 700;
+      } /*!sc*/
+      .egCcio a {
+        display: block;
+        color: inherit;
+      } /*!sc*/
+      .egCcio a:hover {
+        color: var(--color--text-brand-normal, inherit);
+      } /*!sc*/
+      data-styled.g8[id="LanguagePicker__LanguageList-ohytd3-0"] {
+        content: "egCcio,";
+      } /*!sc*/
+      .ghaeor.hide-others .LanguagePicker__LanguageList-ohytd3-0 li.current {
+        font-weight: inherit;
+      } /*!sc*/
+      .ghaeor.hide-others
+        .LanguagePicker__LanguageList-ohytd3-0
+        li:not(.current) {
+        position: absolute;
+        -webkit-clip: rect(1px 1px 1px 1px);
+        clip: rect(1px 1px 1px 1px);
+        -webkit-clip: rect(1px, 1px, 1px, 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+      } /*!sc*/
+      data-styled.g9[id="LanguagePicker-ohytd3-1"] {
+        content: "ghaeor,";
+      } /*!sc*/
+      .iioFOg {
+        display: grid;
+        gap: 1.25rem 1.75rem;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(min-content, max-content);
+        padding: 1.25rem 1.75rem;
+      } /*!sc*/
+      @media (min-width: 640px) {
+        .iioFOg {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      } /*!sc*/
+      @media (min-width: 960px) {
+        .iioFOg {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      } /*!sc*/
+      .iioFOg a {
+        color: inherit;
+      } /*!sc*/
+      .iioFOg a:hover {
+        color: var(--color--text-brand-normal, inherit);
+      } /*!sc*/
+      .iioFOg section h3 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 18pt;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .iioFOg section li {
+        line-height: 2;
+      } /*!sc*/
+      .iioFOg section li a {
+        display: block;
+      } /*!sc*/
+      data-styled.g10[id="Nav-sc-114h8f1-0"] {
+        content: "iioFOg,";
+      } /*!sc*/
+      .gQOfvU {
+        overflow: auto;
+      } /*!sc*/
+      .gQOfvU .LanguagePicker-ohytd3-1 {
+        padding: 1.25rem 1.75rem 0;
+      } /*!sc*/
+      .gQOfvU .LanguagePicker-ohytd3-1 h5 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 18pt;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .gQOfvU .Nav-sc-114h8f1-0 {
+        padding-bottom: 2.5rem;
+      } /*!sc*/
+      data-styled.g11[id="HeaderNav-sc-1oveqwp-0"] {
+        content: "gQOfvU,";
+      } /*!sc*/
+      .dVKRvm {
+        padding: 1.25rem 1.75rem;
+      } /*!sc*/
+      data-styled.g12[id="Main-ujv4hx-0"] {
+        content: "dVKRvm,";
+      } /*!sc*/
+      .byZvTm .LanguagePicker-ohytd3-1 {
+        padding: 1.25rem 1.75rem 0;
+      } /*!sc*/
+      .byZvTm .LanguagePicker-ohytd3-1 h3 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 18pt;
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .byZvTm .Nav-sc-114h8f1-0 {
+        padding-bottom: 2.5rem;
+      } /*!sc*/
+      data-styled.g13[id="Footer-sc-1qyll0s-0"] {
+        content: "byZvTm,";
+      } /*!sc*/
+      .bRqCYC {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background-color: var(--color--background-primary, inherit);
+        border-bottom: 1px solid var(--color--border-secondary, inherit);
+        z-index: 100;
+      } /*!sc*/
+      .bRqCYC .Header-h7cxjh-0 {
+        height: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      } /*!sc*/
+      .bRqCYC .HeaderNav-sc-1oveqwp-0 {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        background-color: var(--color--background-primary, inherit);
+        -webkit-transition: -webkit-transform 250ms ease-out,
+          visibility 250ms linear;
+        -webkit-transition: transform 250ms ease-out, visibility 250ms linear;
+        transition: transform 250ms ease-out, visibility 250ms linear;
+      } /*!sc*/
+      .bRqCYC .HeaderNav-sc-1oveqwp-0:not(.active) {
+        -webkit-transition-delay: 0, 200ms;
+        transition-delay: 0, 200ms;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: hidden;
+        pointer-events: none;
+      } /*!sc*/
+      @media (min-width: 640px) {
+        .bRqCYC .HeaderNav-sc-1oveqwp-0 {
+          display: none;
+        }
+      } /*!sc*/
+      @media (min-width: 768px) {
+        .bRqCYC {
+          height: 100px;
+        }
+        .bRqCYC .HeaderNav-sc-1oveqwp-0 {
+          top: 100px;
+        }
+      } /*!sc*/
+      data-styled.g14[id="Layout__HeaderWrapper-u406a5-0"] {
+        content: "bRqCYC,";
+      } /*!sc*/
+      .iEHbPn {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        z-index: 80;
+      } /*!sc*/
+      .iEHbPn .Main-ujv4hx-0 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      } /*!sc*/
+      data-styled.g15[id="Layout__MainWrapper-u406a5-1"] {
+        content: "iEHbPn,";
+      } /*!sc*/
+      .djcEJG {
+        position: relative;
+        background-color: var(--color--background-primary, inherit);
+        border-top: 1px solid var(--color--border-secondary, inherit);
+        z-index: 90;
+      } /*!sc*/
+      @media (max-width: 639px) {
+        .djcEJG {
+          display: none;
+        }
+      } /*!sc*/
+      .djcEJG .Footer-sc-1qyll0s-0 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5rem;
+      } /*!sc*/
+      data-styled.g16[id="Layout__FooterWrapper-u406a5-2"] {
+        content: "djcEJG,";
+      } /*!sc*/
+      .dYLOJM {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-height: 100vh;
+      } /*!sc*/
+      data-styled.g17[id="Layout__LayoutWrapper-u406a5-3"] {
+        content: "dYLOJM,";
+      } /*!sc*/
+      .dlViiJ b,
+      .dlViiJ strong {
+        font-weight: 700;
+      } /*!sc*/
+      .dlViiJ i,
+      .dlViiJ em {
+        font-style: italic;
+      } /*!sc*/
+      .dlViiJ small {
+        font-size: 90%;
+      } /*!sc*/
+      .dlViiJ figcaption {
+        font-size: 11pt;
+      } /*!sc*/
+      .dlViiJ pre,
+      .dlViiJ code {
+        font-family: monospace;
+      } /*!sc*/
+      .dlViiJ blockquote {
+        border-left: 2px solid var(--color--border-secondary, inherit);
+        padding-left: 1rem;
+      } /*!sc*/
+      .dlViiJ hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        background-color: var(--color--border-secondary, inherit);
+      } /*!sc*/
+      .dlViiJ ol {
+        list-style: decimal outside;
+      } /*!sc*/
+      .dlViiJ ol li {
+        margin-left: 1.4rem;
+      } /*!sc*/
+      .dlViiJ ul {
+        list-style: disc outside;
+      } /*!sc*/
+      .dlViiJ ul li {
+        margin-left: 1rem;
+      } /*!sc*/
+      .dlViiJ ul ul {
+        list-style-type: circle;
+      } /*!sc*/
+      .dlViiJ ul ul ul {
+        list-style-type: square;
+      } /*!sc*/
+      .dlViiJ h1,
+      .dlViiJ h2,
+      .dlViiJ h3,
+      .dlViiJ h4,
+      .dlViiJ h5,
+      .dlViiJ h6 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        line-height: 1.22;
+        color: var(--color--text-primary, inherit);
+      } /*!sc*/
+      .dlViiJ h1 {
+        font-size: 2.3rem;
+      } /*!sc*/
+      .dlViiJ h2 {
+        font-size: 1.6rem;
+      } /*!sc*/
+      .dlViiJ h3 {
+        font-size: 1.4rem;
+      } /*!sc*/
+      .dlViiJ h4 {
+        font-size: 1.2rem;
+      } /*!sc*/
+      .dlViiJ h5 {
+        font-size: 1rem;
+      } /*!sc*/
+      .dlViiJ h6 {
+        font-size: 0.8rem;
+      } /*!sc*/
+      .dlViiJ h1:not(:first-child),
+      .dlViiJ h2:not(:first-child),
+      .dlViiJ h3:not(:first-child),
+      .dlViiJ h4:not(:first-child),
+      .dlViiJ h5:not(:first-child),
+      .dlViiJ h6:not(:first-child),
+      .dlViiJ p:not(:first-child),
+      .dlViiJ figure:not(:first-child),
+      .dlViiJ figcaption:not(:first-child),
+      .dlViiJ pre:not(:first-child),
+      .dlViiJ ul:not(:first-child),
+      .dlViiJ ol:not(:first-child),
+      .dlViiJ li:not(:first-child),
+      .dlViiJ blockquote:not(:first-child) {
+        margin-top: 0.8rem;
+      } /*!sc*/
+      .dlViiJ h1:not(:last-child),
+      .dlViiJ h2:not(:last-child),
+      .dlViiJ h3:not(:last-child),
+      .dlViiJ h4:not(:last-child),
+      .dlViiJ h5:not(:last-child),
+      .dlViiJ h6:not(:last-child),
+      .dlViiJ p:not(:last-child),
+      .dlViiJ figure:not(:last-child),
+      .dlViiJ figcaption:not(:last-child),
+      .dlViiJ pre:not(:last-child),
+      .dlViiJ ul:not(:last-child),
+      .dlViiJ ol:not(:last-child),
+      .dlViiJ li:not(:last-child),
+      .dlViiJ blockquote:not(:last-child) {
+        margin-bottom: 0.8rem;
+      } /*!sc*/
+      .dlViiJ li:not(:first-child) {
+        margin-top: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li:not(:last-child) {
+        margin-bottom: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > h1,
+      .dlViiJ li > h2,
+      .dlViiJ li > h3,
+      .dlViiJ li > h4,
+      .dlViiJ li > h5,
+      .dlViiJ li > h6,
+      .dlViiJ li > p,
+      .dlViiJ li > figure,
+      .dlViiJ li > figcaption,
+      .dlViiJ li > pre,
+      .dlViiJ li > ul,
+      .dlViiJ li > ol,
+      .dlViiJ li > li,
+      .dlViiJ li > blockquote {
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .dlViiJ li > h1:first-child,
+      .dlViiJ li > h2:first-child,
+      .dlViiJ li > h3:first-child,
+      .dlViiJ li > h4:first-child,
+      .dlViiJ li > h5:first-child,
+      .dlViiJ li > h6:first-child,
+      .dlViiJ li > p:first-child,
+      .dlViiJ li > figure:first-child,
+      .dlViiJ li > figcaption:first-child,
+      .dlViiJ li > pre:first-child,
+      .dlViiJ li > ul:first-child,
+      .dlViiJ li > ol:first-child,
+      .dlViiJ li > li:first-child,
+      .dlViiJ li > blockquote:first-child {
+        margin-top: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > h1:last-child,
+      .dlViiJ li > h2:last-child,
+      .dlViiJ li > h3:last-child,
+      .dlViiJ li > h4:last-child,
+      .dlViiJ li > h5:last-child,
+      .dlViiJ li > h6:last-child,
+      .dlViiJ li > p:last-child,
+      .dlViiJ li > figure:last-child,
+      .dlViiJ li > figcaption:last-child,
+      .dlViiJ li > pre:last-child,
+      .dlViiJ li > ul:last-child,
+      .dlViiJ li > ol:last-child,
+      .dlViiJ li > li:last-child,
+      .dlViiJ li > blockquote:last-child {
+        margin-bottom: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > p:first-child {
+        margin-bottom: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > p:first-child + ul,
+      .dlViiJ li > p:first-child + ol {
+        margin-top: 0.2rem;
+      } /*!sc*/
+      .dlViiJ p + h1:not(:first-child),
+      .dlViiJ figure + h1:not(:first-child),
+      .dlViiJ figcaption + h1:not(:first-child),
+      .dlViiJ pre + h1:not(:first-child),
+      .dlViiJ ul + h1:not(:first-child),
+      .dlViiJ ol + h1:not(:first-child),
+      .dlViiJ blockquote + h1:not(:first-child),
+      .dlViiJ p + h2:not(:first-child),
+      .dlViiJ figure + h2:not(:first-child),
+      .dlViiJ figcaption + h2:not(:first-child),
+      .dlViiJ pre + h2:not(:first-child),
+      .dlViiJ ul + h2:not(:first-child),
+      .dlViiJ ol + h2:not(:first-child),
+      .dlViiJ blockquote + h2:not(:first-child),
+      .dlViiJ p + h3:not(:first-child),
+      .dlViiJ figure + h3:not(:first-child),
+      .dlViiJ figcaption + h3:not(:first-child),
+      .dlViiJ pre + h3:not(:first-child),
+      .dlViiJ ul + h3:not(:first-child),
+      .dlViiJ ol + h3:not(:first-child),
+      .dlViiJ blockquote + h3:not(:first-child),
+      .dlViiJ p + h4:not(:first-child),
+      .dlViiJ figure + h4:not(:first-child),
+      .dlViiJ figcaption + h4:not(:first-child),
+      .dlViiJ pre + h4:not(:first-child),
+      .dlViiJ ul + h4:not(:first-child),
+      .dlViiJ ol + h4:not(:first-child),
+      .dlViiJ blockquote + h4:not(:first-child),
+      .dlViiJ p + h5:not(:first-child),
+      .dlViiJ figure + h5:not(:first-child),
+      .dlViiJ figcaption + h5:not(:first-child),
+      .dlViiJ pre + h5:not(:first-child),
+      .dlViiJ ul + h5:not(:first-child),
+      .dlViiJ ol + h5:not(:first-child),
+      .dlViiJ blockquote + h5:not(:first-child),
+      .dlViiJ p + h6:not(:first-child),
+      .dlViiJ figure + h6:not(:first-child),
+      .dlViiJ figcaption + h6:not(:first-child),
+      .dlViiJ pre + h6:not(:first-child),
+      .dlViiJ ul + h6:not(:first-child),
+      .dlViiJ ol + h6:not(:first-child),
+      .dlViiJ blockquote + h6:not(:first-child) {
+        margin-top: 1rem;
+      } /*!sc*/
+      .dlViiJ hr:not(:first-child) {
+        margin-top: 1.8rem;
+      } /*!sc*/
+      .dlViiJ hr:not(:last-child) {
+        margin-bottom: 1.8rem;
+      } /*!sc*/
+      .dlViiJ li,
+      .dlViiJ p {
+        line-height: 1.47;
+      } /*!sc*/
+      .dlViiJ pre {
+        white-space: pre;
+        overflow-x: auto;
+      } /*!sc*/
+      .dlViiJ table {
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 1px;
+        background-color: var(--color--divider-primary, inherit);
+        width: 100%;
+      } /*!sc*/
+      .dlViiJ table th,
+      .dlViiJ table td {
+        text-align: left;
+        background-color: var(--color--background-primary, inherit);
+        padding: 0.5rem;
+      } /*!sc*/
+      .dlViiJ a {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+      } /*!sc*/
+      data-styled.g18[id="TextContent-kkmgbg-0"] {
+        content: "dlViiJ,";
+      } /*!sc*/
+      .UuLIl a[name] {
+        position: relative;
+        top: -70px;
+      } /*!sc*/
+      @media (min-width: 768px) {
+        .UuLIl a[name] {
+          top: -100px;
+        }
+      } /*!sc*/
+      data-styled.g20[id="PolicyPage__PolicyArticleBody-sc-1fiiwlt-0"] {
+        content: "UuLIl,";
+      } /*!sc*/
+      .theme-light {
+        --theme-dark: 0;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #fff;
+        --color--background-secondary: #f0f2f4;
+        --color--background-tertiary: #e9ebee;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #fff;
+        --color--divider-primary: #d4d8de;
+        --color--border-primary: #7c8591;
+        --color--border-secondary: #b9bfc8;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #21262e;
+        --color--text-primary: #21262e;
+        --color--text-primary-inverse: #fff;
+        --color--text-secondary: #505965;
+        --color--text-inactive: #656e7b;
+        --color--text-brand-normal: #d6002f;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #9908e8;
+        --color--text-gold: #896707;
+        --color--text-super-like: #106bd5;
+        --color--text-super-boost: #9908e8;
+        --color--text-overlay: #fff;
+        --color--text-link: #106bd5;
+        --color--text-success: #0b7d58;
+        --color--text-error: #c62c1e;
+        --color--icon-primary: #e9ebee;
+        --color--icon-secondary: #656e7b;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #1786ff;
+        --color--text-datepicker-active: #21262e;
+        --color--text-datepicker-inactive: #656e7b;
+        --color--background-datepicker-selected: #f0f2f4;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(17, 20, 24, 0.16);
+        --color--border-button-secondary: #7c8591;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #505965;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #e9ebee;
+        --color--border-button-disabled: #e9ebee;
+        --color--icon-navigation-secondary-start: #656e7b;
+        --color--icon-navigation-secondary-end: #1786ff;
+        --color--icon-navigation-secondary-disabled: #b9bfc8;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f8a81f, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--super-like: linear-gradient(45deg, #47a1ff, #30f3ef);
+        --gradient--like: linear-gradient(45deg, #21d07c, #30f3ef);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #cc7afb);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__light__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__light__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__light__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__light__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__light__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__light__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__light__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__light__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__light__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__light__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__light__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__light__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__light__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__light__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__light__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__light__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --letter-casing--display-1: none;
+        --letter-casing--display-2: none;
+        --letter-casing--display-3: none;
+        --letter-casing--heading-1: none;
+        --letter-casing--subheading-1: none;
+        --letter-casing--subheading-2: none;
+        --letter-casing--body-1: none;
+        --letter-casing--body-2: none;
+        --letter-casing--caption-1: none;
+        --letter-casing--button-1: none;
+        --letter-casing--button-2: none;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      } /*!sc*/
+      data-styled.g38[id="sc-global-gWmEJC2"] {
+        content: "sc-global-gWmEJC2,";
+      } /*!sc*/
+      .theme-dark {
+        --theme-dark: 1;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #000;
+        --color--background-secondary: #111418;
+        --color--background-tertiary: #111418;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #111418;
+        --color--divider-primary: #21262e;
+        --color--border-primary: #656e7b;
+        --color--border-secondary: #3c444f;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #e9ebee;
+        --color--text-primary: #e9ebee;
+        --color--text-primary-inverse: #21262e;
+        --color--text-secondary: #939ba7;
+        --color--text-inactive: #7c8591;
+        --color--text-brand-normal: #ff4458;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #ba52f5;
+        --color--text-gold: #ae830c;
+        --color--text-super-like: #1786ff;
+        --color--text-super-boost: #ba52f5;
+        --color--text-overlay: #fff;
+        --color--text-link: #1786ff;
+        --color--text-success: #129e68;
+        --color--text-error: #f13b2d;
+        --color--icon-primary: #21262e;
+        --color--icon-secondary: #7c8591;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #106bd5;
+        --color--text-datepicker-active: #e9ebee;
+        --color--text-datepicker-inactive: #7c8591;
+        --color--background-datepicker-selected: #111418;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(240, 242, 244, 0.16);
+        --color--border-button-secondary: #656e7b;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #939ba7;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(240, 242, 244, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(240, 242, 244, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #3c444f;
+        --color--border-button-disabled: #3c444f;
+        --color--icon-navigation-secondary-start: #7c8591;
+        --color--icon-navigation-secondary-end: #106bd5;
+        --color--icon-navigation-secondary-disabled: #3c444f;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f59307, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #f13b2d, #e010cd);
+        --gradient--super-like: linear-gradient(45deg, #1786ff, #74fef2);
+        --gradient--like: linear-gradient(45deg, #2df187, #74fef2);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #e010cd);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #ffe8a5);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #b9bfc8, #f0f2f4);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__dark__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__dark__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__dark__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__dark__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__dark__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__dark__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__dark__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__dark__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__dark__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__dark__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__dark__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__dark__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__dark__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__dark__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__dark__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__dark__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --letter-casing--display-1: none;
+        --letter-casing--display-2: none;
+        --letter-casing--display-3: none;
+        --letter-casing--heading-1: none;
+        --letter-casing--subheading-1: none;
+        --letter-casing--subheading-2: none;
+        --letter-casing--body-1: none;
+        --letter-casing--body-2: none;
+        --letter-casing--caption-1: none;
+        --letter-casing--button-1: none;
+        --letter-casing--button-2: none;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      } /*!sc*/
+      data-styled.g39[id="sc-global-gWmEJC3"] {
+        content: "sc-global-gWmEJC3,";
+      } /*!sc*/
+    </style>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+    <meta name="theme-color" content="#ff4458" />
+    <link
+      rel="apple-touch-icon"
+      sizes="48x48"
+      href="/icons/icon-48x48.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/icon-72x72.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="/icons/icon-96x96.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/icon-144x144.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/icons/icon-192x192.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/icons/icon-256x256.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/icons/icon-384x384.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/icons/icon-512x512.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      as="script"
+      rel="preload"
+      href="/webpack-runtime-2be7d047cf26b7468727.js"
+    />
+    <link as="script" rel="preload" href="/framework-90a019f1c20540076580.js" />
+    <link as="script" rel="preload" href="/app-d011f58ba08167ecf7ec.js" />
+    <link as="script" rel="preload" href="/styles-e9d24b1846c7d6eb9685.js" />
+    <link as="script" rel="preload" href="/commons-e5840ea12d8eecc53ff5.js" />
+    <link
+      as="script"
+      rel="preload"
+      href="/41dc7b0c85f0365a3422834ac006c2c46095f4ac-ae8ee0807df86fa27705.js"
+    />
+    <link
+      as="script"
+      rel="preload"
+      href="/component---src-templates-policy-page-jsx-1d79a624d7b684bce9f4.js"
+    />
+    <link
+      as="fetch"
+      rel="preload"
+      href="/page-data/privacy/intl/vi/page-data.json"
+      crossorigin="anonymous"
+    />
+    <link
+      as="fetch"
+      rel="preload"
+      href="/page-data/sq/d/1922046831.json"
+      crossorigin="anonymous"
+    />
+    <link
+      as="fetch"
+      rel="preload"
+      href="/page-data/app-data.json"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="___gatsby">
+      <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
+        <div class="Layout__LayoutWrapper-u406a5-3 dYLOJM">
+          <div class="Layout__HeaderWrapper-u406a5-0 bRqCYC">
+            <header class="Header-h7cxjh-0 busVyp">
+              <figure>
+                <a href="https://tinder.com"
+                  ><img
+                    src="assets/img/logo/logotran-87.png"
+                    alt="Tinder"
+                    class="TinderLogo-k04kc-0 bTxlgf"
+                    style="margin-top: -15px"
+                /></a>
+              </figure>
+              <div style="flex-grow: 1"></div>
+            </header>
+            <div class="HeaderNav-sc-1oveqwp-0 gQOfvU inactive">
+              <nav class="LanguagePicker-ohytd3-1 ghaeor">
+                <h5>Ngôn ngữ</h5>
+                <ul class="LanguagePicker__LanguageList-ohytd3-0 egCcio">
+                  <li class="">
+                    <a data-locale="ar" href="/privacy/intl/ar/">‏العربية</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="bg" href="/privacy/intl/bg/">Български</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ca" href="/privacy/intl/ca/">Català</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="cs" href="/privacy/intl/cs/">Čeština</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="da" href="/privacy/intl/da/">Dansk</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="de" href="/privacy/intl/de/">Deutsch</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="el" href="/privacy/intl/el/">Ελληνικά</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="en" href="/privacy/intl/en/">English</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-ES" href="/privacy/intl/es-es/"
+                      >Español(ES)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="es" href="/privacy/intl/es/">Español(MX)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-AR" href="/privacy/intl/es-ar/"
+                      >Español(AR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="fr" href="/privacy/intl/fr/"
+                      >Français(FR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="fi" href="/privacy/intl/fi/">Suomi</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="he" href="/privacy/intl/he/">עברית</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hr" href="/privacy/intl/hr/">Hrvatski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hu" href="/privacy/intl/hu/">Magyar</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="id" href="/privacy/intl/id/">Indonesia</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ja" href="/privacy/intl/ja/">日本語</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ko" href="/privacy/intl/ko/">한국어</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lt" href="/privacy/intl/lt/">Lietuvių</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lv" href="/privacy/intl/lv/">Latviešu</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ms" href="/privacy/intl/ms/"
+                      >Bahasa Melayu</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="nl" href="/privacy/intl/nl/">Nederlands</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="no" href="/privacy/intl/no/">Nynorsk</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pl" href="/privacy/intl/pl/">Polski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pt" href="/privacy/intl/pt/"
+                      >Português(BR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="pt-PT" href="/privacy/intl/pt-pt/"
+                      >Português(PT)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="ro" href="/privacy/intl/ro/">Română</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ru" href="/privacy/intl/ru/">Русский</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sk" href="/privacy/intl/sk/">Slovenčina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sl" href="/privacy/intl/sl/">Slovenščina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sr" href="/privacy/intl/sr/">Srpski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="th" href="/privacy/intl/th/">ไทย</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="tr" href="/privacy/intl/tr/">Türkçe</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="uk" href="/privacy/intl/uk/">Українська</a>
+                  </li>
+                  <li class="current">
+                    <a
+                      aria-current="page"
+                      data-locale="vi"
+                      class=""
+                      href="/privacy/intl/vi/"
+                      >Tiếng Việt</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-CN" href="/privacy/intl/zh-cn/"
+                      >简体中文</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-TW" href="/privacy/intl/zh-tw/"
+                      >繁體中文</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="Nav-sc-114h8f1-0 iioFOg">
+                <section>
+                  <h3>Công ty</h3>
+                  <ul>
+                    <li><a href="https://tinder.com/jobs">Tuyển dụng</a></li>
+                    <li><a href="/contact">Liên hệ</a></li>
+                    <li><a href="/security">Bảo mật</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Cộng đồng</h3>
+                  <ul>
+                    <li>
+                      <a href="https://tech.gotinder.com">Blog Công nghệ</a>
+                    </li>
+                    <li>
+                      <a href="https://www.tinderpressroom.com/">Báo chí</a>
+                    </li>
+                    <li><a href="https://www.help.tinder.com">Hỗ trợ</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Pháp lý</h3>
+                  <ul>
+                    <li><a href="/privacy">Quyền riêng tư</a></li>
+                    <li><a href="/terms">Điều khoản</a></li>
+                    <li><a href="/cookie-policy">Chính sách Cookie</a></li>
+                    <li>
+                      <a href="/safety-and-policy"
+                        >Trung tâm Chính sách và An toàn</a
+                      >
+                    </li>
+                    <li><a href="/safety">Bí quyết an toàn</a></li>
+                    <li>
+                      <a href="https://www.gotinder.com/community-guidelines"
+                        >Quy tắc cộng đồng</a
+                      >
+                    </li>
+                    <li><a href="/intellectual-property">Sở Hữu Trí Tuệ</a></li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+          </div>
+          <div class="Layout__MainWrapper-u406a5-1 iEHbPn">
+            <main class="Main-ujv4hx-0 dVKRvm">
+              <span class="PolicyPage__PolicyArticleBody-sc-1fiiwlt-0 UuLIl"
+                ><div
+                  class="TextContent-kkmgbg-0 dlViiJ RendererdMarkdownContent-sc-99ohlb-0 jUycHo"
+                >
+                  <h2>CAM KẾT CỦA CHÚNG TÔI VỚI BẠN</h2>
+                  <p>
+                    Tại Tinder, quyền riêng tư của bạn là ưu tiên hàng đầu.
+                    Quyền riêng tư của bạn là cốt lõi để chúng tôi thiết kế, xây
+                    dựng các dịch vụ và sản phẩm mà bạn biết và yêu thích, từ đó
+                    bạn có thể hoàn toàn tin tưởng vào các dịch vụ và sản phẩm
+                    và tập trung vào việc xây dựng các kết nối có ý nghĩa.
+                  </p>
+                  <p>
+                    Chúng tôi trân trọng sự tin tưởng của bạn đối với chúng tôi
+                    khi bạn cung cấp cho chúng tôi thông tin của bạn và chúng
+                    tôi không hề xem nhẹ điều này.
+                  </p>
+                  <p>
+                    <strong>Cam kết của chúng tôi về quyền riêng tư.</strong>
+                    Chúng tôi thiết kế tất cả các sản phẩm của mình trên cơ sở
+                    tôn trọng quyền riêng tư của bạn. Chúng tôi tìm tới một đội
+                    ngũ gồm các chuyên gia từ nhiều lĩnh vực, gồm có pháp lý,
+                    bảo mật, kĩ thuật, thiết kế sản phẩm và các lĩnh vực khác
+                    nhằm đảm bảo rằng các quyết định của chúng tôi đưa ra đều
+                    dựa trên sự tôn trọng tuyệt đối quyền riêng tư của bạn.
+                  </p>
+                  <p>
+                    <strong>Cam kết của chúng tôi về sự minh bạch.</strong> Vì
+                    chúng tôi cũng sử dụng nhiều dịch vụ trực tuyến giống như
+                    bạn, chúng tôi biết rằng việc thiếu thông tin và các từ ngữ
+                    phức tạp là các vấn thường gặp trong các chính sách quyền
+                    riêng tư. Chúng tôi đi theo hướng hoàn toàn ngược lại: chúng
+                    tôi nỗ lực hết sức mình để diễn đạt Chính sách Quyền riêng
+                    tư cùng các văn bản liên quan một cách dễ hiểu. Chúng tôi
+                    thực sự muốn bạn đọc các chính sách và hiểu các biện pháp
+                    đảm bảo quyền riêng tư của chúng tôi!
+                  </p>
+                  <p>
+                    <strong>Cam kết của chúng tôi về vấn đề bảo mật.</strong>
+                    Chúng tôi có các đội ngũ chuyên trách đảm bảo an toàn cho dữ
+                    liệu của bạn. Chúng tôi liên tục cập nhật các biện pháp bảo
+                    mật của mình và nỗ lực để nâng cao độ an toàn cho dữ liệu
+                    của bạn.
+                  </p>
+                  <hr />
+                  <h1>Chính sách Quyền riêng tư</h1>
+                  <p>
+                    Chào mừng bạn đến với Chính sách Quyền riêng tư của Tinder.
+                    Cảm ơn bạn đã dành thời gian để đọc.
+                  </p>
+                  <p>
+                    Chúng tôi đánh giá cao việc bạn tin tưởng trao cho chúng tôi
+                    thông tin của bạn và chúng tôi sẽ luôn giữ vững niềm tin đó.
+                    Điều này bắt đầu bằng việc đảm bảo bạn hiểu được thông tin
+                    mà chúng tôi thu thập, lý do chúng tôi thu thập, cách thông
+                    tin đó được sử dụng và các lựa chọn của bạn liên quan đến
+                    thông tin của mình. Chính sách này mô tả những biện pháp đảm
+                    bảo quyền riêng tư của chúng tôi bằng ngôn ngữ đơn giản, sử
+                    dụng thuật ngữ pháp lý và kĩ thuật ở mức tối thiểu.
+                  </p>
+                  <p>
+                    Chính sách Quyền riêng tư này áp dụng từ ngày 17/1/2022.
+                    Phiên bản trước của Chính sách Quyền riêng tư này, có sẵn
+                    <a href="/privacy-2021-6-21">tại đây</a>, sẽ áp dụng cho đến
+                    ngày đó.
+                  </p>
+                  <p><strong>NGÀY HIỆU LỰC</strong> : 17/1/2022</p>
+                  <ol>
+                    <li><a href="#who-we-are">Chúng tôi là ai</a></li>
+                    <li>
+                      <a href="#where-this-applies"
+                        >Nơi áp dụng Chính sách Quyền riêng tư này</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#information-we-collect"
+                        >Thông tin chúng tôi thu thập</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#cookie-and-similar-tech"
+                        >Cookie và các Công nghệ Thu thập Dữ liệu Tương tự
+                        khác</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#how-we-use-info"
+                        >Cách chúng tôi sử dụng thông tin</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#how-we-share-info"
+                        >Cách chúng tôi chia sẻ thông tin</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#cross-border-data"
+                        >Truyền dữ liệu qua biên giới</a
+                      >
+                    </li>
+                    <li><a href="#your-rights">Các quyền của bạn</a></li>
+                    <li>
+                      <a href="#how-long-we-retain"
+                        >Thời gian chúng tôi duy trì thông tin của bạn</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#childrens-privacy">Quyền riêng tư của trẻ em</a>
+                    </li>
+                    <li>
+                      <a href="#job-candidates"
+                        >Các ứng viên tìm việc làm, các nhà thầu và đại diện nhà
+                        cung cấp</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#policy-changes"
+                        >Các thay đổi về Chính sách Quyền riêng tư</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#how-to-contact"
+                        >Cách thức liên hệ với chúng tôi</a
+                      >
+                    </li>
+                  </ol>
+                  <h2>Dành cho người tiêu dùng tại California</h2>
+                  <p>
+                    Vui lòng xem
+                    <a href="/ccpa-addendum"
+                      >Tuyên bố Quyền riêng tư tại California</a
+                    >
+                    để tìm hiểu về các quyền riêng tư tại California.
+                  </p>
+                  <h3>1. Chúng tôi là ai</h3>
+                  <p>
+                    Nếu bạn sống ở Khu vực kinh tế châu Âu ("EEA"), ở Vương quốc
+                    Anh hoặc Thụy Sĩ, công ty chiu trách nhiệm về thông tin của
+                    bạn theo Chính sách Quyền riêng tư (bên "quản lý dữ liệu")
+                    là:
+                  </p>
+                  <blockquote>
+                    <p>MTCH Technology Services Limited</p>
+                    <p>Tinder</p>
+                    <p>WeWork Charlemont Exchange</p>
+                    <p>42 phố Charlemont</p>
+                    <p>Dublin 2, D02 R593</p>
+                    <p>Ireland</p>
+                  </blockquote>
+                  <p>
+                    Nếu bạn sống ở Nhật Bản, công ty chịu trách nhiệm về thông
+                    tin của bạn là:
+                  </p>
+                  <blockquote>
+                    <p>MG Japan Services GK</p>
+                    <p>4F Sumitomo Fudosan Azabu Bldg</p>
+                    <p>1-4-1 Mita</p>
+                    <p>Minato-ku,Tokyo 108-0073</p>
+                    <p>Nhật Bản</p>
+                  </blockquote>
+                  <p>
+                    Nếu bạn sống ngoài Khu vực kinh tế châu Âu ("EEA"), Vương
+                    quốc Anh, Thụy Sĩ và Nhật Bản, công ty chịu trách nhiệm về
+                    thông tin của bạn là:
+                  </p>
+                  <blockquote>
+                    <p>Match Group, LLC</p>
+                    <p>8750 North Central Expressway</p>
+                    <p>Suite 1400</p>
+                    <p>Dallas, TX 75231</p>
+                    <p>United States</p>
+                  </blockquote>
+                  <h3>2. Nơi áp dụng Chính sách Quyền riêng tư này</h3>
+                  <p>
+                    Chính sách Quyền riêng tư này áp dụng cho các trang web, ứng
+                    dụng, sự kiện và các dịch vụ khác mà chúng tôi vận hành
+                    thông qua thương hiệu Tinder. Để đơn giản, chúng tôi gọi
+                    chung tất cả những thứ này là “dịch vụ” trong Chính sách
+                    Quyền riêng tư này. Để giúp rõ ràng hơn nữa, chúng tôi đã bổ
+                    sung các liên kết đến Chính sách Quyền riêng tư này trên tất
+                    cả dịch vụ hiện hành.
+                  </p>
+                  <p>
+                    Một số dịch vụ có thể yêu cầu chính sách quyền riêng tư
+                    riêng biệt. Nếu một dịch vụ có chính sách quyền riêng tư
+                    riêng biệt, thì chính sách đó sẽ được áp dụng, thay vì Chính
+                    sách Quyền riêng tư này.
+                  </p>
+                  <h3>3.Thông tin chúng tôi thu thập</h3>
+                  <p>
+                    Tất cả đều hiểu rằng chúng tôi không thể giúp bạn phát triển
+                    các mối quan hệ có ý nghĩa mà không có một số thông tin về
+                    bạn, chẳng hạn như các thông tin cơ bản trên hồ sơ và mẫu
+                    người mà bạn muốn gặp. Chúng tôi cũng thu thập thông tin
+                    liên quan đến việc bạn sử dụng các dịch vụ của chúng tôi như
+                    lịch sử truy cập, và cả thông tin từ các bên thứ ba, như khi
+                    bạn truy cập vào các dịch vụ của chúng tôi bằng tài khoản
+                    mạng xã hội hoặc khi bạn tải thông tin từ tài khoản mạng xã
+                    hội của bạn lên để hoàn tất hồ sơ. Nếu bạn muốn thêm thông
+                    tin, chúng tôi đi vào chi tiết hơn dưới đây.
+                  </p>
+                  <h4>Thông tin bạn cung cấp cho chúng tôi</h4>
+                  <p>
+                    Bạn quyết định cung cấp cho chúng tôi một số thông tin nhất
+                    định khi sử dụng dịch vụ của chúng tôi. Điều này bao gồm:
+                  </p>
+                  <ul>
+                    <li>
+                      Khi bạn tạo một tài khoản, bạn cung cấp cho chúng tôi ít
+                      nhất là số điện thoại và địa chỉ email của bạn, cùng với
+                      một số thông tin cơ bản cần thiết khác cho dịch vụ, ví dụ
+                      như giới tính và ngày sinh nhật của bạn.
+                    </li>
+                    <li>
+                      Khi bạn hoàn thành hồ sơ của mình, bạn có thể chia sẻ với
+                      chúng tôi các thông tin khác, như tiểu sử, sở thích và các
+                      thông tin khác về bạn cùng các nội dung như ảnh và video.
+                      Để thêm một loại nội dung nhất định, như ảnh hoặc video,
+                      bạn có thể cho phép chúng tôi truy cập camera hoặc album
+                      ảnh của bạn.
+                    </li>
+                    <li>
+                      Khi bạn đăng ký thuê bao một dịch vụ trả phí hoặc mua hàng
+                      trực tiếp từ chúng tôi (thay vì thông qua một nền tảng như
+                      iOS hoặc Android), bạn cung cấp cho chúng tôi hoặc nhà
+                      cung cấp dịch vụ thanh toán của chúng tôi các thông tin
+                      như số thẻ ghi nợ hoặc số thẻ tín dụng của bạn hoặc thông
+                      tin tài chính khác.
+                    </li>
+                    <li>
+                      Khi bạn tham gia vào các khảo sát, phỏng vấn nhóm khách
+                      hàng hoặc nghiên cứu thị trường, bạn cung cấp cho chúng
+                      tôi cảm nhận của bạn về các sản phẩm và dịch vụ của chúng
+                      tôi, các câu trả lời cho các câu hỏi của chúng tôi cùng
+                      phần nhận xét.
+                    </li>
+                    <li>
+                      Khi bạn quyết định tham gia các chương trình quảng cáo, sự
+                      kiện hoặc cuộc thi, chúng tôi thu thập thông tin mà bạn sử
+                      dụng để đăng ký hoặc tham gia.
+                    </li>
+                    <li>
+                      Nếu bạn liên lạc với đội ngũ chăm sóc khách hàng của chúng
+                      tôi, chúng tôi thu thập thông tin mà bạn cung cấp cho
+                      chúng tôi trong quá trình tương tác.
+                    </li>
+                    <li>
+                      Nếu bạn chia sẻ với chúng tôi thông tin về người khác (ví
+                      dụ, nếu bạn sử dụng thông tin liên hệ của một người bạn
+                      cho một tính năng), chúng tôi xử lý thông tin này theo sự
+                      ủy quyền của bạn để hoàn tất yêu cầu đó.
+                    </li>
+                    <li>
+                      Tất nhiên, chúng tôi cũng xử lý các cuộc trò chuyện của
+                      bạn với các thành viên khác cũng như các nội dung bạn đăng
+                      tải, bởi điều đó cần thiết để vận hành các dịch vụ.
+                    </li>
+                  </ul>
+                  <h4>Thông tin chúng tôi nhận được từ các nguồn khác</h4>
+                  <p>
+                    Ngoài thông tin bạn trực tiếp cung cấp cho chúng tôi, chúng
+                    tôi nhận được thông tin về bạn từ những nguồn khác, bao gồm:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Các thành viên</strong> Các thành viên có thể cung
+                      cấp thông tin về bạn khi họ sử dụng các dịch vụ của chúng
+                      tôi, như khi họ tương tác với bạn hoặc nếu họ gửi một báo
+                      cáo liên quan đến bạn.
+                    </li>
+                    <li>
+                      <strong>Mạng xã hội</strong> Bạn có thể quyết định chia sẻ
+                      thông tin với chúng tôi thông qua tài khoản mạng xã hội
+                      của mình, như khi bạn quyết định tạo và đăng nhập vào tài
+                      khoản Tinder của mình thông qua tài khoản mạng xã hội hoặc
+                      tài khoản khác của bạn (như Facebook, Google hoặc Apple)
+                      hoặc tải nội dung như hình ảnh từ một trong các tài khoản
+                      mạng xã hội của bạn (như Instagram hoặc Spotify) lên các
+                      dịch vụ của chúng tôi.
+                    </li>
+                    <li>
+                      <strong>Các bên liên quan</strong> Tinder là một trong các
+                      <a href="https://mtch.com"
+                        >hoạt động kinh doanh của tập đoàn Match Group</a
+                      >. Match Group xem sự an toàn và bảo mật của các thành
+                      viên là ưu tiên hàng đầu. Nếu bạn bị cấm ở một dịch vụ
+                      khác của Match Group, thông tin của bạn có thể được chia
+                      sẻ với chúng tôi để có các biện pháp cần thiết, như đóng
+                      tài khoản hoặc ngăn bạn tạo tài khoản trên các dịch vụ của
+                      chúng tôi.
+                    </li>
+                    <li>
+                      <strong>Các đối tác khác</strong> Chúng tôi có thể nhận
+                      thông tin về bạn từ các đối tác mà chúng tôi liên kết để
+                      đặt quảng cáo của Tinder (trường hợp này họ có thể chia sẻ
+                      một số thông tin khác về chiến dịch). Khi được pháp luật
+                      cho phép, chúng tôi cũng nhận thông tin về các thành viên
+                      bị nghi hoặc đã được xác nhận là thành phần xấu bởi các
+                      bên thứ ba, đây là một phần nỗ lực nhằm đảm bảo sự an toàn
+                      và bảo mật cho các thành viên của chúng tôi.
+                    </li>
+                  </ul>
+                  <h4>
+                    Thông tin được thu thập khi bạn sử dụng dịch vụ của chúng
+                    tôi
+                  </h4>
+                  <p>
+                    Việc bạn sử dụng các dịch vụ của chúng tôi sẽ tạo ra các dữ
+                    liệu kỹ thuật về việc bạn đã sử dụng các tính năng nào, cách
+                    bạn sử dụng và thiết bị bạn sử dụng để truy cập các dịch vụ
+                    của chúng tôi. Xem dưới đây để biết thêm chi tiết:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Thông tin về việc Sử dụng</strong> Việc sử dụng
+                      các dịch vụ tạo ra dữ liệu về hoạt động của bạn trên các
+                      dịch vụ của chúng tôi, như cách bạn sử dụng chúng (ví dụ
+                      như thời điểm bạn đăng nhập, các tính năng bạn sử dụng,
+                      hoạt động của bạn, thông tin hiển thị cho bạn, đường dẫn
+                      đến các trang web hoặc quảng cáo bạn đã có tương tác) và
+                      tương tác của bạn với các thành viên khác (ví dụ như các
+                      thành viên bạn đã kết nối và có tương tác, thời điểm bạn
+                      trò chuyện với các thành viên đó, số lượng tin nhắn bạn đã
+                      gửi và nhận).
+                    </li>
+                    <li>
+                      <strong>Thông tin về thiết bị</strong> Chúng tôi thu thập
+                      thông tin từ và về một hoặc nhiều thiết bị bạn sử dụng để
+                      truy cập các dịch vụ của chúng tôi, bao gồm thông tin phần
+                      cứng và phần mềm như địa chỉ IP, loại và mã nhận dạng
+                      thiết bị, các cài đặt &#x26; đặc tính của các ứng dụng,
+                      những lần ứng dụng gặp sự cố, mã nhận dạng quảng cáo (là
+                      các con số được tạo ngẫu nhiên bạn có thể tạo lại bằng
+                      cách vào phần cài đặt trên thiết bị của mình), số nhận
+                      dạng liên kết với cookie hoặc các công nghệ khác có thể
+                      nhận dạng một thiết bị hoặc trình duyệt độc nhất.
+                    </li>
+                    <li>
+                      <strong>Thông tin khác có sự đồng ý của bạn</strong> Nếu
+                      bạn cho phép, chúng tôi có thể thu thập thông tin vị trí
+                      địa lý chính xác của bạn (vĩ độ và kinh độ). Việc thu thập
+                      thông tin vị trí địa lý của bạn có thể diễn ra ngầm ngay
+                      cả khi bạn không sử dụng các dịch vụ nếu quyền bạn đã trao
+                      cho chúng tôi cho phép hành động thu thập đó. Nếu bạn
+                      không cho phép chúng tôi thu thập thông tin vị trí địa lý
+                      chính xác của bạn, chúng tôi sẽ không thực hiện việc đó.
+                      Tương tự, nếu bạn đồng ý, chúng tôi có thể thu thập các
+                      hình ảnh và video (ví dụ, nếu bạn muốn đăng tải một bức
+                      ảnh hoặc video hoặc tham gia sử dụng các tính năng phát
+                      trực tiếp trên các dịch vụ của chúng tôi).
+                    </li>
+                  </ul>
+                  <h3>
+                    4.Cookie và các Công nghệ Thu thập Dữ liệu Tương tự khác
+                  </h3>
+                  <p>
+                    Chúng tôi sử dụng và có thể cho phép các bên khác sử dụng
+                    cookie và các công nghệ tương tự (như web beacon, pixel,
+                    SDK) để nhận dạng bạn và/hoặc một hoặc nhiều thiết bị của
+                    bạn. Bạn có thể đọc Chính sách Cookie của chúng tôi để biết
+                    lý do tại sao chúng tôi sử dụng các công nghệ này và cách
+                    bạn có thể kiểm soát tốt hơn việc chúng được sử dụng như thế
+                    nào.
+                  </p>
+                  <p>
+                    Một số trình duyệt web (bao gồm cả Safari, Internet
+                    Explorer, Firefox và Chrome) có tính năng “Do Not Track” (“
+                    <strong>DNT</strong> ”, tiếng Việt: Không Theo dõi) cho
+                    trang web biết rằng người dùng không muốn bị theo dõi hoạt
+                    động trực tuyến của họ. Nếu một trang web đáp ứng tín hiệu
+                    DNT nhận được tín hiệu DNT, trình duyệt có thể chặn trang
+                    web đó thu thập thông tin nhất định về người dùng của trình
+                    duyệt. Không phải tất cả những trình duyệt đều cung cấp tùy
+                    chọn DNT và những tín hiệu DNT vẫn chưa thống nhất. Vì lý do
+                    này, nhiều doanh nghiệp, bao gồm Tinder, hiện không đáp ứng
+                    tín hiệu DNT.
+                  </p>
+                  <h3>5. Cách thức chúng tôi sử dụng thông tin</h3>
+                  <p>
+                    Lý do chính chúng tôi sử dụng thông tin của bạn là để cung
+                    cấp và cải tiến các dịch vụ của mình. Ngoài ra, chúng tôi sử
+                    dụng thông tin của bạn để giúp bạn giữ an toàn, và để cung
+                    cấp cho bạn những quảng cáo có thể bạn quan tâm. Hãy tiếp
+                    tục đọc phần phân tích kỹ hơn ở dưới đây về các lý do chúng
+                    tôi sử dụng thông tin của bạn, cùng các ví dụ thực tiễn.
+                  </p>
+                  <h4>
+                    A. Để quản lý tài khoản của bạn và cung cấp các dịch vụ của
+                    chúng tôi đến bạn
+                  </h4>
+                  <ul>
+                    <li>Tạo và quản lý tài khoản của bạn</li>
+                    <li>
+                      Cung cấp dịch vụ chăm sóc khách hàng và đáp ứng các yêu
+                      cầu của bạn
+                    </li>
+                    <li>Hoàn thành các giao dịch của bạn</li>
+                    <li>Trao đổi với bạn về các dịch vụ của chúng tôi</li>
+                  </ul>
+                  <h4>B. Để giúp bạn kết nối với những người dùng khác</h4>
+                  <ul>
+                    <li>Giới thiệu bạn với các thành viên khác</li>
+                    <li>Cho các thành viên nhìn thấy hồ sơ của nhau</li>
+                  </ul>
+                  <h4>C. Cung cấp cho bạn các dịch vụ của Tinder</h4>
+                  <ul>
+                    <li>
+                      Đăng ký cho bạn và hiển thị hồ sơ của bạn trên các tính
+                      năng mới và các ứng dụng của Tinder
+                    </li>
+                    <li>
+                      Quản lý tài khoản của bạn trên các tính năng mới và các
+                      ứng dụng này.
+                    </li>
+                  </ul>
+                  <h4>D. Để vận hành các chiến dịch quảng cáo và tiếp thị</h4>
+                  <ul>
+                    <li>
+                      Quản lý những lần rút thăm trúng thưởng, cuộc thi, giảm
+                      giá hoặc các khuyến mãi khác
+                    </li>
+                    <li>
+                      Thực hiện và đo lường độ hiệu quả của các chiến dịch quảng
+                      cáo trên các dịch vụ của chúng tôi và các chiến dịch quảng
+                      bá Tinder bên ngoài các dịch vụ của chúng tôi
+                    </li>
+                    <li>
+                      Trao đổi với bạn về các sản phẩm hoặc dịch vụ mà chúng tôi
+                      tin bạn sẽ quan tâm
+                    </li>
+                  </ul>
+                  <h4>
+                    E. Để cải thiện các dịch vụ của chúng tôi và phát triển
+                    những dịch vụ mới
+                  </h4>
+                  <ul>
+                    <li>
+                      Quản lý các cuộc phỏng vấn nhóm khách hàng, nghiên cứu thị
+                      trường và khảo sát
+                    </li>
+                    <li>
+                      Xem xét tương tác của người dùng với đội ngũ chăm sóc
+                      khách hàng để nâng cao chất lượng dịch vụ của chúng tôi
+                    </li>
+                    <li>
+                      Hiểu được cách người dùng sử dụng dịch vụ để từ đó nâng
+                      cao chất lượng dịch vụ (ví dụ, chúng tôi có thể quyết định
+                      thay đổi giao diện và trải nghiệm hay thậm chí chỉnh sửa
+                      đáng kể một tính năng dựa trên cách người dùng tương tác
+                      với nó)
+                    </li>
+                    <li>
+                      Phát triển các tính năng và dịch vụ mới (ví dụ, chúng tôi
+                      có thể quyết định xây dựng một tính năng mới dựa trên sở
+                      thích nhằm đáp ứng yêu cầu nhận được từ người dùng).
+                    </li>
+                  </ul>
+                  <h4>
+                    F. Để ngăn ngừa, phát hiện và chống gian lận cùng các hoạt
+                    động bất hợp pháp hoặc không được phép khác
+                  </h4>
+                  <ul>
+                    <li>
+                      Tìm và giải quyết các trường hợp đang vi phạm, nghi ngờ vi
+                      phạm hoặc vi phạm đã được xác định liên quan đến
+                      <a href="/terms">Điều khoản Sử dụng</a>, đặc biệt bằng
+                      cách duyệt các báo cáo và tương tác giữa các thành viên
+                      với nhau
+                    </li>
+                    <li>
+                      Hiểu rõ hơn và thiết kế các biện pháp chống lại việc vi
+                      phạm <a href="/terms">Điều khoản Sử dụng</a>
+                    </li>
+                    <li>
+                      Lưu trữ dữ liệu liên quan đến việc vi phạm
+                      <a href="/terms">Điều khoản Sử dụng</a> để ngăn việc tái
+                      diễn
+                    </li>
+                    <li>
+                      Thực thi hoặc sử dụng các quyền của chúng tôi, ví dụ như
+                      <a href="/terms">Điều khoản Sử dụng</a>
+                    </li>
+                    <li>
+                      Trao đổi với các cá nhân gửi báo cáo, thông báo về việc
+                      chúng tôi đã làm khi nhận được báo cáo của họ
+                    </li>
+                  </ul>
+                  <h4>G. Đảm bảo việc tuân thủ pháp luật</h4>
+                  <ul>
+                    <li>Tuân theo các yêu cầu pháp lý</li>
+                    <li>Hỗ trợ việc thực thi pháp luật</li>
+                  </ul>
+                  <p>
+                    Để biết thêm thông tin về cách chúng tôi xử lý các thông tin
+                    cá nhân thông qua việc phân loại và xử lý tự động, vui lòng
+                    tham khảo mục
+                    <a
+                      href="https://www.help.tinder.com/hc/en-us/articles/360003082172-Profiling-and-automated-decision-making-at-Tinder"
+                      >Câu hỏi thường gặp</a
+                    >.
+                  </p>
+                  <p>
+                    Để xử lý thông tin của bạn như đã mô tả trong Chính sách
+                    Quyền riêng tư này, chúng tôi dựa trên các cơ sở pháp lý
+                    sau:
+                  </p>
+                  <ul>
+                    <li>
+                      <em>Cung cấp dịch vụ của chúng tôi đến bạn:</em> Lý do để
+                      chúng tôi xử lý thông tin của bạn cho các mục đích A, B và
+                      C trên đây là để thực hiện hợp đồng giữa bạn và chúng tôi.
+                      Ví dụ như, bạn sử dụng dịch vụ của chúng tôi để xây dựng
+                      các mối quan hệ có ý nghĩa, chúng tôi sử dụng thông tin
+                      của bạn để duy trì tài khoản và hồ sơ của bạn, giúp nó
+                      được nhìn thấy bởi các thành viên khác và giới thiệu các
+                      thành viên khác với bạn và bên cạnh đó để cung cấp cho bạn
+                      và các thành viên khác các tính năng miễn phí và trả phí
+                      của chúng tôi.
+                    </li>
+                    <li>
+                      <em>Lợi ích hợp pháp:</em> Chúng tôi xử lý thông tin của
+                      bạn cho các mục đích D, E và F ở trên dựa trên lợi ích hợp
+                      pháp của chúng tôi. Ví dụ, chúng tôi phân tích hành vi của
+                      người dùng các dịch vụ của mình để liên tục cải thiện các
+                      giá trị mình mang đến cho người dùng, chúng tôi đưa ra
+                      những thứ có thể bạn sẽ quan tâm và quảng bá các dịch vụ
+                      của mình, chúng tôi xử lý thông tin để giúp giữ cho người
+                      dùng an toàn và chúng tôi xử lý dữ liệu khi cần để thực
+                      thi các quyền của mình, hỗ trợ việc thực thi pháp luật và
+                      giúp chúng tôi tự bảo vệ mình trong trường hợp có vấn đề
+                      về pháp lý.
+                    </li>
+                    <li>
+                      <em>Tuân theo các quy định và điều luật hiện hành:</em>
+                      Chúng tôi xử lý thông tin của bạn vì mục đích G ở trên khi
+                      cần để tuân theo các quy định và điều luật hiện hành và để
+                      chứng minh cho việc tuân thủ các quy định và điều luật đó
+                      của chúng tôi. Ví dụ, chúng tôi lưu dữ liệu về lưu lượng
+                      truy cập và dữ liệu về các giao dịch để tuân theo các
+                      nghĩa vụ về kế toán, thuế cùng các nghĩa vụ lưu trữ dữ
+                      liệu khác của mình, và để có thể phản hồi các yêu cầu truy
+                      cập hợp pháp của phía hành pháp. Chúng tôi cũng lưu các dữ
+                      liệu để chứng minh quyết định đồng ý mà khách hàng gửi cho
+                      chúng tôi hay các quyết định của họ về việc không đồng ý
+                      tham gia vào một tính năng hay quá trình.
+                    </li>
+                    <li>
+                      <em>Sự chấp thuận:</em> Nếu bạn chọn cung cấp cho chúng
+                      tôi các thông tin có thể được xem là "đặc biệt" hay "nhạy
+                      cảm" trong một số trường hợp nhất định, như xu hướng tính
+                      dục, thì tức là bạn đang chấp thuận việc xử lý của chúng
+                      tôi đối với thông tin đó theo Chính sách Quyền riêng tư
+                      này. Chúng tôi có thể sẽ liên tục hỏi ý kiến của bạn về sự
+                      chấp thuận đối với việc thu thập một số thông tin nhất
+                      định như vị trí địa lý chính xác của bạn hay việc sử dụng
+                      thông tin của bạn cho những mục đích nhất định. Trong một
+                      số trường hợp, bạn có thể rút lại sự chấp thuận của mình
+                      bằng cách thay đổi các cài đặt (như điều chỉnh liên quan
+                      đến việc thu thập thông tin vị trí địa lý chính xác từ
+                      phía chúng tôi) hay bằng cách xóa nội dung của bạn (như
+                      việc xóa thông tin ở những điểm trong hồ sơ của bạn có thể
+                      được xem là "đặc biệt" hay "nhạy cảm"). Trong bất kỳ
+                      trường hợp nào, bạn có thể rút lại sự chấp thuận ở bất kỳ
+                      thời điểm nào bằng cách liên hệ với chúng tôi qua thông
+                      tin được cung cấp ở cuối Chính sách Quyền riêng tư này.
+                    </li>
+                  </ul>
+                  <h3>6.Cách thức chúng tôi chia sẻ thông tin</h3>
+                  <p>
+                    Vì mục tiêu của chúng tôi là giúp bạn tạo nên những mối quan
+                    hệ có ý nghĩa, nên phần lớn thông tin về người dùng mà chúng
+                    tôi chia sẻ, dĩ nhiên, là với các người dùng khác. Chúng tôi
+                    cũng chia sẻ thông tin về người dùng với các bên cung cấp
+                    dịch vụ và các đối tác hỗ trợ chúng tôi vận hành các dịch
+                    vụ, với các công ty khác của Match Group vì những lý do được
+                    nêu dưới đây và, trong một số trường hợp, với các cơ quan
+                    pháp luật. Đọc tiếp để biết thêm chi tiết về cách thông tin
+                    của bạn được chia sẻ với những người khác.
+                  </p>
+                  <ul>
+                    <li>
+                      <h4>Với các người dùng khác</h4>
+                      <p>
+                        Bạn chia sẻ thông tin với những người dùng khác khi tự
+                        nguyện tiết lộ thông tin trên dịch vụ (bao gồm cả hồ sơ
+                        công khai của bạn). Xin vui lòng cẩn trọng với thông tin
+                        của mình và đảm bảo rằng nội dung bạn chia sẻ là những
+                        thứ bạn thấy thoải mái khi được xem bởi người khác.
+                      </p>
+                      <p>
+                        Nếu bạn quyết định giới hạn đối tượng cho tất cả hoặc
+                        một phần hồ sơ của bạn hoặc cho một số nội dung hoặc
+                        thông tin nhất định về bạn, thì nó sẽ hiển thị theo cài
+                        đặt của bạn.
+                      </p>
+                      <p>
+                        Nếu có người gửi báo cáo liên quan đến bạn (ví dụ như
+                        việc bạn vi phạm
+                        <a href="/terms">Điều khoản Sử dụng</a>), chúng tôi có
+                        thể sẽ liên hệ với bên gửi báo cáo về các biện pháp mà
+                        chúng tôi tiến hành, nếu có, trong kết quả của báo cáo
+                        đó.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>
+                        Với những nhà cung cấp dịch vụ và đối tác của chúng tôi
+                      </h4>
+                      <p>
+                        Chúng tôi sử dụng những bên thứ ba để giúp điều hành và
+                        cải tiến dịch vụ. Các bên thứ ba này hỗ trợ chúng tôi
+                        nhiều tác vụ khác nhau, bao gồm những hoạt động lưu trữ
+                        và bảo trì, phân tích dữ liệu, chăm sóc khách hàng, tiếp
+                        thị, quảng cáo, xử lý thanh toán và bảo mật. Chúng tôi
+                        cũng chia sẻ thông tin với những đối tác phân phối và hỗ
+                        trợ chúng tôi quảng cáo dịch vụ. Ví dụ, chúng tôi có thể
+                        chia sẻ thông tin hạn chế về bạn bằng hình thức chia
+                        nhỏ, con người không thể đọc được cho các đối tác quảng
+                        cáo.
+                      </p>
+                      <p>
+                        Chúng tôi tuân theo quy trình kiểm tra nghiêm ngặt trước
+                        khi thuê bất cứ nhà cung cấp dịch vụ nào hoặc làm việc
+                        với bất kỳ đối tác nào. Các bên cung cấp dịch vụ của
+                        chúng tôi và các đối tác phải đồng ý với các nghĩa vụ
+                        bảo mật nghiệm ngặt.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Với các bên liên quan</h4>
+                      <p>
+                        Tinder là một trong các
+                        <a href="https://mtch.com"
+                          >hoạt động kinh doanh của tập đoàn Match Group</a
+                        >.
+                      </p>
+                      <p>
+                        Chúng tôi chia sẻ thông tin của bạn với các bên liên
+                        quan vì một số ít các mục đích hợp pháp như dưới đây:
+                      </p>
+                      <ul>
+                        <li>
+                          để giúp tất cả các nền tảng của Match Group an toàn
+                          hơn và để giúp chúng tôi giải quyết (như việc cấm) các
+                          thành phần xấu trên các nền tảng; để hỗ trợ chúng tôi
+                          trong các hoạt động xử lý dữ liệu, trong vai trò là
+                          các bên cung cấp dịch vụ, theo các hướng dẫn của chúng
+                          tôi và đại diện cho chúng tôi. Sự hỗ trợ của họ có thể
+                          bao gồm các hoạt động xử lý về mặt kỹ thuật, như lưu
+                          trữ và bảo trì cơ sở dữ liệu, chăm sóc khách hàng,
+                          tiếp thị và quảng cáo chọn mục tiêu, phân tích, hỗ trợ
+                          về mặt tài chính và kế toán, nâng cao chất lượng dịch
+                          vụ của chúng tôi, bảo vệ dữ liệu và các hệ thống của
+                          chúng tôi và chống lại việc gửi tin rác, lạm dụng, lừa
+                          đảo, xâm phạm và các hành vi sai trái khác.
+                        </li>
+                        <li>
+                          Chúng tôi cũng có thể chia sẻ thông tin với các công
+                          ty khác của Match Group cho các mục đích kinh doanh
+                          hợp pháp khác bao gồm kiểm toán công ty, phân tích và
+                          tổng hợp báo cáo, trong trường hợp và khi được cho
+                          phép theo luật hiện hành.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Tính năng chia sẻ</h4>
+                      <p>
+                        Bạn có thể chia sẻ hồ sơ của các người dùng khác và họ
+                        cũng có thể chia sẻ hồ sơ của bạn với những người khác
+                        bên ngoài dịch vụ của chúng tôi, sử dụng tính năng chia
+                        sẻ.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Đối với những giao dịch của công ty</h4>
+                      <p>
+                        Chúng tôi có thể chuyển giao thông tin của bạn nếu chúng
+                        tôi tham gia, dù là toàn bộ hay một phần, vào việc sáp
+                        nhập, bán, mua lại, nhượng quyền, tái cơ cấu, tái tổ
+                        chức, giải thể, phá sản hoặc thay đổi khác về quyền sở
+                        hữu hoặc quyền kiểm soát.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>
+                        Với cơ quan thực thi pháp luật / khi pháp luật yêu cầu
+                      </h4>
+                      <p>
+                        Chúng tôi có thể tiết lộ thông tin của bạn nếu cần
+                        thiết: (i) để tuân theo thủ tục pháp lý, chẳng hạn như
+                        lệnh tòa, trát tòa hoặc lệnh khám xét, điều tra thi hành
+                        luật pháp hoặc những yêu cầu pháp lý khác; (ii) để giúp
+                        đỡ trong việc ngăn ngừa hoặc phát hiện tội phạm (theo
+                        từng trường hợp đối với luật pháp hiện hành); hoặc (iii)
+                        để bảo vệ sự an toàn của bất cứ người nào.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Để thực thi những quyền hợp pháp</h4>
+                      <p>
+                        Chúng tôi cũng có thể chia sẻ thông tin: (i) nếu việc
+                        tiết lộ sẽ giảm nhẹ trách nhiệm pháp lý của chúng tôi
+                        trong một vụ kiện thực tế hoặc một vụ kiện mang tính đe
+                        dọa; (ii) khi cần thiết để bảo vệ những quyền hợp pháp
+                        của chúng tôi và những quyền hợp pháp của người sử dụng,
+                        đối tác kinh doanh hoặc những bên liên quan khác; (iii)
+                        để thực thi những thỏa thuận của chúng tôi với bạn; và
+                        (iv) để điều tra, ngăn ngừa hoặc thực hiện hành động
+                        khác liên quan đến hoạt động bất hợp pháp, nghi ngờ gian
+                        lận hoặc hành vi sai trái khác.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>
+                        Với sự chấp thuận của bạn hoặc theo yêu cầu của bạn
+                      </h4>
+                      <p>
+                        Chúng tôi có thể yêu cầu sự chấp thuận của bạn để chia
+                        sẻ thông tin của bạn với những bên thứ ba. Trong bất cứ
+                        trường hợp nào, chúng tôi sẽ giải thích tại sao chúng
+                        tôi muốn chia sẻ thông tin.
+                      </p>
+                      <p>
+                        Chúng tôi có thể sử dụng và chia sẻ thông tin không mang
+                        tính cá nhân (có nghĩa là thông tin mà tự nó không xác
+                        định được bạn là ai, chẳng hạn như thông tin thiết bị,
+                        nhân khẩu học chung chung, dữ liệu về hành vi thông
+                        thường, vị trí địa lý theo hình thức không xác định),
+                        cũng như thông tin cá nhân theo hình thức chia nhỏ, con
+                        người không thể đọc được, dưới bất cứ trường hợp nào ở
+                        trên. Chúng tôi cũng có thể chia sẻ thông tin này với
+                        những công ty khác của Match Group và các bên thứ ba
+                        (đặc biệt là những nhà quảng cáo) để phát triển và cung
+                        cấp quảng cáo chọn mục tiêu trên những dịch vụ của chúng
+                        tôi và trên những trang web hoặc những ứng dụng của bên
+                        thứ ba, cũng như để phân tích và báo cáo về quảng cáo mà
+                        bạn nhìn thấy. Chúng tôi có thể kết hợp thông tin này
+                        với thông tin phi cá nhân hoặc thông tin cá nhân bổ sung
+                        theo hình thức chia nhỏ, con người không thể đọc được,
+                        được thu thập từ những nguồn khác. Có thể tìm thêm thông
+                        tin về việc chúng tôi sử dụng cookie và những công nghệ
+                        tương tự trong
+                        <a href="/cookie-policy">Chính sách Cookie</a>
+                      </p>
+                    </li>
+                  </ul>
+                  <h3>7. Truyền dữ liệu qua biên giới</h3>
+                  <p>
+                    Việc chia sẻ thông tin được nêu trong
+                    <a href="#how-we-share-info">Mục 6</a> liên quan đến việc
+                    chuyển dữ liệu xuyên biên giới đến Mỹ và các khu vực pháp lý
+                    khác có thể có các luật khác nhau về xử lý dữ liệu. Khi
+                    chúng tôi chuyển thông tin cá nhân ra bên ngoài khu vực EEA,
+                    Vương quốc Anh, Thụy Sĩ hoặc các nước khác mà luật bảo vệ dữ
+                    liệu đã được Ủy ban Châu Âu hoặc cơ quan chính phủ có thẩm
+                    quyền khác chấp nhận, chúng tôi sử dụng
+                    <a
+                      href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en"
+                      >các điều khoản hợp đồng tiêu chuẩn</a
+                    >
+                    (các điều khoản hợp đồng tiêu chuẩn là cam kết giữa các công
+                    ty đảm nhận việc chuyển dữ liệu cá nhân, ràng buộc họ để bảo
+                    vệ quyền riêng tư và tính bảo mật của dữ liệu của bạn) hoặc
+                    cơ chế chuyển giao phù hợp khác. Chúng tôi hiện đang trong
+                    quá trình xem xét việc chuyển giao cho các nhà cung cấp của
+                    chúng tôi và cơ sở pháp lý liên quan thêm tới
+                    <a
+                      href="http://curia.europa.eu/juris/document/document.jsf;jsessionid=D9783B09CDC25934085215EB6CAC9FDB?text=&#x26;docid=228677&#x26;pageIndex=0&#x26;doclang=EN&#x26;mode=req&#x26;dir=&#x26;occ=first&#x26;part=1&#x26;cid=14024666"
+                      >phán quyết gần đây của Tòa án Công lý Liên minh Châu Âu
+                      về việc chuyển dữ liệu cá nhân đến Mỹ</a
+                    >.
+                  </p>
+                  <h3>8. Các Quyền của bạn</h3>
+                  <p>
+                    Chúng tôi muốn bạn có thể tự kiểm soát thông tin của mình,
+                    vì vậy chúng tôi muốn nhắc bạn về các tùy chọn và công cụ
+                    hiện có sau:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong
+                        >Các công cụ Truy cập / Cập nhật trong dịch vụ.</strong
+                      >
+                      Các công cụ và cài đặt tài khoản có thể giúp bạn truy cập,
+                      chỉnh sửa hoặc xóa thông tin mà bạn đã cung cấp cho chúng
+                      tôi và thông tin đã liên kết trực tiếp với tài khoản của
+                      bạn trong dịch vụ. Nếu bạn có bất kỳ câu hỏi nào về các
+                      công cụ và cài đặt này, vui lòng liên hệ với đội ngũ chăm
+                      sóc khách hàng của chúng tôi để được trợ giúp
+                      <a href="https://gotinder.com/help">tại đây.</a>
+                    </li>
+                    <li>
+                      <strong>Quyền với thiết bị.</strong> Các nền tảng thiết bị
+                      di động có thể có hệ thống cấp phép cho các loại dữ liệu
+                      thiết bị và thông báo cụ thể, như danh bạ điện thoại, hình
+                      ảnh, các dịch vụ liên quan đến vị trí, thông báo đẩy và số
+                      nhận dạng quảng cáo. Bạn có thể thay đổi các cài đặt trên
+                      thiết bị của mình để đồng ý hoặc phản đối việc thu thập
+                      hoặc xử lý thông tin tương ứng hoặc hiển thị thông báo
+                      tương ứng. Tất nhiên, nếu bạn làm vậy, một số dịch vụ nhất
+                      định có thể bị mất khả năng phục vụ bạn.
+                    </li>
+                    <li>
+                      <strong>Gỡ cài đặt.</strong> Bạn có thể dừng tất cả việc
+                      thu thập thông tin của một ứng dụng bằng cách gỡ ứng dụng
+                      đó bằng quy trình gỡ cài đặt tiêu chuẩn trên thiết bị của
+                      bạn. Hãy nhớ rằng việc gỡ một ứng dụng KHÔNG đóng tài
+                      khoản của bạn. Để đóng tài khoản, vui lòng sử dụng tính
+                      năng tương ứng của dịch vụ.
+                    </li>
+                    <li>
+                      <strong>Đóng tài khoản.</strong> Bạn có thể đóng tài khoản
+                      của mình bằng cách sử dụng tính năng tương ứng trực tiếp
+                      trên dịch vụ.
+                    </li>
+                  </ul>
+                  <p>
+                    Chúng tôi cũng muốn bạn nhận thức được quyền riêng tư của
+                    mình. Dưới đây là một số điểm chính cần nhớ:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Xem xét thông tin của bạn.</strong> Các luật về
+                      quyền riêng tư hiện hành có thể cung cấp cho bạn quyền xem
+                      xét thông tin cá nhân mà chúng tôi lưu trữ về bạn (tùy
+                      thuộc vào việc áp dụng luật, nó có thể được gọi là quyền
+                      truy cập, quyền di chuyển, quyền được biết hoặc các biến
+                      thể của các điều khoản đó). Bạn có thể thực hiện quyền này
+                      bằng cách đưa ra một yêu cầu như vậy
+                      <a href="https://account.gotinder.com/data?locale=en"
+                        >tại đây.</a
+                      >
+                    </li>
+                    <li>
+                      <strong>Cập nhật thông tin của bạn.</strong> Nếu bạn cho
+                      rằng thông tin chúng tôi có về bạn là không chính xác hoặc
+                      chúng tôi không còn được quyền sử dụng thông tin đó nữa và
+                      muốn yêu cầu chỉnh sửa, xóa, phản đối hoặc hạn chế việc xử
+                      lý thông tin đó, vui lòng liên hệ với chúng tôi
+                      <a href="https://gotinder.com/help">tại đây.</a>
+                    </li>
+                  </ul>
+                  <p>
+                    Để bảo vệ bạn và bảo vệ tất cả những người dùng của chúng
+                    tôi, chúng tôi có thể yêu cầu bạn cung cấp bằng chứng nhận
+                    dạng trước khi chúng tôi có thể trả lời những yêu cầu trên.
+                  </p>
+                  <p>
+                    Hãy nhớ rằng, chúng tôi có thể từ chối các yêu cầu, bao gồm
+                    cả trường hợp chúng tôi không thể xác thực bạn, nếu yêu cầu
+                    là bất hợp pháp hoặc không hợp lệ, hoặc nếu nó có thể vi
+                    phạm các bí mật thương mại hoặc sở hữu trí tuệ hoặc quyền
+                    riêng tư hoặc các quyền khác của người khác. Nếu bạn muốn
+                    nhận các thông tin liên quan đến một thành viên khác, như
+                    bản sao của bất kỳ tin nhắn nào bạn nhận từ họ thông qua
+                    dịch vụ của chúng tôi, thành viên đó phải liên hệ và cung
+                    cấp cho chúng tôi sự chấp thuận bằng văn bản trước khi thông
+                    tin đó được đưa ra. Chúng tôi cũng có thể yêu cầu họ chứng
+                    minh danh tính trước khi chúng tôi phản hồi yêu cầu.
+                  </p>
+                  <p>
+                    Ngoài ra, chúng tôi có thể không thể đáp ứng một số yêu cầu
+                    hướng đến việc phản đối hoặc hạn chế việc xử lý thông tin cá
+                    nhân, đặc biệt là khi những yêu cầu đó không cho phép chúng
+                    tôi cung cấp dịch vụ của mình cho bạn nữa. Ví dụ, chúng tôi
+                    không thể cung cấp dịch vụ của mình nếu chúng tôi không có
+                    thông tin ngày sinh của bạn và do đó không thể đảm bảo rằng
+                    bạn đã đủ 18 tuổi trở lên.
+                  </p>
+                  <p>
+                    Ở một số nước nhất định, bao gồm các nước trong Khu vực kinh
+                    tế Châu Âu và Vương quốc Anh, bạn có quyền khiếu nại với cơ
+                    quan bảo vệ dữ liệu tương ứng nếu bạn lo ngại về cách chúng
+                    tôi xử lý thông tin cá nhân của bạn. Bạn có thể tìm thông
+                    tin về cơ quan quản lý việc bảo vệ dữ liệu của mình ở Khu
+                    vực Kinh tế Châu Âu
+                    <a href="https://edpb.europa.eu/about-edpb/board/members_en"
+                      >tại đây</a
+                    >, và ở Vương quốc Anh
+                    <a href="https://ico.org.uk/">tại đây</a>. Cơ quan bảo vệ dữ
+                    liệu mà bạn có thể gửi khiếu nại đến có thể là cơ quan ở nơi
+                    bạn thường trú, nơi bạn làm việc hoặc nơi đã xảy ra hành vi
+                    vi phạm được nêu.
+                  </p>
+                  <h3>9. Thời gian chúng tôi lưu trữ thông tin của bạn</h3>
+                  <p>
+                    Chúng tôi chỉ lưu trữ thông tin cá nhân của bạn trong khoảng
+                    thời gian chúng tôi cần thông tin đó cho các mục đích kinh
+                    doanh hợp pháp (như được trình bày trong
+                    <a href="#how-we-use-info">Mục 5</a>) và theo quy định của
+                    pháp luật hiện hành. Nếu bạn quyết định ngừng sử dụng dịch
+                    vụ của chúng tôi, bạn có thể đóng tài khoản của mình và các
+                    thành viên khác sẽ không còn nhìn thấy hồ sơ của bạn. Lưu ý
+                    rằng chúng tôi sẽ tự động đóng tài khoản của bạn nếu bạn
+                    không hoạt động trong khoảng thời gian hai năm. Sau khi tài
+                    khoản của bạn bị đóng, chúng tôi sẽ xóa thông tin cá nhân
+                    của bạn, như được trình bày dưới đây:
+                  </p>
+                  <ol>
+                    <li>
+                      Để bảo vệ sự an toàn và bảo mật cho các thành viên của
+                      chúng tôi, chúng tôi áp dụng thời hạn lưu giữ an toàn là
+                      ba tháng sau khi tài khoản bị đóng, hoặc một năm sau khi
+                      tài khoản bị cấm. Trong thời gian này, chúng tôi giữ thông
+                      tin của bạn phòng trường hợp cần để điều tra các hành vi
+                      bất hợp pháp hoặc có hại. Việc lưu giữ thông tin trong
+                      thời hạn lưu giữ an toàn này được dựa trên lợi ích hợp
+                      pháp của chúng tôi cũng như lợi ích của bên thứ ba là các
+                      nạn nhân tiềm năng.
+                    </li>
+                    <li>
+                      <p>
+                        Khi thời hạn lưu giữ an toàn kết thúc, chúng tôi sẽ xóa
+                        dữ liệu của bạn và chỉ giữ lại số ít thông tin cho các
+                        mục đích cụ thể được trình bày dưới đây:
+                      </p>
+                      <ul>
+                        <li>
+                          a) Chúng tôi giữ lại một phần dữ liệu tối thiểu để
+                          tuân thủ các nghĩa vụ lưu trữ dữ liệu pháp lý: cụ thể,
+                          chúng tôi lưu trữ dữ liệu giao dịch trong 10 năm để
+                          tuân thủ các yêu cầu pháp lý về thuế và kế toán, thông
+                          tin thẻ tín dụng trong khoảng thời gian mà người dùng
+                          có thể khiếu nại về giao dịch và “dữ liệu lưu lượng
+                          truy cập” / nhật ký trong một năm để tuân thủ các
+                          nghĩa vụ pháp lý về lưu trữ dữ liệu. Chúng tôi cũng
+                          lưu trữ hồ sơ về các quyết định chấp thuận mà các
+                          thành viên cung cấp cho chúng tôi trong năm năm để làm
+                          bằng chứng cho việc tuân thủ pháp luật hiện hành của
+                          chúng tôi.
+                        </li>
+                        <li>
+                          b) Chúng tôi giữ lại một phần thông tin tối thiểu trên
+                          cơ sở lợi ích hợp pháp của mình: chúng tôi lưu trữ hồ
+                          sơ chăm sóc khách hàng và dữ liệu liên quan cũng như
+                          vị trí không chính xác của người dùng khi tải ứng
+                          dụng/giao dịch trong năm năm để hỗ trợ các quyết định
+                          chăm sóc khách hàng của chúng tôi, áp dụng các quyền
+                          của chúng tôi và cho phép chúng tôi tự bảo vệ mình
+                          trong trường hợp có khiếu nại, thông tin về sự tồn tại
+                          của các tài khoản và thuê bao đăng ký trong quá khứ -
+                          chúng tôi sẽ xóa ba năm sau khi bạn đóng tài khoản
+                          cuối cùng của mình để đảm bảo dự báo và báo cáo tài
+                          chính phù hợp và chính xác, dữ liệu hồ sơ trong một
+                          năm để đề phòng có kiện tụng xảy ra, cho việc thiết
+                          lập, thực hiện hoặc bảo vệ các khiếu nại pháp lý, và
+                          dữ liệu cần thiết để ngăn các thành viên đã bị cấm mở
+                          tài khoản mới, trong khoảng thời gian đủ dài để đảm
+                          bảo an toàn và các lợi ích cần thiết của thành viên
+                          của chúng tôi.
+                        </li>
+                        <li>
+                          c) Cuối cùng, chúng tôi giữ lại thông tin trên cơ sở
+                          lợi ích hợp pháp của chúng tôi cho nguy cơ và khi thực
+                          tế có vấn đề xảy ra, khiếu nại hoặc tranh chấp cần
+                          chúng tôi lưu trữ thông tin (cụ thể là nếu chúng tôi
+                          nhận được trát đòi hầu tòa hợp pháp hoặc yêu cầu chúng
+                          tôi bảo lưu dữ liệu (trong trường hợp đó chúng tôi cần
+                          giữ dữ liệu để tuân thủ các nghĩa vụ pháp lý của mình)
+                          hoặc nếu dữ liệu cần thiết cho các quy trình pháp lý).
+                        </li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <h3>10. Quyền riêng tư của trẻ em</h3>
+                  <p>
+                    Các dịch vụ của chúng tôi chỉ dành cho các cá nhân từ 18
+                    tuổi trở lên. Chúng tôi không cho phép các cá nhân dưới 18
+                    tuổi sử dụng nền tảng của mình. Nếu bạn nghi ngờ một thành
+                    viên dưới 18 tuổi, vui lòng sử dụng cơ chế báo cáo hiện có
+                    trên dịch vụ.
+                  </p>
+                  <h3>
+                    11. Các ứng viên tìm việc làm, các nhà thầu và đại diện các
+                    nhà cung cấp
+                  </h3>
+                  <p>
+                    Chúng tôi xử lý thông tin cá nhân của các ứng viên tìm việc
+                    làm, các nhà thầu và đại diện các nhà cung cấp, như một phần
+                    của hoạt động tuyển dụng và quản lý nhân sự cũng như quản lý
+                    các dịch vụ mà các nhà thầu và các nhà cung cấp mang đến cho
+                    chúng tôi. Nếu bạn là ứng viên, nhà thầu hoặc đại diện nhà
+                    cung cấp của Tinder, một số điều khoản có liên quan của
+                    Chính sách Quyền riêng tư này sẽ áp dụng cho việc xử lý
+                    thông tin cá nhân của bạn, bao gồm các mục của Chính sách
+                    Quyền riêng tư này nói về
+                    <a href="#who-we-are"
+                      >pháp nhân chịu trách nhiệm xử lý thông tin cá nhân của
+                      bạn</a
+                    >,
+                    <a href="#cross-border-data"
+                      >chuyển giao thông tin cá nhân</a
+                    >,
+                    <a href="#your-rights"
+                      >các quyền bạn có thể có theo pháp luật hiện hành</a
+                    >,
+                    <a href="#how-to-contact">cách liên hệ với chúng tôi</a> và
+                    <a href="https://policies.tinder.com/ccpa-addendum/us/en"
+                      >thông tin cụ thể liên quan đến California</a
+                    >.
+                  </p>
+                  <p>
+                    Nếu bạn là người ứng tuyển cho một công việc, thông tin về
+                    bạn mà chúng tôi xử lý có thể khác nhau tùy thuộc vào công
+                    việc bạn tìm kiếm nhưng thường bao gồm những gì bạn cung cấp
+                    cho chúng tôi như trong đơn xin việc cũng như bằng cấp
+                    chuyên môn, thông tin lý lịch và thông tin tham khảo mà nhà
+                    tuyển dụng hoặc các bên thứ ba chia sẻ với chúng tôi. Chúng
+                    tôi sử dụng thông tin này để hỗ trợ quá trình tuyển dụng và
+                    quá trình này có thể dẫn đến hợp đồng lao động. Đối với các
+                    nhà thầu và đại diện nhà cung cấp, chúng tôi có thể xử lý
+                    thông tin nhận dạng và thông tin liên quan đến công việc,
+                    điều này cần thiết để quản lý mối quan hệ giữa chúng tôi với
+                    bạn và bên chủ quản của bạn, và cần thiết cho việc thực hiện
+                    thỏa thuận dịch vụ, đồng thời để thiết lập, thực hiện hoặc
+                    bảo vệ các khiếu nại pháp lý tiềm ẩn. Chúng tôi có thể chia
+                    sẻ thông tin cá nhân với các nhà cung cấp dịch vụ hỗ trợ
+                    chúng tôi trong hoạt động tuyển dụng và xử lý dữ liệu kỹ
+                    thuật, cũng như với các công ty của Match Group (ví dụ, nếu
+                    bạn có mối quan hệ kinh doanh với nhân viên của một công ty
+                    liên kết). Chúng tôi chỉ giữ thông tin cá nhân của bạn cho
+                    đến lúc các dữ liệu đó còn cần thiết cho những mục đích này.
+                  </p>
+                  <h3>12. Các thay đổi về Chính sách Quyền riêng tư</h3>
+                  <p>
+                    Vì chúng tôi luôn tìm kiếm những cách thức mới và sáng tạo
+                    để giúp bạn xây dựng những mối quan hệ có ý nghĩa và cố gắng
+                    đảm bảo các phần giải thích về việc sử dụng dữ liệu của
+                    chúng tôi luôn được cập nhật, chính sách này có thể thay đổi
+                    theo thời gian. Chúng tôi sẽ thông báo cho bạn trước khi bất
+                    cứ thay đổi quan trọng nào có hiệu lực để bạn có thời gian
+                    xem xét những thay đổi đó.
+                  </p>
+                  <h3>13. Cách liên hệ với chúng tôi</h3>
+                  <p>
+                    Nếu bạn thắc mắc về Chính sách Quyền riêng tư này, bạn có
+                    các tùy chọn khác nhau dưới đây:
+                  </p>
+                  <h4>
+                    Nếu bạn sống ở Khu vực Kinh tế Châu Âu, Vương quốc Anh hoặc
+                    Thụy Sĩ:
+                  </h4>
+                  <p>
+                    Trực tuyến: <a href="https://gotinder.com/help">tại đây</a>
+                  </p>
+                  <p>Qua bưu điện:</p>
+                  <blockquote>
+                    <p>Chuyên viên Bảo vệ Dữ liệu</p>
+                    <p>MTCH Technology Services Limited</p>
+                    <p>Tinder</p>
+                    <p>WeWork Charlemont Exchange</p>
+                    <p>42 phố Charlemont</p>
+                    <p>Dublin 2, D02 R593</p>
+                    <p>Ireland</p>
+                  </blockquote>
+                  <h4>Nếu bạn cư trú tại Nhật Bản:</h4>
+                  <p>
+                    Trực tuyến: <a href="https://gotinder.com/help">tại đây</a>
+                  </p>
+                  <p>Qua bưu điện:</p>
+                  <blockquote>
+                    <p>Chuyên viên Bảo vệ Dữ liệu</p>
+                    <p>MG Japan Services GK</p>
+                    <p>c/o Match Group, LLC</p>
+                    <p>8750 North Central Expressway</p>
+                    <p>Suite 1400</p>
+                    <p>Dallas, TX 75231</p>
+                    <p>United States</p>
+                  </blockquote>
+                  <h4>
+                    Nếu bạn sống bên ngoài Khu vực Kinh tế Châu Âu, Vương quốc
+                    Anh, Thụy Sĩ và Nhật Bản:
+                  </h4>
+                  <p>
+                    Trực tuyến: <a href="https://gotinder.com/help">tại đây</a>
+                  </p>
+                  <p>Qua bưu điện:</p>
+                  <blockquote>
+                    <p>Chuyên viên Bảo vệ Dữ liệu</p>
+                    <p>Match Group, LLC</p>
+                    <p>8750 North Central Expressway</p>
+                    <p>Suite 1400</p>
+                    <p>Dallas, TX 75231</p>
+                    <p>United States</p>
+                  </blockquote>
+                </div></span
+              >
+            </main>
+          </div>
+          <div class="Layout__FooterWrapper-u406a5-2 djcEJG">
+            <footer class="Footer-sc-1qyll0s-0 byZvTm">
+              <nav class="LanguagePicker-ohytd3-1 ghaeor">
+                <h3>Ngôn ngữ</h3>
+                <ul class="LanguagePicker__LanguageList-ohytd3-0 egCcio">
+                  <li class="">
+                    <a data-locale="ar" href="/privacy/intl/ar/">‏العربية</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="bg" href="/privacy/intl/bg/">Български</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ca" href="/privacy/intl/ca/">Català</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="cs" href="/privacy/intl/cs/">Čeština</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="da" href="/privacy/intl/da/">Dansk</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="de" href="/privacy/intl/de/">Deutsch</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="el" href="/privacy/intl/el/">Ελληνικά</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="en" href="/privacy/intl/en/">English</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-ES" href="/privacy/intl/es-es/"
+                      >Español(ES)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="es" href="/privacy/intl/es/">Español(MX)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-AR" href="/privacy/intl/es-ar/"
+                      >Español(AR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="fr" href="/privacy/intl/fr/"
+                      >Français(FR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="fi" href="/privacy/intl/fi/">Suomi</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="he" href="/privacy/intl/he/">עברית</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hr" href="/privacy/intl/hr/">Hrvatski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hu" href="/privacy/intl/hu/">Magyar</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="id" href="/privacy/intl/id/">Indonesia</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ja" href="/privacy/intl/ja/">日本語</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ko" href="/privacy/intl/ko/">한국어</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lt" href="/privacy/intl/lt/">Lietuvių</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lv" href="/privacy/intl/lv/">Latviešu</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ms" href="/privacy/intl/ms/"
+                      >Bahasa Melayu</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="nl" href="/privacy/intl/nl/">Nederlands</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="no" href="/privacy/intl/no/">Nynorsk</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pl" href="/privacy/intl/pl/">Polski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pt" href="/privacy/intl/pt/"
+                      >Português(BR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="pt-PT" href="/privacy/intl/pt-pt/"
+                      >Português(PT)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="ro" href="/privacy/intl/ro/">Română</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ru" href="/privacy/intl/ru/">Русский</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sk" href="/privacy/intl/sk/">Slovenčina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sl" href="/privacy/intl/sl/">Slovenščina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sr" href="/privacy/intl/sr/">Srpski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="th" href="/privacy/intl/th/">ไทย</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="tr" href="/privacy/intl/tr/">Türkçe</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="uk" href="/privacy/intl/uk/">Українська</a>
+                  </li>
+                  <li class="current">
+                    <a
+                      aria-current="page"
+                      data-locale="vi"
+                      class=""
+                      href="/privacy/intl/vi/"
+                      >Tiếng Việt</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-CN" href="/privacy/intl/zh-cn/"
+                      >简体中文</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-TW" href="/privacy/intl/zh-tw/"
+                      >繁體中文</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="Nav-sc-114h8f1-0 iioFOg">
+                <section>
+                  <h3>Công ty</h3>
+                  <ul>
+                    <li><a href="https://tinder.com/jobs">Tuyển dụng</a></li>
+                    <li><a href="/contact">Liên hệ</a></li>
+                    <li><a href="/security">Bảo mật</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Cộng đồng</h3>
+                  <ul>
+                    <li>
+                      <a href="https://tech.gotinder.com">Blog Công nghệ</a>
+                    </li>
+                    <li>
+                      <a href="https://www.tinderpressroom.com/">Báo chí</a>
+                    </li>
+                    <li><a href="https://www.help.tinder.com">Hỗ trợ</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Pháp lý</h3>
+                  <ul>
+                    <li><a href="/privacy">Quyền riêng tư</a></li>
+                    <li><a href="/terms">Điều khoản</a></li>
+                    <li><a href="/cookie-policy">Chính sách Cookie</a></li>
+                    <li>
+                      <a href="/safety-and-policy"
+                        >Trung tâm Chính sách và An toàn</a
+                      >
+                    </li>
+                    <li><a href="/safety">Bí quyết an toàn</a></li>
+                    <li>
+                      <a href="https://www.gotinder.com/community-guidelines"
+                        >Quy tắc cộng đồng</a
+                      >
+                    </li>
+                    <li><a href="/intellectual-property">Sở Hữu Trí Tuệ</a></li>
+                  </ul>
+                </section>
+              </nav>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div
+        id="gatsby-announcer"
+        style="
+          position: absolute;
+          top: 0;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        "
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
+    </div>
+    <script id="gatsby-script-loader">
+      /*<![CDATA[*/ window.pagePath = "/privacy/intl/vi/"; /*]]>*/
+    </script>
+    <script id="gatsby-chunk-mapping">
+      /*<![CDATA[*/ window.___chunkMapping = {
+        polyfill: ["/polyfill-8323aa54c0d045626fca.js"],
+        app: ["/app-d011f58ba08167ecf7ec.js"],
+        "component---src-pages-404-jsx": [
+          "/component---src-pages-404-jsx-6ce81b9c1667361c7a96.js",
+        ],
+        "component---src-pages-index-jsx": [
+          "/component---src-pages-index-jsx-f59acd5bce0ff284f38b.js",
+        ],
+        "component---src-templates-policy-page-jsx": [
+          "/component---src-templates-policy-page-jsx-1d79a624d7b684bce9f4.js",
+        ],
+        "component---src-templates-safety-center-page-jsx": [
+          "/component---src-templates-safety-center-page-jsx-47b3027a914fbe42d38c.js",
+        ],
+        "component---src-templates-safety-center-page-web-jsx": [
+          "/component---src-templates-safety-center-page-web-jsx-a3564fe9717d00ea43e4.js",
+        ],
+      }; /*]]>*/
+    </script>
+    <script src="/polyfill-8323aa54c0d045626fca.js" nomodule=""></script>
+    <script
+      src="/component---src-templates-policy-page-jsx-1d79a624d7b684bce9f4.js"
+      async=""
+    ></script>
+    <script
+      src="/41dc7b0c85f0365a3422834ac006c2c46095f4ac-ae8ee0807df86fa27705.js"
+      async=""
+    ></script>
+    <script src="/commons-e5840ea12d8eecc53ff5.js" async=""></script>
+    <script src="/styles-e9d24b1846c7d6eb9685.js" async=""></script>
+    <script src="/app-d011f58ba08167ecf7ec.js" async=""></script>
+    <script src="/framework-90a019f1c20540076580.js" async=""></script>
+    <script src="/webpack-runtime-2be7d047cf26b7468727.js" async=""></script>
+  </body>
+</html>

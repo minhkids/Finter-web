@@ -1,0 +1,3766 @@
+<!DOCTYPE html>
+<html lang="vi" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style data-href="/styles.ebb28f049a359a149f15.css" id="gatsby-global-css">
+      @font-face {
+        font-family: Proxima Nova;
+        src: url(/static/proximanova-regular-bcf3bb1b7f7a3436181788e748bae013.woff2)
+            format("woff2"),
+          url(/static/proximanova-regular-54460ea503fd65c9bb26cac92011031e.woff)
+            format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Proxima Nova;
+        src: url(/static/proximanova-medium-445fe48212325deff8ff1d87e5b7e08f.woff2)
+            format("woff2"),
+          url(/static/proximanova-medium-7a79b3dbb9b0990ae4b89034395a1877.woff)
+            format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Proxima Nova;
+        src: url(/static/proximanova-bold-5c92d5d3e39a260d5dd06ced7eca070d.woff2)
+            format("woff2"),
+          url(/static/proximanova-bold-c25c6cfc30268615faf0b2c1a0b5a141.woff)
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: fallback;
+      }
+      @font-face {
+        font-family: Proxima Nova Condensed;
+        src: url(/static/proximanovacond-bold-65abc112c4fd3a0db39fe4be4e3498f5.woff2)
+            format("woff2"),
+          url(/static/proximanovacond-bold-843536743cac3edcd419c5eb8131bf00.woff)
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: fallback;
+      }
+      @font-face {
+        font-family: Proxima Nova Condensed;
+        src: url(/static/proximanovacond-extrabold-9d99f81121fc3cf5b5e0098731da7ccb.woff2)
+            format("woff2"),
+          url(/static/proximanovacond-extrabold-2a53d129f2902b344f2cca830ef8b443.woff)
+            format("woff");
+        font-weight: 800;
+        font-style: normal;
+        font-display: block;
+      }
+      :root {
+        --theme-dark: 0;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #fff;
+        --color--background-secondary: #f0f2f4;
+        --color--background-tertiary: #e9ebee;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #fff;
+        --color--divider-primary: #d4d8de;
+        --color--border-primary: #7c8591;
+        --color--border-secondary: #b9bfc8;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #21262e;
+        --color--text-primary: #21262e;
+        --color--text-primary-inverse: #fff;
+        --color--text-secondary: #505965;
+        --color--text-inactive: #656e7b;
+        --color--text-brand-normal: #d6002f;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #9908e8;
+        --color--text-gold: #896707;
+        --color--text-super-like: #106bd5;
+        --color--text-super-boost: #9908e8;
+        --color--text-overlay: #fff;
+        --color--text-link: #106bd5;
+        --color--text-success: #0b7d58;
+        --color--text-error: #c62c1e;
+        --color--icon-primary: #e9ebee;
+        --color--icon-secondary: #656e7b;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #1786ff;
+        --color--text-datepicker-active: #21262e;
+        --color--text-datepicker-inactive: #656e7b;
+        --color--background-datepicker-selected: #f0f2f4;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(17, 20, 24, 0.16);
+        --color--border-button-secondary: #7c8591;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #505965;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #e9ebee;
+        --color--border-button-disabled: #e9ebee;
+        --color--icon-navigation-secondary-start: #656e7b;
+        --color--icon-navigation-secondary-end: #1786ff;
+        --color--icon-navigation-secondary-disabled: #b9bfc8;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f8a81f, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--super-like: linear-gradient(45deg, #47a1ff, #30f3ef);
+        --gradient--like: linear-gradient(45deg, #21d07c, #30f3ef);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #cc7afb);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__light__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__light__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__light__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__light__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__light__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__light__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__light__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__light__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__light__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__light__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__light__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__light__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__light__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__light__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__light__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__light__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      }
+    </style>
+    <meta name="generator" content="Gatsby 2.32.12" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <title data-react-helmet="true">
+      ĐIỀU KHOẢN SỬ DỤNG | Tinder | Tương hợp. Trò chuyện. Gặp gỡ. Hẹn hò Hiện
+      đại.
+    </title>
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      href="/static/aade374e6059a64c391f87daa8ed1186/dd812/tinder-icon.png"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="x-default"
+      href="https://policies.tinder.com/terms/intl/vi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ar"
+      href="https://policies.tinder.com/terms/intl/ar/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ca"
+      href="https://policies.tinder.com/terms/intl/ca/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="cs"
+      href="https://policies.tinder.com/terms/intl/cs/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="da"
+      href="https://policies.tinder.com/terms/intl/da/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="de"
+      href="https://policies.tinder.com/terms/intl/de/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="en"
+      href="https://policies.tinder.com/terms/intl/en/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="es-es"
+      href="https://policies.tinder.com/terms/intl/es-es/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="es-ar"
+      href="https://policies.tinder.com/terms/intl/es-ar/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="et"
+      href="https://policies.tinder.com/terms/intl/et/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="es"
+      href="https://policies.tinder.com/terms/intl/es/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="fi"
+      href="https://policies.tinder.com/terms/intl/fi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="fr"
+      href="https://policies.tinder.com/terms/intl/fr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="he"
+      href="https://policies.tinder.com/terms/intl/he/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="hr"
+      href="https://policies.tinder.com/terms/intl/hr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ja"
+      href="https://policies.tinder.com/terms/intl/ja/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="id"
+      href="https://policies.tinder.com/terms/intl/id/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="hu"
+      href="https://policies.tinder.com/terms/intl/hu/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="it"
+      href="https://policies.tinder.com/terms/intl/it/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="lt"
+      href="https://policies.tinder.com/terms/intl/lt/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="lv"
+      href="https://policies.tinder.com/terms/intl/lv/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ko"
+      href="https://policies.tinder.com/terms/intl/ko/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="nb"
+      href="https://policies.tinder.com/terms/intl/nb/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ms"
+      href="https://policies.tinder.com/terms/intl/ms/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="nl"
+      href="https://policies.tinder.com/terms/intl/nl/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="pt"
+      href="https://policies.tinder.com/terms/intl/pt/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="pl"
+      href="https://policies.tinder.com/terms/intl/pl/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ro"
+      href="https://policies.tinder.com/terms/intl/ro/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://policies.tinder.com/terms/intl/pt-pt/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sk"
+      href="https://policies.tinder.com/terms/intl/sk/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sr"
+      href="https://policies.tinder.com/terms/intl/sr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sl"
+      href="https://policies.tinder.com/terms/intl/sl/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="sv"
+      href="https://policies.tinder.com/terms/intl/sv/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="tr"
+      href="https://policies.tinder.com/terms/intl/tr/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="canonical"
+      hreflang="vi"
+      href="https://policies.tinder.com/terms/intl/vi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="zh-cn"
+      href="https://policies.tinder.com/terms/intl/zh-cn/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="zh-tw"
+      href="https://policies.tinder.com/terms/intl/zh-tw/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="bg"
+      href="https://policies.tinder.com/terms/intl/bg/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="el"
+      href="https://policies.tinder.com/terms/intl/el/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="hi"
+      href="https://policies.tinder.com/terms/intl/hi/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="ru"
+      href="https://policies.tinder.com/terms/intl/ru/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="th"
+      href="https://policies.tinder.com/terms/intl/th/"
+    />
+    <link
+      data-react-helmet="true"
+      rel="alternate"
+      hreflang="uk"
+      href="https://policies.tinder.com/terms/intl/uk/"
+    />
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Với 43 tỷ lượt tương hợp cho đến nay, Tinder® là ứng dụng hẹn hò phổ biến nhất thế giới, biến đây trở thành nơi gặp gỡ bạn bè mới."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="ĐIỀU KHOẢN SỬ DỤNG"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Với 43 tỷ lượt tương hợp cho đến nay, Tinder® là ứng dụng hẹn hò phổ biến nhất thế giới, biến đây trở thành nơi gặp gỡ bạn bè mới."
+    />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary" />
+    <meta data-react-helmet="true" name="twitter:creator" content="Tinder" />
+    <meta
+      data-react-helmet="true"
+      name="twitter:title"
+      content="ĐIỀU KHOẢN SỬ DỤNG"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:description"
+      content="Với 43 tỷ lượt tương hợp cho đến nay, Tinder® là ứng dụng hẹn hò phổ biến nhất thế giới, biến đây trở thành nơi gặp gỡ bạn bè mới."
+    />
+    <style data-styled="" data-styled-version="5.2.3">
+      :root {
+        --theme-dark: 0;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #fff;
+        --color--background-secondary: #f0f2f4;
+        --color--background-tertiary: #e9ebee;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #fff;
+        --color--divider-primary: #d4d8de;
+        --color--border-primary: #7c8591;
+        --color--border-secondary: #b9bfc8;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #21262e;
+        --color--text-primary: #21262e;
+        --color--text-primary-inverse: #fff;
+        --color--text-secondary: #505965;
+        --color--text-inactive: #656e7b;
+        --color--text-brand-normal: #d6002f;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #9908e8;
+        --color--text-gold: #896707;
+        --color--text-super-like: #106bd5;
+        --color--text-super-boost: #9908e8;
+        --color--text-overlay: #fff;
+        --color--text-link: #106bd5;
+        --color--text-success: #0b7d58;
+        --color--text-error: #c62c1e;
+        --color--icon-primary: #e9ebee;
+        --color--icon-secondary: #656e7b;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #1786ff;
+        --color--text-datepicker-active: #21262e;
+        --color--text-datepicker-inactive: #656e7b;
+        --color--background-datepicker-selected: #f0f2f4;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(17, 20, 24, 0.16);
+        --color--border-button-secondary: #7c8591;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #505965;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #e9ebee;
+        --color--border-button-disabled: #e9ebee;
+        --color--icon-navigation-secondary-start: #656e7b;
+        --color--icon-navigation-secondary-end: #1786ff;
+        --color--icon-navigation-secondary-disabled: #b9bfc8;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f8a81f, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--super-like: linear-gradient(45deg, #47a1ff, #30f3ef);
+        --gradient--like: linear-gradient(45deg, #21d07c, #30f3ef);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #cc7afb);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__light__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__light__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__light__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__light__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__light__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__light__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__light__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__light__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__light__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__light__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__light__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__light__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__light__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__light__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__light__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__light__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --letter-casing--display-1: none;
+        --letter-casing--display-2: none;
+        --letter-casing--display-3: none;
+        --letter-casing--heading-1: none;
+        --letter-casing--subheading-1: none;
+        --letter-casing--subheading-2: none;
+        --letter-casing--body-1: none;
+        --letter-casing--body-2: none;
+        --letter-casing--caption-1: none;
+        --letter-casing--button-1: none;
+        --letter-casing--button-2: none;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      } /*!sc*/
+      data-styled.g1[id="sc-global-gWmEJC1"] {
+        content: "sc-global-gWmEJC1,";
+      } /*!sc*/
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      menu,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      } /*!sc*/
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section {
+        display: block;
+      } /*!sc*/
+      *[hidden] {
+        display: none;
+      } /*!sc*/
+      body {
+        line-height: 1;
+      } /*!sc*/
+      menu,
+      ol,
+      ul {
+        list-style: none;
+      } /*!sc*/
+      blockquote,
+      q {
+        quotes: none;
+      } /*!sc*/
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      } /*!sc*/
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      } /*!sc*/
+      html {
+        box-sizing: border-box;
+        direction: ltr;
+      } /*!sc*/
+      body.locked {
+        overflow: hidden;
+      } /*!sc*/
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      } /*!sc*/
+      button {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        text-align: inherit;
+        outline: none;
+        line-height: inherit;
+        -webkit-appearance: none;
+      } /*!sc*/
+      html {
+        font-size: 13pt;
+      } /*!sc*/
+      body {
+        font-family: "Proxima Nova", "Helvetica Neue", Arial, Helvetica,
+          sans-serif;
+        line-height: 1.3125;
+        word-wrap: break-word;
+      } /*!sc*/
+      body {
+        background-color: var(--color--background-primary, inherit);
+        color: var(--color--text-secondary, inherit);
+      } /*!sc*/
+      a {
+        color: var(--color--text-link, inherit);
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      } /*!sc*/
+      a:hover {
+        color: var(--color--text-link, inherit);
+      } /*!sc*/
+      data-styled.g3[id="sc-global-leGCPL1"] {
+        content: "sc-global-leGCPL1,";
+      } /*!sc*/
+      .busVyp {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1.25rem 1.75rem;
+      } /*!sc*/
+      .busVyp > figure {
+        height: 100%;
+      } /*!sc*/
+     
+      data-styled.g7[id="Header-h7cxjh-0"] {
+        content: "busVyp,";
+      } /*!sc*/
+      .egCcio {
+        display: grid;
+        gap: 0 1.75rem;
+        grid-template-columns: 1fr;
+      } /*!sc*/
+      @media (min-width: 640px) {
+        .egCcio {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      } /*!sc*/
+      @media (min-width: 960px) {
+        .egCcio {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      } /*!sc*/
+      .egCcio li {
+        line-height: 2;
+      } /*!sc*/
+      .egCcio li.current {
+        font-weight: 700;
+      } /*!sc*/
+      .egCcio a {
+        display: block;
+        color: inherit;
+      } /*!sc*/
+      .egCcio a:hover {
+        color: var(--color--text-brand-normal, inherit);
+      } /*!sc*/
+      data-styled.g8[id="LanguagePicker__LanguageList-ohytd3-0"] {
+        content: "egCcio,";
+      } /*!sc*/
+      .ghaeor.hide-others .LanguagePicker__LanguageList-ohytd3-0 li.current {
+        font-weight: inherit;
+      } /*!sc*/
+      .ghaeor.hide-others
+        .LanguagePicker__LanguageList-ohytd3-0
+        li:not(.current) {
+        position: absolute;
+        -webkit-clip: rect(1px 1px 1px 1px);
+        clip: rect(1px 1px 1px 1px);
+        -webkit-clip: rect(1px, 1px, 1px, 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+      } /*!sc*/
+      data-styled.g9[id="LanguagePicker-ohytd3-1"] {
+        content: "ghaeor,";
+      } /*!sc*/
+      .iioFOg {
+        display: grid;
+        gap: 1.25rem 1.75rem;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(min-content, max-content);
+        padding: 1.25rem 1.75rem;
+      } /*!sc*/
+      @media (min-width: 640px) {
+        .iioFOg {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      } /*!sc*/
+      @media (min-width: 960px) {
+        .iioFOg {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      } /*!sc*/
+      .iioFOg a {
+        color: inherit;
+      } /*!sc*/
+      .iioFOg a:hover {
+        color: var(--color--text-brand-normal, inherit);
+      } /*!sc*/
+      .iioFOg section h3 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 18pt;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .iioFOg section li {
+        line-height: 2;
+      } /*!sc*/
+      .iioFOg section li a {
+        display: block;
+      } /*!sc*/
+      data-styled.g10[id="Nav-sc-114h8f1-0"] {
+        content: "iioFOg,";
+      } /*!sc*/
+      .gQOfvU {
+        overflow: auto;
+      } /*!sc*/
+      .gQOfvU .LanguagePicker-ohytd3-1 {
+        padding: 1.25rem 1.75rem 0;
+      } /*!sc*/
+      .gQOfvU .LanguagePicker-ohytd3-1 h5 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 18pt;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .gQOfvU .Nav-sc-114h8f1-0 {
+        padding-bottom: 2.5rem;
+      } /*!sc*/
+      data-styled.g11[id="HeaderNav-sc-1oveqwp-0"] {
+        content: "gQOfvU,";
+      } /*!sc*/
+      .dVKRvm {
+        padding: 1.25rem 1.75rem;
+      } /*!sc*/
+      data-styled.g12[id="Main-ujv4hx-0"] {
+        content: "dVKRvm,";
+      } /*!sc*/
+      .byZvTm .LanguagePicker-ohytd3-1 {
+        padding: 1.25rem 1.75rem 0;
+      } /*!sc*/
+      .byZvTm .LanguagePicker-ohytd3-1 h3 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 18pt;
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .byZvTm .Nav-sc-114h8f1-0 {
+        padding-bottom: 2.5rem;
+      } /*!sc*/
+      data-styled.g13[id="Footer-sc-1qyll0s-0"] {
+        content: "byZvTm,";
+      } /*!sc*/
+      .bRqCYC {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background-color: var(--color--background-primary, inherit);
+        border-bottom: 1px solid var(--color--border-secondary, inherit);
+        z-index: 100;
+      } /*!sc*/
+      .bRqCYC .Header-h7cxjh-0 {
+        height: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      } /*!sc*/
+      .bRqCYC .HeaderNav-sc-1oveqwp-0 {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        background-color: var(--color--background-primary, inherit);
+        -webkit-transition: -webkit-transform 250ms ease-out,
+          visibility 250ms linear;
+        -webkit-transition: transform 250ms ease-out, visibility 250ms linear;
+        transition: transform 250ms ease-out, visibility 250ms linear;
+      } /*!sc*/
+      .bRqCYC .HeaderNav-sc-1oveqwp-0:not(.active) {
+        -webkit-transition-delay: 0, 200ms;
+        transition-delay: 0, 200ms;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: hidden;
+        pointer-events: none;
+      } /*!sc*/
+      @media (min-width: 640px) {
+        .bRqCYC .HeaderNav-sc-1oveqwp-0 {
+          display: none;
+        }
+      } /*!sc*/
+      @media (min-width: 768px) {
+        .bRqCYC {
+          height: 100px;
+        }
+        .bRqCYC .HeaderNav-sc-1oveqwp-0 {
+          top: 100px;
+        }
+      } /*!sc*/
+      data-styled.g14[id="Layout__HeaderWrapper-u406a5-0"] {
+        content: "bRqCYC,";
+      } /*!sc*/
+      .iEHbPn {
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        z-index: 80;
+      } /*!sc*/
+      .iEHbPn .Main-ujv4hx-0 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      } /*!sc*/
+      data-styled.g15[id="Layout__MainWrapper-u406a5-1"] {
+        content: "iEHbPn,";
+      } /*!sc*/
+      .djcEJG {
+        position: relative;
+        background-color: var(--color--background-primary, inherit);
+        border-top: 1px solid var(--color--border-secondary, inherit);
+        z-index: 90;
+      } /*!sc*/
+      @media (max-width: 639px) {
+        .djcEJG {
+          display: none;
+        }
+      } /*!sc*/
+      .djcEJG .Footer-sc-1qyll0s-0 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5rem;
+      } /*!sc*/
+      data-styled.g16[id="Layout__FooterWrapper-u406a5-2"] {
+        content: "djcEJG,";
+      } /*!sc*/
+      .dYLOJM {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-height: 100vh;
+      } /*!sc*/
+      data-styled.g17[id="Layout__LayoutWrapper-u406a5-3"] {
+        content: "dYLOJM,";
+      } /*!sc*/
+      .dlViiJ b,
+      .dlViiJ strong {
+        font-weight: 700;
+      } /*!sc*/
+      .dlViiJ i,
+      .dlViiJ em {
+        font-style: italic;
+      } /*!sc*/
+      .dlViiJ small {
+        font-size: 90%;
+      } /*!sc*/
+      .dlViiJ figcaption {
+        font-size: 11pt;
+      } /*!sc*/
+      .dlViiJ pre,
+      .dlViiJ code {
+        font-family: monospace;
+      } /*!sc*/
+      .dlViiJ blockquote {
+        border-left: 2px solid var(--color--border-secondary, inherit);
+        padding-left: 1rem;
+      } /*!sc*/
+      .dlViiJ hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        background-color: var(--color--border-secondary, inherit);
+      } /*!sc*/
+      .dlViiJ ol {
+        list-style: decimal outside;
+      } /*!sc*/
+      .dlViiJ ol li {
+        margin-left: 1.4rem;
+      } /*!sc*/
+      .dlViiJ ul {
+        list-style: disc outside;
+      } /*!sc*/
+      .dlViiJ ul li {
+        margin-left: 1rem;
+      } /*!sc*/
+      .dlViiJ ul ul {
+        list-style-type: circle;
+      } /*!sc*/
+      .dlViiJ ul ul ul {
+        list-style-type: square;
+      } /*!sc*/
+      .dlViiJ h1,
+      .dlViiJ h2,
+      .dlViiJ h3,
+      .dlViiJ h4,
+      .dlViiJ h5,
+      .dlViiJ h6 {
+        font-family: "Proxima Nova Condensed", "Proxima Nova", "Helvetica Neue",
+          Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        line-height: 1.22;
+        color: var(--color--text-primary, inherit);
+      } /*!sc*/
+      .dlViiJ h1 {
+        font-size: 2.3rem;
+      } /*!sc*/
+      .dlViiJ h2 {
+        font-size: 1.6rem;
+      } /*!sc*/
+      .dlViiJ h3 {
+        font-size: 1.4rem;
+      } /*!sc*/
+      .dlViiJ h4 {
+        font-size: 1.2rem;
+      } /*!sc*/
+      .dlViiJ h5 {
+        font-size: 1rem;
+      } /*!sc*/
+      .dlViiJ h6 {
+        font-size: 0.8rem;
+      } /*!sc*/
+      .dlViiJ h1:not(:first-child),
+      .dlViiJ h2:not(:first-child),
+      .dlViiJ h3:not(:first-child),
+      .dlViiJ h4:not(:first-child),
+      .dlViiJ h5:not(:first-child),
+      .dlViiJ h6:not(:first-child),
+      .dlViiJ p:not(:first-child),
+      .dlViiJ figure:not(:first-child),
+      .dlViiJ figcaption:not(:first-child),
+      .dlViiJ pre:not(:first-child),
+      .dlViiJ ul:not(:first-child),
+      .dlViiJ ol:not(:first-child),
+      .dlViiJ li:not(:first-child),
+      .dlViiJ blockquote:not(:first-child) {
+        margin-top: 0.8rem;
+      } /*!sc*/
+      .dlViiJ h1:not(:last-child),
+      .dlViiJ h2:not(:last-child),
+      .dlViiJ h3:not(:last-child),
+      .dlViiJ h4:not(:last-child),
+      .dlViiJ h5:not(:last-child),
+      .dlViiJ h6:not(:last-child),
+      .dlViiJ p:not(:last-child),
+      .dlViiJ figure:not(:last-child),
+      .dlViiJ figcaption:not(:last-child),
+      .dlViiJ pre:not(:last-child),
+      .dlViiJ ul:not(:last-child),
+      .dlViiJ ol:not(:last-child),
+      .dlViiJ li:not(:last-child),
+      .dlViiJ blockquote:not(:last-child) {
+        margin-bottom: 0.8rem;
+      } /*!sc*/
+      .dlViiJ li:not(:first-child) {
+        margin-top: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li:not(:last-child) {
+        margin-bottom: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > h1,
+      .dlViiJ li > h2,
+      .dlViiJ li > h3,
+      .dlViiJ li > h4,
+      .dlViiJ li > h5,
+      .dlViiJ li > h6,
+      .dlViiJ li > p,
+      .dlViiJ li > figure,
+      .dlViiJ li > figcaption,
+      .dlViiJ li > pre,
+      .dlViiJ li > ul,
+      .dlViiJ li > ol,
+      .dlViiJ li > li,
+      .dlViiJ li > blockquote {
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+      } /*!sc*/
+      .dlViiJ li > h1:first-child,
+      .dlViiJ li > h2:first-child,
+      .dlViiJ li > h3:first-child,
+      .dlViiJ li > h4:first-child,
+      .dlViiJ li > h5:first-child,
+      .dlViiJ li > h6:first-child,
+      .dlViiJ li > p:first-child,
+      .dlViiJ li > figure:first-child,
+      .dlViiJ li > figcaption:first-child,
+      .dlViiJ li > pre:first-child,
+      .dlViiJ li > ul:first-child,
+      .dlViiJ li > ol:first-child,
+      .dlViiJ li > li:first-child,
+      .dlViiJ li > blockquote:first-child {
+        margin-top: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > h1:last-child,
+      .dlViiJ li > h2:last-child,
+      .dlViiJ li > h3:last-child,
+      .dlViiJ li > h4:last-child,
+      .dlViiJ li > h5:last-child,
+      .dlViiJ li > h6:last-child,
+      .dlViiJ li > p:last-child,
+      .dlViiJ li > figure:last-child,
+      .dlViiJ li > figcaption:last-child,
+      .dlViiJ li > pre:last-child,
+      .dlViiJ li > ul:last-child,
+      .dlViiJ li > ol:last-child,
+      .dlViiJ li > li:last-child,
+      .dlViiJ li > blockquote:last-child {
+        margin-bottom: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > p:first-child {
+        margin-bottom: 0.2rem;
+      } /*!sc*/
+      .dlViiJ li > p:first-child + ul,
+      .dlViiJ li > p:first-child + ol {
+        margin-top: 0.2rem;
+      } /*!sc*/
+      .dlViiJ p + h1:not(:first-child),
+      .dlViiJ figure + h1:not(:first-child),
+      .dlViiJ figcaption + h1:not(:first-child),
+      .dlViiJ pre + h1:not(:first-child),
+      .dlViiJ ul + h1:not(:first-child),
+      .dlViiJ ol + h1:not(:first-child),
+      .dlViiJ blockquote + h1:not(:first-child),
+      .dlViiJ p + h2:not(:first-child),
+      .dlViiJ figure + h2:not(:first-child),
+      .dlViiJ figcaption + h2:not(:first-child),
+      .dlViiJ pre + h2:not(:first-child),
+      .dlViiJ ul + h2:not(:first-child),
+      .dlViiJ ol + h2:not(:first-child),
+      .dlViiJ blockquote + h2:not(:first-child),
+      .dlViiJ p + h3:not(:first-child),
+      .dlViiJ figure + h3:not(:first-child),
+      .dlViiJ figcaption + h3:not(:first-child),
+      .dlViiJ pre + h3:not(:first-child),
+      .dlViiJ ul + h3:not(:first-child),
+      .dlViiJ ol + h3:not(:first-child),
+      .dlViiJ blockquote + h3:not(:first-child),
+      .dlViiJ p + h4:not(:first-child),
+      .dlViiJ figure + h4:not(:first-child),
+      .dlViiJ figcaption + h4:not(:first-child),
+      .dlViiJ pre + h4:not(:first-child),
+      .dlViiJ ul + h4:not(:first-child),
+      .dlViiJ ol + h4:not(:first-child),
+      .dlViiJ blockquote + h4:not(:first-child),
+      .dlViiJ p + h5:not(:first-child),
+      .dlViiJ figure + h5:not(:first-child),
+      .dlViiJ figcaption + h5:not(:first-child),
+      .dlViiJ pre + h5:not(:first-child),
+      .dlViiJ ul + h5:not(:first-child),
+      .dlViiJ ol + h5:not(:first-child),
+      .dlViiJ blockquote + h5:not(:first-child),
+      .dlViiJ p + h6:not(:first-child),
+      .dlViiJ figure + h6:not(:first-child),
+      .dlViiJ figcaption + h6:not(:first-child),
+      .dlViiJ pre + h6:not(:first-child),
+      .dlViiJ ul + h6:not(:first-child),
+      .dlViiJ ol + h6:not(:first-child),
+      .dlViiJ blockquote + h6:not(:first-child) {
+        margin-top: 1rem;
+      } /*!sc*/
+      .dlViiJ hr:not(:first-child) {
+        margin-top: 1.8rem;
+      } /*!sc*/
+      .dlViiJ hr:not(:last-child) {
+        margin-bottom: 1.8rem;
+      } /*!sc*/
+      .dlViiJ li,
+      .dlViiJ p {
+        line-height: 1.47;
+      } /*!sc*/
+      .dlViiJ pre {
+        white-space: pre;
+        overflow-x: auto;
+      } /*!sc*/
+      .dlViiJ table {
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 1px;
+        background-color: var(--color--divider-primary, inherit);
+        width: 100%;
+      } /*!sc*/
+      .dlViiJ table th,
+      .dlViiJ table td {
+        text-align: left;
+        background-color: var(--color--background-primary, inherit);
+        padding: 0.5rem;
+      } /*!sc*/
+      .dlViiJ a {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+      } /*!sc*/
+      data-styled.g18[id="TextContent-kkmgbg-0"] {
+        content: "dlViiJ,";
+      } /*!sc*/
+      .UuLIl a[name] {
+        position: relative;
+        top: -70px;
+      } /*!sc*/
+      @media (min-width: 768px) {
+        .UuLIl a[name] {
+          top: -100px;
+        }
+      } /*!sc*/
+      data-styled.g20[id="PolicyPage__PolicyArticleBody-sc-1fiiwlt-0"] {
+        content: "UuLIl,";
+      } /*!sc*/
+      .theme-light {
+        --theme-dark: 0;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #fff;
+        --color--background-secondary: #f0f2f4;
+        --color--background-tertiary: #e9ebee;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #fff;
+        --color--divider-primary: #d4d8de;
+        --color--border-primary: #7c8591;
+        --color--border-secondary: #b9bfc8;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #21262e;
+        --color--text-primary: #21262e;
+        --color--text-primary-inverse: #fff;
+        --color--text-secondary: #505965;
+        --color--text-inactive: #656e7b;
+        --color--text-brand-normal: #d6002f;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #9908e8;
+        --color--text-gold: #896707;
+        --color--text-super-like: #106bd5;
+        --color--text-super-boost: #9908e8;
+        --color--text-overlay: #fff;
+        --color--text-link: #106bd5;
+        --color--text-success: #0b7d58;
+        --color--text-error: #c62c1e;
+        --color--icon-primary: #e9ebee;
+        --color--icon-secondary: #656e7b;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #1786ff;
+        --color--text-datepicker-active: #21262e;
+        --color--text-datepicker-inactive: #656e7b;
+        --color--background-datepicker-selected: #f0f2f4;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(17, 20, 24, 0.16);
+        --color--border-button-secondary: #7c8591;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #505965;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(17, 20, 24, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #e9ebee;
+        --color--border-button-disabled: #e9ebee;
+        --color--icon-navigation-secondary-start: #656e7b;
+        --color--icon-navigation-secondary-end: #1786ff;
+        --color--icon-navigation-secondary-disabled: #b9bfc8;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f8a81f, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--super-like: linear-gradient(45deg, #47a1ff, #30f3ef);
+        --gradient--like: linear-gradient(45deg, #21d07c, #30f3ef);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #cc7afb);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__light__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__light__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__light__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__light__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__light__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__light__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__light__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__light__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__light__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__light__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__light__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__light__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__light__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__light__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__light__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__light__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --letter-casing--display-1: none;
+        --letter-casing--display-2: none;
+        --letter-casing--display-3: none;
+        --letter-casing--heading-1: none;
+        --letter-casing--subheading-1: none;
+        --letter-casing--subheading-2: none;
+        --letter-casing--body-1: none;
+        --letter-casing--body-2: none;
+        --letter-casing--caption-1: none;
+        --letter-casing--button-1: none;
+        --letter-casing--button-2: none;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      } /*!sc*/
+      data-styled.g38[id="sc-global-gWmEJC2"] {
+        content: "sc-global-gWmEJC2,";
+      } /*!sc*/
+      .theme-dark {
+        --theme-dark: 1;
+        --color--white: #fff;
+        --color--black: #000;
+        --color--gray-10: #f0f2f4;
+        --color--gray-15: #e9ebee;
+        --color--gray-20: #d4d8de;
+        --color--gray-30: #b9bfc8;
+        --color--gray-40: #939ba7;
+        --color--gray-50: #7c8591;
+        --color--gray-60: #656e7b;
+        --color--gray-70: #505965;
+        --color--gray-80: #3c444f;
+        --color--gray-90: #21262e;
+        --color--gray-95: #111418;
+        --color--red-10: #ffeaea;
+        --color--red-15: #ffdfdf;
+        --color--red-20: #ffd4d3;
+        --color--red-30: #ffaaa7;
+        --color--red-40: #fa6f68;
+        --color--red-50: #f13b2d;
+        --color--red-60: #c62c1e;
+        --color--red-70: #9b1f11;
+        --color--red-80: #701408;
+        --color--red-90: #450b03;
+        --color--red-95: #2f0701;
+        --color--yellow-orange-10: #fff8a1;
+        --color--yellow-orange-15: #ffdd6b;
+        --color--yellow-orange-20: #fecd51;
+        --color--yellow-orange-30: #f8a81f;
+        --color--yellow-orange-40: #f59307;
+        --color--yellow-orange-50: #cd7105;
+        --color--yellow-orange-60: #a55303;
+        --color--yellow-orange-70: #7d3902;
+        --color--yellow-orange-80: #692d01;
+        --color--yellow-orange-90: #411900;
+        --color--yellow-orange-95: #2d1000;
+        --color--gold-10: #fff2bf;
+        --color--gold-15: #ffe8a5;
+        --color--gold-20: #f7d472;
+        --color--gold-30: #e6af16;
+        --color--gold-40: #c1920f;
+        --color--gold-50: #ae830c;
+        --color--gold-60: #896707;
+        --color--gold-70: #644a03;
+        --color--gold-80: #513c02;
+        --color--gold-90: #2c2000;
+        --color--gold-95: #191300;
+        --color--green-10: #c8ffd1;
+        --color--green-15: #7cfda3;
+        --color--green-20: #2df187;
+        --color--green-30: #21d07c;
+        --color--green-40: #17af70;
+        --color--green-50: #129e68;
+        --color--green-60: #0b7d58;
+        --color--green-70: #055c45;
+        --color--green-80: #034b3b;
+        --color--green-90: #012a23;
+        --color--green-95: #001916;
+        --color--teal-10: #b2fff7;
+        --color--teal-15: #74fef2;
+        --color--teal-20: #30f3ef;
+        --color--teal-30: #26d1d2;
+        --color--teal-40: #1dacb0;
+        --color--teal-50: #199a9f;
+        --color--teal-60: #12777e;
+        --color--teal-70: #0c565c;
+        --color--teal-80: #09454c;
+        --color--teal-90: #05262a;
+        --color--teal-95: #031619;
+        --color--blue-10: #e3f4ff;
+        --color--blue-15: #d5eeff;
+        --color--blue-20: #abd9ff;
+        --color--blue-30: #78bdff;
+        --color--blue-40: #47a1ff;
+        --color--blue-50: #1786ff;
+        --color--blue-60: #106bd5;
+        --color--blue-70: #0a53ac;
+        --color--blue-80: #053c82;
+        --color--blue-90: #022658;
+        --color--blue-95: #00132e;
+        --color--purple-10: #f9e8ff;
+        --color--purple-15: #f6dcff;
+        --color--purple-20: #f2d0ff;
+        --color--purple-30: #dea4ff;
+        --color--purple-40: #cc7afb;
+        --color--purple-50: #ba52f5;
+        --color--purple-60: #9908e8;
+        --color--purple-70: #7b05ba;
+        --color--purple-80: #5d038c;
+        --color--purple-90: #3f015e;
+        --color--purple-95: #200030;
+        --color--fuchsia-10: #ffe2ff;
+        --color--fuchsia-15: #ffd4ff;
+        --color--fuchsia-20: #ffc5ff;
+        --color--fuchsia-30: #fa93fb;
+        --color--fuchsia-40: #ed4ee7;
+        --color--fuchsia-50: #e010cd;
+        --color--fuchsia-60: #b80ba5;
+        --color--fuchsia-70: #91067e;
+        --color--fuchsia-80: #690359;
+        --color--fuchsia-90: #410136;
+        --color--fuchsia-95: #2d0025;
+        --color--brand-hot-pink: #fd267a;
+        --color--brand-coral: #ff6036;
+        --color--brand-primary: #ff4458;
+        --color--brand-primary-a11y: #d6002f;
+        --color--brand-pink: #ff4458;
+        --color--brand-pink-a11y: #d6002f;
+        --color--accent-primary: #ff4458;
+        --color--background-primary: #000;
+        --color--background-secondary: #111418;
+        --color--background-tertiary: #111418;
+        --color--background-brand: #ff4458;
+        --color--background-error: #c62c1e;
+        --color--background-modal: #111418;
+        --color--divider-primary: #21262e;
+        --color--border-primary: #656e7b;
+        --color--border-secondary: #3c444f;
+        --color--border-brand: #ff4458;
+        --color--border-overlay: #fff;
+        --color--border-focus: #e9ebee;
+        --color--text-primary: #e9ebee;
+        --color--text-primary-inverse: #21262e;
+        --color--text-secondary: #939ba7;
+        --color--text-inactive: #7c8591;
+        --color--text-brand-normal: #ff4458;
+        --color--text-brand-large: #ff4458;
+        --color--text-boost: #ba52f5;
+        --color--text-gold: #ae830c;
+        --color--text-super-like: #1786ff;
+        --color--text-super-boost: #ba52f5;
+        --color--text-overlay: #fff;
+        --color--text-link: #1786ff;
+        --color--text-success: #129e68;
+        --color--text-error: #f13b2d;
+        --color--icon-primary: #21262e;
+        --color--icon-secondary: #7c8591;
+        --color--icon-overlay: #fff;
+        --color--icon-brand: #ff4458;
+        --color--icon-trust: #106bd5;
+        --color--text-datepicker-active: #e9ebee;
+        --color--text-datepicker-inactive: #7c8591;
+        --color--background-datepicker-selected: #111418;
+        --color--background-button-primary-small: #d6002f;
+        --color--background-button-primary-inverse: #fff;
+        --color--foreground-button-primary: #fff;
+        --color--foreground-button-primary-inverse: #ff4458;
+        --color--foreground-button-primary-small-inverse: #d6002f;
+        --color--overlay-button-primary: rgba(240, 242, 244, 0.16);
+        --color--border-button-secondary: #656e7b;
+        --color--border-button-secondary-inverse: #fff;
+        --color--foreground-button-secondary: #939ba7;
+        --color--foreground-button-secondary-inverse: #fff;
+        --color--overlay-button-secondary: rgba(240, 242, 244, 0.08);
+        --color--foreground-button-tertiary: #656e7b;
+        --color--foreground-button-tertiary-inverse: #fff;
+        --color--overlay-button-tertiary: rgba(240, 242, 244, 0.08);
+        --color--foreground-button-disabled: #7c8591;
+        --color--background-button-disabled: #3c444f;
+        --color--border-button-disabled: #3c444f;
+        --color--icon-navigation-secondary-start: #7c8591;
+        --color--icon-navigation-secondary-end: #106bd5;
+        --color--icon-navigation-secondary-disabled: #3c444f;
+        --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--rewind: linear-gradient(45deg, #f59307, #ffdd6b);
+        --gradient--nope: linear-gradient(45deg, #f13b2d, #e010cd);
+        --gradient--super-like: linear-gradient(45deg, #1786ff, #74fef2);
+        --gradient--like: linear-gradient(45deg, #2df187, #74fef2);
+        --gradient--boost: linear-gradient(45deg, #9908e8, #e010cd);
+        --gradient--super-boost: linear-gradient(45deg, #ba52f5, #dea4ff);
+        --gradient--super-boost-inverse: linear-gradient(
+          45deg,
+          #ba52f5,
+          #dea4ff
+        );
+        --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+        --gradient--gold: linear-gradient(45deg, #e6af16, #ffe8a5);
+        --gradient--gold-shine: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--gold-shine-inverse: linear-gradient(
+          45deg,
+          #e6af16,
+          #f7d472,
+          #e6af16
+        );
+        --gradient--platinum: linear-gradient(45deg, #b9bfc8, #f0f2f4);
+        --gradient--platinum-shine: linear-gradient(
+          45deg,
+          #b9bfc8,
+          #e9ebee,
+          #b9bfc8
+        );
+        --gradient--platinum-shine-inverse: linear-gradient(
+          45deg,
+          #111418,
+          #656e7b,
+          #111418
+        );
+        --gradient--background-button-primary: linear-gradient(
+          45deg,
+          #fd267a,
+          #ff6036
+        );
+        --fill--brand: url(#svg-pattern-linear__dark__gradient--brand);
+        --fill--rewind: url(#svg-pattern-linear__dark__gradient--rewind);
+        --fill--nope: url(#svg-pattern-linear__dark__gradient--nope);
+        --fill--super-like: url(#svg-pattern-linear__dark__gradient--superLike);
+        --fill--like: url(#svg-pattern-linear__dark__gradient--like);
+        --fill--boost: url(#svg-pattern-linear__dark__gradient--boost);
+        --fill--super-boost: url(#svg-pattern-linear__dark__gradient--superBoost);
+        --fill--super-boost-inverse: url(#svg-pattern-linear__dark__gradient--superBoostInverse);
+        --fill--plus: url(#svg-pattern-linear__dark__gradient--plus);
+        --fill--gold: url(#svg-pattern-linear__dark__gradient--gold);
+        --fill--gold-shine: url(#svg-pattern-linear__dark__gradient--goldShine);
+        --fill--gold-shine-inverse: url(#svg-pattern-linear__dark__gradient--goldShineInverse);
+        --fill--platinum: url(#svg-pattern-linear__dark__gradient--platinum);
+        --fill--platinum-shine: url(#svg-pattern-linear__dark__gradient--platinumShine);
+        --fill--platinum-shine-inverse: url(#svg-pattern-linear__dark__gradient--platinumShineInverse);
+        --fill--background-button-primary: url(#svg-pattern-linear__dark__gradient--backgroundButtonPrimary);
+        --shadow--button-primary: -0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+        --font-size--base: 10px;
+        --font-size--display-1: 3.4rem;
+        --font-size--display-2: 2.8rem;
+        --font-size--display-3: 2rem;
+        --font-size--heading-1: 2rem;
+        --font-size--subheading-1: 1.7rem;
+        --font-size--subheading-2: 1.5rem;
+        --font-size--body-1: 1.7rem;
+        --font-size--body-2: 1.5rem;
+        --font-size--caption-1: 1.2rem;
+        --font-size--button-1: 1.9rem;
+        --font-size--button-2: 1.5rem;
+        --font-weight--light: 300;
+        --font-weight--regular: 400;
+        --font-weight--medium: 500;
+        --font-weight--semibold: 600;
+        --font-weight--bold: 700;
+        --font-weight--extrabold: 800;
+        --font-weight--display-1: 700;
+        --font-weight--display-2: 400;
+        --font-weight--display-3: 500;
+        --font-weight--heading-1: 700;
+        --font-weight--subheading-1: 700;
+        --font-weight--subheading-2: 700;
+        --font-weight--body-1: 400;
+        --font-weight--body-2: 500;
+        --font-weight--caption-1: 500;
+        --font-weight--button-1: 700;
+        --font-weight--button-2: 700;
+        --line-height--display-1: 1.24;
+        --line-height--display-2: 1.29;
+        --line-height--display-3: 1.3;
+        --line-height--heading-1: 1.3;
+        --line-height--subheading-1: 1.29;
+        --line-height--subheading-2: 1.33;
+        --line-height--body-1: 1.35;
+        --line-height--body-2: 1.33;
+        --line-height--caption-1: 1.42;
+        --line-height--button-1: 1.37;
+        --line-height--button-2: 1.33;
+        --letter-spacing--base: 0;
+        --letter-spacing--display-1: 0;
+        --letter-spacing--display-2: 0;
+        --letter-spacing--display-3: 0;
+        --letter-spacing--heading-1: 0;
+        --letter-spacing--subheading-1: 0;
+        --letter-spacing--subheading-2: 0;
+        --letter-spacing--body-1: 0;
+        --letter-spacing--body-2: 0;
+        --letter-spacing--caption-1: 0;
+        --letter-spacing--button-1: 0.01rem;
+        --letter-spacing--button-2: 0.01rem;
+        --letter-casing--default: none;
+        --letter-casing--uppercase: uppercase;
+        --letter-casing--lowercase: lowercase;
+        --letter-casing--display-1: none;
+        --letter-casing--display-2: none;
+        --letter-casing--display-3: none;
+        --letter-casing--heading-1: none;
+        --letter-casing--subheading-1: none;
+        --letter-casing--subheading-2: none;
+        --letter-casing--body-1: none;
+        --letter-casing--body-2: none;
+        --letter-casing--caption-1: none;
+        --letter-casing--button-1: none;
+        --letter-casing--button-2: none;
+        --space--none: 0;
+        --space--xxxxs: 0.1rem;
+        --space--xxxs: 0.2rem;
+        --space--xxs: 0.4rem;
+        --space--xs: 0.8rem;
+        --space--s: 1.6rem;
+        --space--m: 2rem;
+        --space--l: 2.4rem;
+        --space--xl: 3.6rem;
+        --space--xxl: 4.8rem;
+        --space--xxxl: 5.6rem;
+        --space--xxxxl: 9.6rem;
+      } /*!sc*/
+      data-styled.g39[id="sc-global-gWmEJC3"] {
+        content: "sc-global-gWmEJC3,";
+      } /*!sc*/
+    </style>
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+    <meta name="theme-color" content="#ff4458" />
+    <link
+      rel="apple-touch-icon"
+      sizes="48x48"
+      href="/icons/icon-48x48.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icons/icon-72x72.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="/icons/icon-96x96.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icons/icon-144x144.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/icons/icon-192x192.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/icons/icon-256x256.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/icons/icon-384x384.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/icons/icon-512x512.png?v=2e3309631d24bac228870dc017adc5dd"
+    />
+    <link
+      as="script"
+      rel="preload"
+      href="/webpack-runtime-c4fed93b667701a95788.js"
+    />
+    <link as="script" rel="preload" href="/framework-90a019f1c20540076580.js" />
+    <link as="script" rel="preload" href="/app-d011f58ba08167ecf7ec.js" />
+    <link as="script" rel="preload" href="/styles-e9d24b1846c7d6eb9685.js" />
+    <link as="script" rel="preload" href="/commons-3de27f5b78bd5d22ff35.js" />
+    <link
+      as="script"
+      rel="preload"
+      href="/41dc7b0c85f0365a3422834ac006c2c46095f4ac-ae8ee0807df86fa27705.js"
+    />
+    <link
+      as="script"
+      rel="preload"
+      href="/component---src-templates-policy-page-jsx-1d79a624d7b684bce9f4.js"
+    />
+    <link
+      as="fetch"
+      rel="preload"
+      href="/page-data/terms/intl/vi/page-data.json"
+      crossorigin="anonymous"
+    />
+    <link
+      as="fetch"
+      rel="preload"
+      href="/page-data/sq/d/1922046831.json"
+      crossorigin="anonymous"
+    />
+    <link
+      as="fetch"
+      rel="preload"
+      href="/page-data/app-data.json"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="___gatsby">
+      <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
+        <div class="Layout__LayoutWrapper-u406a5-3 dYLOJM">
+          <div class="Layout__HeaderWrapper-u406a5-0 bRqCYC">
+            <header class="Header-h7cxjh-0 busVyp">
+              <figure>
+                <a href="https://tinder.com"
+                  ><img
+                    src="assets/img/logo/logotran-87.png"
+                    alt="Tinder"
+                    class="TinderLogo-k04kc-0 bTxlgf"
+                    style="margin-top: -15px"
+                /></a>
+              </figure>
+              <div style="flex-grow: 1"></div>
+            </header>
+            <div class="HeaderNav-sc-1oveqwp-0 gQOfvU inactive">
+              <nav class="LanguagePicker-ohytd3-1 ghaeor">
+                <h5>Ngôn ngữ</h5>
+                <ul class="LanguagePicker__LanguageList-ohytd3-0 egCcio">
+                  <li class="">
+                    <a data-locale="ar" href="/terms/intl/ar/">‏العربية</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="bg" href="/terms/intl/bg/">Български</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ca" href="/terms/intl/ca/">Català</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="cs" href="/terms/intl/cs/">Čeština</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="da" href="/terms/intl/da/">Dansk</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="de" href="/terms/intl/de/">Deutsch</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="el" href="/terms/intl/el/">Ελληνικά</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="en" href="/terms/intl/en/">English</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-ES" href="/terms/intl/es-es/"
+                      >Español(ES)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="es" href="/terms/intl/es/">Español(MX)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-AR" href="/terms/intl/es-ar/"
+                      >Español(AR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="fr" href="/terms/intl/fr/">Français(FR)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="fi" href="/terms/intl/fi/">Suomi</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="he" href="/terms/intl/he/">עברית</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hr" href="/terms/intl/hr/">Hrvatski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hu" href="/terms/intl/hu/">Magyar</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="id" href="/terms/intl/id/">Indonesia</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ja" href="/terms/intl/ja/">日本語</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ko" href="/terms/intl/ko/">한국어</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lt" href="/terms/intl/lt/">Lietuvių</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lv" href="/terms/intl/lv/">Latviešu</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ms" href="/terms/intl/ms/">Bahasa Melayu</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="nl" href="/terms/intl/nl/">Nederlands</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pl" href="/terms/intl/pl/">Polski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pt" href="/terms/intl/pt/">Português(BR)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pt-PT" href="/terms/intl/pt-pt/"
+                      >Português(PT)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="ro" href="/terms/intl/ro/">Română</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ru" href="/terms/intl/ru/">Русский</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sk" href="/terms/intl/sk/">Slovenčina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sl" href="/terms/intl/sl/">Slovenščina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sr" href="/terms/intl/sr/">Srpski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="th" href="/terms/intl/th/">ไทย</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="tr" href="/terms/intl/tr/">Türkçe</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="uk" href="/terms/intl/uk/">Українська</a>
+                  </li>
+                  <li class="current">
+                    <a
+                      aria-current="page"
+                      data-locale="vi"
+                      class=""
+                      href="/terms/intl/vi/"
+                      >Tiếng Việt</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-CN" href="/terms/intl/zh-cn/"
+                      >简体中文</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-TW" href="/terms/intl/zh-tw/"
+                      >繁體中文</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="Nav-sc-114h8f1-0 iioFOg">
+                <section>
+                  <h3>Công ty</h3>
+                  <ul>
+                    <li><a href="https://tinder.com/jobs">Tuyển dụng</a></li>
+                    <li><a href="/contact">Liên hệ</a></li>
+                    <li><a href="/security">Bảo mật</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Cộng đồng</h3>
+                  <ul>
+                    <li>
+                      <a href="https://tech.gotinder.com">Blog Công nghệ</a>
+                    </li>
+                    <li>
+                      <a href="https://www.tinderpressroom.com/">Báo chí</a>
+                    </li>
+                    <li><a href="https://www.help.tinder.com">Hỗ trợ</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Pháp lý</h3>
+                  <ul>
+                    <li><a href="/privacy">Quyền riêng tư</a></li>
+                    <li><a href="/terms">Điều khoản</a></li>
+                    <li><a href="/cookie-policy">Chính sách Cookie</a></li>
+                    <li>
+                      <a href="/safety-and-policy"
+                        >Trung tâm Chính sách và An toàn</a
+                      >
+                    </li>
+                    <li><a href="/safety">Bí quyết an toàn</a></li>
+                    <li>
+                      <a href="https://www.gotinder.com/community-guidelines"
+                        >Quy tắc cộng đồng</a
+                      >
+                    </li>
+                    <li><a href="/intellectual-property">Sở Hữu Trí Tuệ</a></li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+          </div>
+          <div class="Layout__MainWrapper-u406a5-1 iEHbPn">
+            <main class="Main-ujv4hx-0 dVKRvm">
+              <span class="PolicyPage__PolicyArticleBody-sc-1fiiwlt-0 UuLIl"
+                ><div
+                  class="TextContent-kkmgbg-0 dlViiJ RendererdMarkdownContent-sc-99ohlb-0 jUycHo"
+                >
+                  <h1 class="headline">ĐIỀU KHOẢN SỬ DỤNG</h1>
+                  <p>Sửa đổi lần cuối vào ngày 19/11/2021</p>
+                  <p>
+                    Thay đổi chính trong phiên bản này: Chúng tôi đã làm rõ rằng
+                    MTCH Technology Services Limited, đơn vị vận hành các trụ sở
+                    ở châu Âu của chúng tôi, chịu trách nhiệm cho dịch vụ của
+                    chúng tôi tại Khu vực Kinh tế Châu Âu, Vương quốc Anh và
+                    Thụy Sĩ.
+                  </p>
+                  <p>
+                    Để nhận được bản tóm tắt Điều khoản Sử dụng của chúng tôi,
+                    hãy vào
+                    <a href="/summary-of-terms">Tóm tắt các Điều khoản</a>.
+                  </p>
+                  <p>
+                    Chào mừng đến với Tinder. Nếu bạn sống tại Khu vực Kinh tế
+                    Châu Âu, Vương quốc Anh, hoặc Thụy Sĩ, các Điều khoản Sử
+                    dụng này được áp dụng giữa bạn và:
+                  </p>
+                  <p>
+                    MTCH Technology Services Limited ("MTCH Technology") WeWork
+                    Charlemont Exchange 42 Charlemont Street Dublin 2, D02 R593
+                    Ireland
+                  </p>
+                  <p>
+                    Nếu bạn sống tại Nhật Bản, các Điều khoản Sử dụng này sẽ
+                    được áp dụng giữa bạn và:
+                  </p>
+                  <p>
+                    MG Japan Services GK (“MG Japan”) 4F Sumitomo Fudosan Azabu
+                    Bldg 1-4-1 Mita Minato-ku, Tokyo 108-0073 Nhật Bản
+                  </p>
+                  <p>
+                    Nếu bạn sống bên ngoài Khu vực Kinh tế Châu Âu, Vương quốc
+                    Anh, Thụy Sĩ và Nhật Bản, các Điều khoản Sử dụng này được áp
+                    dụng giữa bạn và:
+                  </p>
+                  <p>
+                    Match Group, LLC ("Match Group")<br />
+                    8750 North Central Expressway, Suite 1400<br />
+                    Dallas, TX 75231, USA
+                  </p>
+                  <p>
+                    Các cụm từ ("chúng tôi", "chúng ta", "Công ty" hoặc
+                    "Tinder") chỉ MTCH Technology, MG Japan hoặc Match Group dựa
+                    trên quốc gia cư trú của bạn.
+                  </p>
+                  <h2>1. Chấp nhận Thoả thuận Điều khoản Sử dụng.</h2>
+                  <p>
+                    Bằng việc tạo tài khoản Tinder, dù thông qua thiết bị di
+                    động, ứng dụng di động hay máy tính (gọi chung là “Dịch
+                    vụ”), bạn đồng ý bị ràng buộc bởi (i) các Điều khoản Sử dụng
+                    này, (ii) <a href="/privacy">Chính sách Quyền riêng tư</a>,
+                    <a href="/cookie-policy">Chính sách Cookie</a>, Thủ tục
+                    Trọng tài của chúng tôi (nếu áp dụng cho bạn),
+                    <a href="/safety">Lời khuyên An toàn</a> và
+                    <a href="/community-guidelines">Nguyên tắc Cộng đồng</a>,
+                    mỗi nội dung này đều được đưa vào Thỏa thuận này theo hình
+                    thức tham chiếu và (iii) bất kỳ điều khoản nào mà bạn tiết
+                    lộ và đồng ý nếu bạn mua các tính năng, sản phẩm hoặc dịch
+                    vụ bổ sung mà chúng tôi cung cấp trên Dịch vụ (gọi chung là
+                    &#x26; "Thỏa thuận"). Nếu bạn không chấp nhận và đồng ý bị
+                    ràng buộc bởi tất cả các điều khoản của Thỏa thuận này, vui
+                    lòng không sử dụng Dịch vụ.
+                  </p>
+                  <p>
+                    Tùy từng thời điểm, chúng tôi có thể tiến hành các thay đổi
+                    với Thỏa thuận và Dịch vụ này. Chúng tôi có thể thực hiện
+                    điều này vì nhiều lý do, bao gồm phản ánh những thay đổi
+                    hoặc yêu cầu về pháp luật, các tính năng mới hoặc những thay
+                    đổi trong phương thức kinh doanh. Phiên bản mới nhất của
+                    Thỏa thuận này sẽ được đăng tải trên phần Dịch vụ trong mục
+                    Cài đặt và cả trên gotinder.com, và bạn nên thường xuyên
+                    kiểm tra phiên bản mới nhất. Phiên bản mới nhất chính là
+                    phiên bản được áp dụng. Nếu việc thay đổi bao gồm những thay
+                    đổi trực tiếp liên quan đến thỏa thuận về quyền hoặc nghĩa
+                    vụ của bạn, chúng tôi sẽ báo trước cho bạn tối thiểu 30 ngày
+                    (trừ phi chúng tôi không thể làm điều này theo luật hiện
+                    hành) bằng các cách thức hợp lý. Các cách thức này có thể
+                    bao gồm thông báo qua Dịch vụ hoặc qua email. Nếu bạn vẫn
+                    tiếp tục sử dụng Dịch vụ sau khi các thay đổi có hiệu lực,
+                    thì tức là bạn đồng ý với Thỏa thuận sửa đổi.
+                  </p>
+                  <h2>2. Điều kiện ử dụng.</h2>
+                  <p>
+                    Bạn không được phép tạo tài khoản hoặc truy cập hay sử dụng
+                    Dịch vụ hoặc các hệ thống có chứa Dịch vụ đó trừ khi tất cả
+                    những điều sau đây đều đúng:
+                  </p>
+                  <ul>
+                    <li>bạn đủ từ 18 tuổi trở lên.</li>
+                    <li>bạn có thể tạo một hợp đồng ràng buộc với Tinder,</li>
+                    <li>
+                      bạn không phải là người bị cấm sử dụng Dịch vụ theo luật
+                      của Hoa Kỳ hoặc bất kỳ khu vực pháp lý hiện hành nào khác
+                      (ví dụ: bạn không xuất hiện trong danh sách Công dân được
+                      chỉ định đặc biệt của Bộ Tài chính Hoa Kỳ hoặc phải chịu
+                      bất kỳ lệnh cấm tương tự nào khác),
+                    </li>
+                    <li>
+                      bạn sẽ tuân thủ Thỏa thuận này và tất cả các điều luật,
+                      quy tắc và quy định hiện hành của địa phương, tiểu bang,
+                      quốc gia và quốc tế, và
+                    </li>
+                    <li>
+                      bạn chưa bao giờ bị kết án vì trọng tội hoặc phạm tội có
+                      thể bị truy tố (hoặc phạm tội ở mức độ nghiêm trọng tương
+                      đương), phạm tội về tình dục, hoặc bất kỳ tội nào liên
+                      quan đến bạo lực, và bạn không bị ghi danh là tội phạm ở
+                      bất kỳ hồ sơ tội phạm của bất kỳ bang nào, hồ sơ liên bang
+                      hoặc hồ sơ tội phạm tình dục địa phương.
+                    </li>
+                  </ul>
+                  <h2>3. Tài khoản của Bạn.</h2>
+                  <p>
+                    Để sử dụng Tinder, bạn có thể đăng nhập bằng nhiều cách, bao
+                    gồm cả đăng nhập qua Facebook. Nếu chọn sử dụng Facebook của
+                    mình để đăng nhập, bạn cho phép chúng tôi truy cập và sử
+                    dụng một số thông tin nhất định của tài khoản Facebook đó,
+                    bao gồm nhưng không giới hạn ở hồ sơ Facebook công khai của
+                    bạn. Để biết thêm về các thông tin chúng tôi thu thập từ bạn
+                    và cách chúng tôi sử dụng các thông tin đó, vui lòng tham
+                    khảo <a href="/privacy">Chính sách Quyền riêng tư</a>.
+                  </p>
+                  <p>
+                    Bạn có trách nhiệm duy trì tính bảo mật của các thông tin
+                    đăng nhập của bạn mà bạn sử dụng để đăng ký Tinder, và bạn
+                    tự chịu trách nhiệm cho tất cả các hoạt động xảy ra theo các
+                    thông tin này. Nếu bạn cho rằng ai đó đã có quyền truy cập
+                    vào tài khoản của bạn, vui lòng
+                    <a href="https://www.help.tinder.com/hc/requests/new"
+                      >liên hệ</a
+                    >
+                    ngay với chúng tôi.
+                  </p>
+                  <h2>4. Sửa đổi Dịch vụ và Ngừng sử dụng.</h2>
+                  <p>
+                    Tinder luôn nỗ lực để cải tiến Dịch vụ và mang đến cho bạn
+                    chức năng bổ sung mà bạn sẽ thấy hấp dẫn và hữu ích. Điều
+                    này có nghĩa là chúng tôi có thể thêm các tính năng hoặc cải
+                    tiến sản phẩm mới tùy từng thời điểm cũng như loại bỏ một số
+                    tính năng và nếu các hành động này không ảnh hưởng một cách
+                    thiết yếu đến các quyền hoặc nghĩa vụ của bạn, chúng tôi có
+                    thể không thông báo cho bạn biết trước khi thực hiện. Chúng
+                    tôi thậm chí có thể đình chỉ Dịch vụ hoàn toàn, trong trường
+                    hợp đó, chúng tôi sẽ thông báo cho bạn biết trước trừ khi
+                    các tình huống giảm nhẹ, chẳng hạn như các lo ngại về an
+                    toàn hoặc an ninh, ngăn cản chúng tôi làm như vậy.
+                  </p>
+                  <p>
+                    Bạn có thể hủy tài khoản của mình bất kỳ lúc nào, vì bất kỳ
+                    lý do gì, bằng cách làm theo các hướng dẫn trong mục "Cài
+                    đặt" của Dịch vụ.
+                    <strong
+                      >Tuy nhiên, nếu bạn sử dụng tài khoản thanh toán của bên
+                      thứ ba, như App Store hoặc iTunes Store của Apple, tùy
+                      trường hợp (“App Store”) hoặc Cửa hàng Google Play, bạn sẽ
+                      cần quản lý việc thanh toán qua tài khoản tương ứng để
+                      tránh phải thanh toán thêm.</strong
+                    >
+                    Tinder có thể hủy tài khoản của bạn bất kỳ lúc nào mà không
+                    cần thông báo nếu biết rằng bạn đã vi phạm Thỏa thuận này.
+                    Sau khi chấm dứt như vậy, bạn sẽ không được quyền nhận bất
+                    kỳ khoản hoàn lại nào cho các giao dịch.
+                  </p>
+                  <p>
+                    Đối với cư dân Hàn Quốc, ngoại trừ trường hợp chúng tôi cho
+                    rằng (i) pháp luật cấm đưa ra thông báo (như khi việc đưa ra
+                    thông báo sẽ gây ra vi phạm pháp luật, quy định hiện hành
+                    hoặc chỉ thị từ các cơ quan chức năng hoặc làm tổn hại đến
+                    một cuộc điều tra đang diễn ra do cơ quan chức năng thực
+                    hiện) hoặc (ii) bất kỳ thông báo nào có thể gây hại cho bạn,
+                    các bên thứ ba, Tinder và/hoặc các chi nhánh của chúng tôi
+                    (như khi việc đưa ra thông báo làm tổn hại đến tính bảo mật
+                    của Dịch vụ), chúng tôi sẽ thông báo cho bạn về lý do thực
+                    hiện bước có liên quan ngay lập tức.
+                  </p>
+                  <p>
+                    Sau khi tài khoản của bạn bị chấm dứt, Thỏa thuận này sẽ
+                    chấm dứt, ngoại trừ các quy định sau đây vẫn sẽ áp dụng cho
+                    bạn và Tinder: Mục 4, Mục 5 và Mục 12 đến 19.
+                  </p>
+                  <h2>5. An toàn; Tương tác của Bạn với Thành Viên Khác.</h2>
+                  <p>
+                    Mặc dù Tinder cố gắng khuyến khích trải nghiệm tôn trọng
+                    thành viên thông qua các tính năng như chọn tham gia kép cho
+                    phép các thành viên chỉ giao tiếp sau khi cả hai đều thể
+                    hiện sự quan tâm đến nhau, Tinder không chịu trách nhiệm về
+                    hành vi của bất kỳ thành viên nào trong hoặc ngoài Dịch vụ.
+                    Bạn đồng ý rằng sẽ cẩn trọng trong mọi hoạt động tương tác
+                    với các thành viên khác, nhất là khi bạn quyết định giao
+                    tiếp bên ngoài Dịch vụ hoặc gặp gỡ trực tiếp. Ngoài ra, bạn
+                    đồng ý xem xét và làm theo các
+                    <a href="/safety">Lời khuyên An toàn</a> của Tinder trước
+                    khi sử dụng Dịch vụ. Bạn đồng ý rằng bạn sẽ không cung cấp
+                    thông tin tài chính của mình (ví dụ: thông tin thẻ tín dụng
+                    hoặc tài khoản ngân hàng của bạn), hoặc chuyển khoản hoặc
+                    gửi tiền cho các thành viên khác.
+                  </p>
+                  <p>
+                    BẠN TỰ CHỊU TRÁCH NHIỆM VỀ CÁC TƯƠNG TÁC CỦA MÌNH VỚI CÁC
+                    THÀNH VIÊN KHÁC. BẠN HIỂU RẰNG TINDER KHÔNG TIẾN HÀNH KIỂM
+                    TRA HỒ SƠ TƯ PHÁP HAY TRA CỨU LÝ LỊCH CÁC THÀNH VIÊN CỦA
+                    MÌNH. TINDER KHÔNG ĐƯA RA TUYÊN BỐ HOẶC BẢO ĐẢM NÀO VỀ VIỆC
+                    HÀNH XỬ HOẶC TÍNH PHÙ HỢP CỦA CÁC THÀNH VIÊN.
+                  </p>
+                  <h2>6. Các Quyền Tinder Cấp cho Bạn.</h2>
+                  <p>
+                    Tinder cấp cho bạn một giấy phép mang tính cá nhân, toàn
+                    cầu, không phải trả tiền bản quyền, không thể chuyển nhượng,
+                    không độc quyền, có thể thu hồi, và không thể cấp phép phụ
+                    để truy cập và sử dụng Dịch vụ. Giấy phép này chỉ nhằm mục
+                    đích cho phép bạn sử dụng và hưởng các quyền lợi của Dịch vụ
+                    theo ý định của Tinder và được Thỏa thuận này cho phép. Giấy
+                    phép này và mọi quyền truy cập Dịch vụ sẽ tự động bị thu hồi
+                    trong trường hợp bạn thực hiện bất kỳ hành động nào sau đây:
+                  </p>
+                  <ul>
+                    <li>
+                      sử dụng Dịch vụ hoặc bất kỳ nội dung nào có trong Dịch vụ
+                      cho bất kỳ mục đích thương mại nào mà không có sự đồng ý
+                      bằng văn bản của chúng tôi.
+                    </li>
+                    <li>
+                      sao chép, sửa đổi, truyền tải, tạo ra bất kỳ tác phẩm phái
+                      sinh nào, tận dụng, hoặc sao chụp bằng bất kỳ cách nào đối
+                      với bất kỳ các tài liệu, hình ảnh, nhãn hiệu, tên thương
+                      mại, nhãn hiệu dịch vụ có bản quyền, hoặc tài sản trí tuệ,
+                      nội dung hoặc thông tin độc quyền khác có thể truy cập
+                      thông qua Dịch vụ mà không có sự đồng ý trước bằng văn bản
+                      của Tinder.
+                    </li>
+                    <li>
+                      diễn đạt hoặc ngụ ý rằng bất kỳ tuyên bố nào mà bạn thực
+                      hiện là được xác nhận bởi Tinder.
+                    </li>
+                    <li>
+                      sử dụng robot, bot, nhện, trình thu thập dữ liệu, trình
+                      quét, ứng dụng tìm kiếm/truy xuất trang web, proxy hoặc
+                      thiết bị tự động hoặc thủ công khác, phương pháp hoặc quy
+                      trình để truy cập, truy xuất, lập chỉ mục, "khai thác dữ
+                      liệu" hoặc dùng bất kỳ phương thức nào sao chép hoặc phá
+                      vỡ cấu trúc điều hướng hoặc cách trình bày Dịch vụ hoặc
+                      nội dung của Dịch vụ.
+                    </li>
+                    <li>
+                      sử dụng Dịch vụ theo bất kỳ cách nào có thể gây trở ngại,
+                      phá hoại hoặc ảnh hưởng xấu đến Dịch vụ hoặc các máy chủ
+                      hay mạng kết nối với Dịch vụ.
+                    </li>
+                    <li>
+                      tải lên virus hay mã độc hại khác hoặc xâm phạm tính bảo
+                      mật của Dịch vụ.
+                    </li>
+                    <li>
+                      giả mạo các tiêu đề hoặc thao túng các ký hiệu nhận dạng
+                      nhằm che giấu nguồn gốc của bất kỳ thông tin nào được
+                      truyền đến hoặc thông qua Dịch vụ.
+                    </li>
+                    <li>
+                      "làm giả" hoặc "sao chép" bất kỳ phần nào của Dịch vụ mà
+                      không có sự cho phép trước bằng văn bản của Tinder.
+                    </li>
+                    <li>
+                      sử dụng thẻ meta hoặc mã hoặc các thiết bị khác có chứa
+                      bất kỳ tham chiếu nào đến Tinder hoặc Dịch vụ (hay bất kỳ
+                      nhãn hiệu, tên thương mại, nhãn hiệu dịch vụ, biểu trưng
+                      hoặc khẩu hiệu của Tinder) để chuyển hướng bất kỳ người
+                      nào đến bất kỳ trang web nào khác vì bất cứ mục đích nào.
+                    </li>
+                    <li>
+                      sửa đổi, điều chỉnh, cấp phép lại, dịch, bán, thiết kế đối
+                      chiếu, giải mã, dịch ngược hoặc tháo rời bất kỳ phần nào
+                      của Dịch vụ hoặc xúi giục người khác làm như vậy.
+                    </li>
+                    <li>
+                      sử dụng hoặc phát triển bất kỳ ứng dụng nào của bên thứ ba
+                      có chức năng tương tác với Dịch vụ hoặc Nội dung hay thông
+                      tin của thành viên khác mà không có sự đồng ý bằng văn bản
+                      của chúng tôi.
+                    </li>
+                    <li>
+                      sử dụng, truy cập, hoặc xuất bản giao diện lập trình ứng
+                      dụng Tinder mà không có sự đồng ý bằng văn bản của chúng
+                      tôi.
+                    </li>
+                    <li>
+                      thăm dò, quét hoặc kiểm tra lỗ hổng Dịch vụ hoặc bất kỳ hệ
+                      thống hay mạng nào của chúng tôi.
+                    </li>
+                    <li>
+                      khuyến khích hoặc quảng bá bất kỳ hoạt động nào vi phạm
+                      Thỏa thuận này.
+                    </li>
+                  </ul>
+                  <p>
+                    Tinder có thể điều tra và thực hiện bất kỳ hành động pháp lý
+                    khả thi nào để đối phó với việc sử dụng Dịch vụ bất hợp pháp
+                    hoặc không được cấp phép, bao gồm cả việc hủy tài khoản của
+                    bạn.
+                  </p>
+                  <p>
+                    Bất kỳ phần mềm nào mà chúng tôi cung cấp, bạn có thể tự
+                    động tải xuống và cài đặt các bản nâng cấp, cập nhật hoặc
+                    các tính năng mới khác. Bạn có thể điều chỉnh các lượt tải
+                    xuống tự động này thông qua cài đặt của thiết bị của bạn.
+                  </p>
+                  <h2>7. Các Quyền Bạn Cấp cho Tinder.</h2>
+                  <p>
+                    Bằng việc tạo tài khoản, bạn trao cho Tinder quyền và bản
+                    quyền toàn cầu, có thể chuyển nhượng, có thể cấp phép lại,
+                    miễn phí bản quyền để tổ chức, lưu trữ, sử dụng, sao chép,
+                    hiển thị, tái lập, điều chỉnh, chỉnh sửa, công bố, sửa đổi
+                    và phân phối thông tin mà bạn cho phép chúng tôi truy cập từ
+                    các bên thứ ba như Facebook, cũng như bất kỳ thông tin nào
+                    bạn đăng, tải lên, hiển thị hoặc bằng một cách nào đó cung
+                    cấp (gọi chung là "đăng tải") trên Dịch vụ hoặc truyền cho
+                    các thành viên khác (gọi chung là "Nội dung"). Bản quyền của
+                    Tinder đối với Nội dung của bạn sẽ thuộc diện không độc
+                    quyền, ngoại trừ việc bản quyền của Tinder sẽ là độc quyền
+                    đối với các tác phẩm phái sinh được tạo ra thông qua việc sử
+                    dụng Dịch vụ. Ví dụ: Tinder sẽ sở hữu bản quyền độc quyền
+                    đối với ảnh chụp màn hình của Dịch vụ chứa Nội dung của bạn.
+                    Ngoài ra, để Tinder có thể ngăn chặn việc sử dụng Nội dung
+                    của bạn bên ngoài Dịch vụ, bạn cho phép Tinder hành động
+                    thay mặt bạn đối với việc sử dụng mang tính vi phạm Nội dung
+                    của bạn mà các thành viên khác hoặc bên thứ ba lấy từ Dịch
+                    vụ. Điều này được làm rõ rằng bao gồm thẩm quyền, nhưng
+                    không phải nghĩa vụ, gửi thông báo theo 17 U.S.C. § 512 (c)
+                    (3) (tức Thông báo gỡ xuống theo DMCA) thay mặt bạn nếu Nội
+                    dung của bạn bị các bên thứ ba bên ngoài Dịch vụ lấy và sử
+                    dụng. Bản quyền của chúng tôi đối với Nội dung của bạn sẽ
+                    tuân theo các quyền của bạn theo luật hiện hành (ví dụ: luật
+                    liên quan đến bảo vệ dữ liệu cá nhân trong phạm vi bất kỳ
+                    Nội dung nào chứa thông tin cá nhân theo định nghĩa của các
+                    luật đó) và dành cho mục đích hạn chế là vận hành, phát
+                    triển, cung cấp và cải tiến Dịch vụ cũng như nghiên cứu phát
+                    triển những nội dung mới. Bạn đồng ý rằng bất kỳ Nội dung
+                    nào bạn đặt hoặc bạn cho phép chúng tôi đặt trên Dịch vụ đều
+                    có thể được các thành viên khác xem và có thể được xem bởi
+                    bất kỳ người nào truy cập hoặc tham gia vào Dịch vụ (chẳng
+                    hạn như các cá nhân có thể nhận được Nội dung được chia sẻ
+                    từ các thành viên Tinder khác).
+                  </p>
+                  <p>
+                    Bạn đồng ý rằng tất cả thông tin bạn gửi khi tạo tài khoản,
+                    bao gồm thông tin được gửi từ tài khoản Facebook của bạn, là
+                    chính xác và trung thực và bạn có quyền đăng tải Nội dung
+                    trên Dịch vụ và cấp phép cho Tinder nói trên.
+                  </p>
+                  <p>
+                    Bạn hiểu và đồng ý rằng chúng tôi có thể giám sát hoặc xem
+                    xét bất kỳ Nội dung nào mà bạn đăng như là một phần của Dịch
+                    vụ. Chúng tôi có thể xóa bất kỳ Nội dung nào, dù toàn bộ hay
+                    một phần, mà theo quyết định riêng của chúng tôi là vi phạm
+                    Thỏa thuận này hoặc có thể gây hại cho danh tiếng của Dịch
+                    vụ.
+                  </p>
+                  <p>
+                    Khi giao tiếp với đại diện chăm sóc khách hàng của chúng
+                    tôi, bạn đồng ý cư xử một cách tôn trọng và tử tế. Nếu chúng
+                    tôi cảm thấy hành vi của bạn đối với bất kỳ đại diện chăm
+                    sóc khách hàng nào của chúng tôi hoặc nhân viên khác là mang
+                    tính chất đe dọa, quấy rối hoặc xúc phạm, vào bất cứ lúc
+                    nào, chúng tôi có quyền chấm dứt tài khoản của bạn ngay lập
+                    tức.
+                  </p>
+                  <p>
+                    Xét đến việc Tinder cho phép bạn sử dụng Dịch vụ, bạn đồng ý
+                    rằng chúng tôi, các chi nhánh của chúng tôi, và các đối tác
+                    bên thứ ba của chúng tôi có thể đặt quảng cáo trên Dịch vụ.
+                    Bằng cách gửi các đề xuất hoặc phản hồi đến Tinder về Dịch
+                    vụ của chúng tôi, bạn đồng ý rằng Tinder có thể sử dụng và
+                    chia sẻ thông tin phản hồi đó cho bất kỳ mục đích nào mà
+                    không phải bồi thường cho bạn.
+                  </p>
+                  <p>
+                    Xin lưu ý rằng Tinder có thể truy cập, lưu trữ và công bố
+                    thông tin và Nội dung tài khoản của bạn nếu pháp luật yêu
+                    cầu, bằng cách thực hiện thỏa thuận của công ty với bạn hoặc
+                    khi tin chắc rằng việc truy cập, lưu trữ hoặc công bố đó
+                    thỏa mãn lợi ích hợp pháp, bao gồm để: (i) tuân thủ quy
+                    trình pháp lý; (ii) thi hành Thỏa thuận; (iii) phản hồi các
+                    khiếu nại rằng bất cứ Nội dung nào vi phạm quyền của bên thứ
+                    ba; (iv) đáp ứng yêu cầu bạn gửi đến dịch vụ khách hàng;
+                    hoặc (v) bảo vệ quyền, tài sản hoặc an toàn cá nhân của Công
+                    ty hoặc bất kỳ người nào khác.
+                  </p>
+                  <h2>8. Quy tắc Cộng đồng.</h2>
+                  <p>
+                    Bằng việc sử dụng Dịch vụ, bạn đồng ý rằng bạn sẽ không:
+                  </p>
+                  <ul>
+                    <li>
+                      sử dụng Dịch vụ cho bất kỳ mục đích nào bất hợp pháp hoặc
+                      bị cấm bởi Thỏa thuận này.
+                    </li>
+                    <li>
+                      sử dụng Dịch vụ cho bất kỳ mục đích gây hại hoặc bất chính
+                      nào
+                    </li>
+                    <li>sử dụng Dịch vụ nhằm gây thiệt hại cho Tinder</li>
+                    <li>
+                      vi phạm
+                      <a href="/community-guidelines">Hướng dẫn về Cộng đồng</a>
+                      của chúng tôi, như được cập nhật tùy từng thời điểm.
+                    </li>
+                    <li>spam, gạ tiền hoặc lừa đảo bất kỳ thành viên nào.</li>
+                    <li>
+                      giả mạo bất kỳ cá nhân hoặc tổ chức nào hoặc đăng bất kỳ
+                      hình ảnh nào của người khác mà không có sự cho phép của
+                      họ.
+                    </li>
+                    <li>
+                      bắt nạt, "lén theo dõi", đe dọa, tấn công, quấy rối, ngược
+                      đãi hoặc phỉ báng bất kỳ ai.
+                    </li>
+                    <li>
+                      đăng bất kỳ Nội dung nào vi phạm hoặc xâm phạm quyền của
+                      bất kỳ ai, bao gồm quyền công khai, quyền riêng tư, bản
+                      quyền, nhãn hiệu hoặc quyền sở hữu trí tuệ hoặc quyền theo
+                      hợp đồng khác.
+                    </li>
+                    <li>
+                      đăng tải bất kỳ Nội dung nào có ngôn từ thù địch, mang
+                      tính đe dọa, có nội dung khiêu dâm
+                    </li>
+                    <li>
+                      đăng tải bất kỳ Nội dung nào có tính chất kích động bạo
+                      lực; hoặc chứa ảnh khỏa thân hoặc hình ảnh hoặc minh họa
+                      bạo lực.
+                    </li>
+                    <li>
+                      đăng tải bất kỳ Nội dung nào khuyến khích phân biệt chủng
+                      tộc, khinh miệt tín ngưỡng, hận thù hoặc gây hại thể chất
+                      tồn tại dưới bất kỳ hình thức nào đối với bất kỳ nhóm hoặc
+                      cá nhân nào.
+                    </li>
+                    <li>
+                      gạ gẫm lấy mật khẩu vì bất kỳ mục đích nào hoặc thông tin
+                      nhận dạng cá nhân vì mục đích thương mại hoặc bất hợp pháp
+                      từ các thành viên khác hoặc phổ biến thông tin cá nhân của
+                      người khác mà không được sự cho phép của người đó.
+                    </li>
+                    <li>
+                      sử dụng tài khoản của thành viên khác, chia sẻ tài khoản
+                      với thành viên khác hoặc duy trì nhiều tài khoản.
+                    </li>
+                    <li>
+                      tạo một tài khoản khác nếu chúng tôi đã chấm dứt tài khoản
+                      của bạn, trừ khi bạn có sự cho phép của chúng tôi.
+                    </li>
+                  </ul>
+                  <p>
+                    Tinder bảo lưu quyền điều tra và/hoặc hủy tài khoản của bạn
+                    mà không cần hoàn tiền cho bất kỳ giao dịch nào nếu bạn vi
+                    phạm Thỏa thuận này, sử dụng sai mục đích của Dịch vụ hoặc
+                    hành xử theo cách mà Tinder coi là không phù hợp hoặc bất
+                    hợp pháp, bao gồm các hành động hoặc hội thoại xảy ra trong
+                    hoặc ngoài dịch vụ. Ngoài ra, trong một số trường hợp nhất
+                    định, chúng tôi có thể hủy tài khoản của bạn vì vi phạm các
+                    điều khoản hiện hành của bất kỳ doanh nghiệp nào thuộc Match
+                    Group, bên cạnh Tinder, các dịch vụ như OkCupid, Plenty of
+                    Fish, Match, Meetic, BlackPeopleMeet, LoveScout24, OurTime,
+                    Pairs, ParPerfeito và Twoo (để biết thêm chi tiết, bấm vào
+                    <a href="https://mtch.com/safety">đây</a>). Trong trường hợp
+                    bạn vi phạm các quy tắc này hoặc Quy tắc Cộng đồng của chúng
+                    tôi, quyền sử dụng Dịch vụ của bạn sẽ tự động bị thu hồi.
+                  </p>
+                  <h2>9. Nội dung của các Thành Viên Khác.</h2>
+                  <p>
+                    Mặc dù Tinder có quyền xem xét và xóa Nội dung vi phạm Thỏa
+                    thuận này, Nội dung đó là trách nhiệm riêng của thành viên
+                    đăng nó và Tinder không thể đảm bảo rằng tất cả Nội dung sẽ
+                    tuân thủ Thỏa thuận này. Nếu bạn thấy Nội dung trên Dịch vụ
+                    vi phạm Thỏa thuận này, vui lòng báo cáo nội dung đó ngay
+                    trong Dịch vụ hoặc qua
+                    <a href="https://www.help.tinder.com/hc/requests/new"
+                      >biểu mẫu liên hệ của chúng tôi</a
+                    >.
+                  </p>
+                  <h2>10. Mua hàng.</h2>
+                  <p>
+                    <strong>Khái quát.</strong> Đôi khi, Tinder có thể cung cấp
+                    các sản phẩm và dịch vụ để mua ("mua hàng trong ứng dụng")
+                    thông qua App Store, Cửa hàng Google Play, thanh toán qua
+                    nhà cung cấp dịch vụ, thanh toán trực tiếp cho Tinder hoặc
+                    các nền tảng thanh toán khác được Tinder ủy quyền. Nếu bạn
+                    chọn mua hàng trong ứng dụng, bạn sẽ được nhắc xác nhận việc
+                    mua hàng của mình với nhà cung cấp dịch vụ thanh toán tương
+                    ứng và phương thức thanh toán của bạn (có thể là thẻ của bạn
+                    hoặc tài khoản bên thứ ba như Cửa hàng Google Play hoặc App
+                    Store (gọi chung là "Phương thức thanh toán"), sẽ được tính
+                    cho việc mua hàng trong ứng dụng theo mức giá hiển thị cho
+                    bạn đối với (các) dịch vụ bạn đã chọn cùng các chương trình
+                    giảm giá hoặc thuế có thể áp dụng cho các khoản thanh toán
+                    của bạn, và bạn ủy quyền cho Tinder hoặc tài khoản của bên
+                    thứ ba, tùy trường hợp, để tính phí bạn.
+                  </p>
+                  <p>
+                    <strong>Gia hạn tự động; Thanh toán thẻ tự động</strong>
+                  </p>
+                  <p>
+                    Nếu bạn mua đăng ký tự động gia hạn định kỳ thông qua thao
+                    tác mua hàng trong ứng dụng, Phương thức thanh toán của bạn
+                    sẽ tiếp tục được sử dụng để đăng ký cho đến khi bạn hủy. Sau
+                    khoảng thời gian cam kết đăng ký ban đầu của bạn, và sau bất
+                    kỳ thời gian đăng ký tiếp theo nào, gói đăng ký của bạn sẽ
+                    tự động tiếp tục trong khoảng thời gian tương đương, với mức
+                    giá bạn đồng ý khi đăng ký. Thông tin thanh toán thẻ của bạn
+                    sẽ được lưu trữ và sau đó được sử dụng cho thanh toán thẻ tự
+                    động theo Thỏa thuận.
+                  </p>
+                  <p>
+                    Việc phản đối một khoản thanh toán đã được thực hiện phải
+                    được chuyển đến bộ phận
+                    <a href="https://www.help.tinder.com/hc/requests/new"
+                      >Hỗ trợ Khách hàng</a
+                    >
+                    nếu bạn được Tinder hoặc tài khoản bên thứ ba có liên quan
+                    lập hóa đơn trực tiếp, chẳng hạn như App Store. Bạn cũng có
+                    thể phản đối bằng cách liên hệ với ngân hàng hoặc nhà cung
+                    cấp dịch vụ thanh toán của mình, họ có thể cung cấp thêm
+                    thông tin về quyền của bạn cũng như các giới hạn thời gian
+                    áp dụng. Bạn có thể rút lại vô điều kiện sự đồng ý của mình
+                    đối với thao tác thanh toán thẻ tự động bất kỳ lúc nào bằng
+                    cách đi tới Cài đặt trên Tinder hoặc tài khoản của bên thứ
+                    ba có liên quan, nhưng hãy lưu ý rằng bạn vẫn có nghĩa vụ
+                    thanh toán mọi khoản tiền chưa thanh toán.
+                  </p>
+                  <p>
+                    <strong
+                      >Nếu muốn thay đổi hoặc chấm dứt đăng ký của mình, bạn sẽ
+                      cần đăng nhập vào tài khoản bên thứ ba của mình (hoặc Cài
+                      đặt trên Tinder, nếu có) và làm theo hướng dẫn để chấm dứt
+                      hoặc hủy đăng ký, ngay cả khi bạn đã xóa tài khoản với
+                      chúng tôi hoặc đã xóa ứng dụng Tinder khỏi thiết bị của
+                      mình.</strong
+                    >
+                    Việc xóa tài khoản của bạn trên Tinder hoặc xóa ứng dụng
+                    Tinder khỏi thiết bị của bạn không chấm dứt hoặc hủy đăng ký
+                    của bạn; Tinder sẽ giữ lại tất cả các khoản tiền được tính
+                    vào Phương thức Thanh toán của bạn cho đến khi bạn chấm dứt
+                    hoặc hủy đăng ký của mình trên Tinder hoặc tài khoản của bên
+                    thứ ba, nếu có. Nếu bạn chấm dứt hoặc hủy đăng ký của mình,
+                    bạn có thể sử dụng đăng ký của mình cho đến khi kết thúc
+                    thời hạn đăng ký hiện tại khi đó và đăng ký của bạn sẽ không
+                    được gia hạn sau khi kỳ hạn hiện tại của bạn kết thúc.
+                  </p>
+                  <p>
+                    <strong
+                      >Điều khoản bổ sung được áp dụng nếu bạn thanh toán trực
+                      tiếp với Tinder bằng Phương thức thanh toán của
+                      mình.</strong
+                    >
+                    Nếu bạn thanh toán trực tiếp cho Tinder, Tinder có thể sửa
+                    bất kỳ lỗi thanh toán hóa đơn hoặc sai sót nào mà trang này
+                    gây ra ngay cả sau khi đã yêu cầu hoặc nhận thanh toán. Nếu
+                    bạn thực hiện khoản bồi hoàn hoặc hủy giao dịch thanh toán
+                    được thực hiện bằng Phương thức thanh toán của mình, Tinder
+                    có thể tự ý chấm dứt tài khoản của bạn ngay lập tức.
+                  </p>
+                  <p>
+                    Bạn có thể chỉnh sửa thông tin Phương thức thanh toán của
+                    mình bằng cách truy cập Tinder và vào mục Cài đặt. Nếu khoản
+                    thanh toán không được thực hiện thành công, do hết hạn,
+                    không đủ tiền hoặc các lý do khác, và bạn không chỉnh sửa
+                    thông tin Phương thức Thanh toán, chấm dứt hoặc hủy đăng ký
+                    của mình, bạn vẫn phải chịu trách nhiệm đối với mọi khoản
+                    tiền chưa nộp và ủy quyền cho chúng tôi tiếp tục xuất hóa
+                    đơn theo Phương thức Thanh toán (có thể được cập nhật). Điều
+                    này có thể dẫn đến việc thay đổi ngày thanh toán của bạn.
+                    Ngoài ra, bạn cho phép chúng tôi được cập nhật hoặc thay thế
+                    ngày hết hạn và số thẻ tín dụng hoặc thẻ ghi nợ do tổ chức
+                    phát hành thẻ tín dụng hoặc thẻ ghi nợ của bạn cung cấp. Các
+                    điều khoản thanh toán của bạn sẽ dựa trên Phương thức thanh
+                    toán của bạn và có thể được xác định theo thỏa thuận giữa
+                    bạn và tổ chức tài chính, tổ chức phát hành thẻ tín dụng
+                    hoặc nhà cung cấp khác của Phương thức thanh toán bạn đã
+                    chọn. Nếu cư trú bên ngoài Châu Mỹ, bạn đồng ý rằng khoản
+                    thanh toán của bạn cho Tinder sẽ được thực hiện thông qua
+                    Công ty TNHH MTCH Technology Services.
+                  </p>
+                  <p>
+                    <strong>Vật Phẩm Ảo.</strong> Đôi khi, bạn có thể mua hoặc
+                    kiếm được bản quyền có giới hạn, cá nhân, không thể chuyển
+                    nhượng, không thể cấp phép lại, có thể thu hồi để sử dụng
+                    "vật phẩm ảo" - có thể bao gồm các sản phẩm ảo hoặc “tiền”
+                    ảo hoặc các đơn vị khác có thể trao đổi trong Dịch vụ để lấy
+                    các sản phẩm ảo (gọi chung là "Vật Phẩm Ảo"). Mọi số dư Vật
+                    Phẩm Ảo hiển thị trong tài khoản của bạn đều không tạo thành
+                    số dư trong thế giới thực hoặc phản ánh bất kỳ giá trị được
+                    lưu trữ nào, mà thay vào đó, sẽ tạo thành một phép đo mức độ
+                    bản quyền của bạn. Bạn sẽ không phải trả phí cho Vật Phẩm Ảo
+                    khi không sử dụng, tuy nhiên, bản quyền cấp cho bạn trong
+                    Vật Phẩm Ảo sẽ chấm dứt theo các điều khoản của Thỏa thuận
+                    này, khi Tinder ngừng cung cấp Dịch vụ hoặc tài khoản của
+                    bạn bị đóng hoặc chấm dứt theo cách khác. Tinder, theo quyết
+                    định riêng của mình, có quyền tính phí cho quyền truy cập
+                    hoặc sử dụng Vật Phẩm Ảo và có thể phân phối Vật Phẩm Ảo có
+                    hoặc không tính phí. Tinder có thể quản lý, điều chỉnh, kiểm
+                    soát, sửa đổi hoặc loại bỏ Vật Phẩm Ảo bất cứ lúc nào.
+                    Tinder sẽ không chịu trách nhiệm pháp lý đối với bạn hoặc
+                    bất kỳ bên thứ ba nào trong trường hợp Tinder thực hiện bất
+                    kỳ quyền nào nêu trên. Chỉ có thể đổi Vật Phẩm Ảo qua Dịch
+                    vụ. TẤT CẢ GIAO DỊCH MUA VÀ MUA LẠI VẬT PHẨM ẢO ĐƯỢC THỰC
+                    HIỆN THÔNG QUA DỊCH VỤ ĐỀU LÀ CUỐI CÙNG VÀ KHÔNG THỂ HOÀN
+                    LẠI. Việc cung cấp các Vật Phẩm Ảo để sử dụng trong Dịch vụ
+                    là một dịch vụ bắt đầu ngay lập tức khi bạn chấp nhận mua
+                    các Vật Phẩm Ảo đó. BẠN XÁC NHẬN RẰNG TINDER KHÔNG BẮT BUỘC
+                    PHẢI CUNG CẤP TIỀN HOÀN TRẢ LIÊN QUAN ĐẾN CÁC VẬT PHẨM ẢO VÌ
+                    BẤT KỲ LÝ DO NÀO VÀ RẰNG BẠN SẼ KHÔNG NHẬN ĐƯỢC TIỀN HOẶC
+                    KHOẢN BỒI THƯỜNG KHÁC CHO CÁC VẬT PHẨM ẢO CHƯA SỬ DỤNG KHI
+                    MỘT TÀI KHOẢN BỊ ĐÓNG, DÙ VIỆC ĐÓNG TÀI KHOẢN NÀY LÀ TỰ
+                    NGUYỆN HAY KHÔNG TỰ NGUYỆN.
+                  </p>
+                  <p>
+                    <strong>Hoàn tiền.</strong> Nhìn chung, tất cả chi phí mua
+                    hàng sẽ không được hoàn lại, và bạn sẽ không được hoàn lại
+                    hoặc ghi có cho khoảng thời gian đã sử dụng một phần. Chúng
+                    tôi có thể chấp nhận một ngoại lệ nếu là yêu cầu hoàn tiền
+                    dành cho gói đăng ký được đưa ra trong vòng mười bốn ngày kể
+                    từ ngày giao dịch, hoặc nếu pháp luật hiện hành trong khu
+                    vực pháp lý của bạn cho phép hoàn lại tiền.
+                  </p>
+                  <p>
+                    Đối với những người đăng ký cư trú ở Liên minh Châu Âu hoặc
+                    Khu vực Kinh tế Châu Âu, theo luật địa phương, bạn có quyền
+                    được hoàn toàn bộ tiền mà không cần nêu lý do trong vòng 14
+                    ngày sau khi bắt đầu đăng ký. Xin lưu ý rằng khoảng thời
+                    gian 14 ngày này bắt đầu ngay khi đăng ký bắt đầu.
+                  </p>
+                  <p>
+                    Đối với người đăng ký và người mua Vật phẩm ảo cư trú tại
+                    Hàn Quốc, theo luật địa phương, bạn có quyền được hoàn toàn
+                    bộ tiền đăng ký và/hoặc tiền mua Vật phẩm ảo chưa sử dụng
+                    của mình trong vòng 7 ngày sau khi mua. Xin lưu ý rằng
+                    khoảng thời gian 7 ngày này bắt đầu ngay sau khi mua hàng.
+                  </p>
+                  <p>
+                    Ngoại trừ trường hợp như đã lưu ý ở trên đối với các thành
+                    viên cư trú tại Hàn Quốc, các giao dịch mua Vật Phẩm Ảo là
+                    CUỐI CÙNG VÀ KHÔNG ĐƯỢC HOÀN LẠI.
+                  </p>
+                  <p>Để yêu cầu trả lại tiền:</p>
+                  <p>
+                    Nếu bạn mua hàng bằng Apple ID của mình, thì việc hoàn lại
+                    tiền sẽ do Apple xử lý, không phải Tinder. Để yêu cầu hoàn
+                    lại tiền, hãy truy cập App Store, bấm vào Apple ID của bạn,
+                    chọn "Lịch sử mua hàng", tìm giao dịch và bấm "Báo cáo sự
+                    cố". Bạn cũng có thể gửi yêu cầu tại
+                    <a href="https://getsupport.apple.com"
+                      >https://getsupport.apple.com</a
+                    >.
+                  </p>
+                  <p>
+                    Nếu bạn mua hàng bằng tài khoản Cửa hàng Google Play của
+                    mình hoặc trực tiếp qua Tinder: vui lòng liên hệ với
+                    <a href="https://www.help.tinder.com/hc/requests/new"
+                      >bộ phận hỗ trợ khách hàng</a
+                    >
+                    và cung cấp mã đơn hàng của bạn cho Cửa hàng Google Play
+                    (bạn có thể tìm thấy mã đơn hàng trong email xác nhận đơn
+                    đặt hàng hoặc bằng cách đăng nhập vào Google Wallet) hoặc
+                    Tinder (bạn có thể tìm thấy nội dung này trong email xác
+                    nhận của mình). Bạn cũng có thể gửi thư hoặc gửi một thông
+                    báo có chữ ký và ghi ngày tháng, trong đó nêu rõ rằng bạn,
+                    tức người mua, đang hủy bỏ thỏa thuận này hoặc các từ ngữ có
+                    hiệu lực tương tự khác. Đồng thời, vui lòng ghi rõ địa chỉ
+                    email hoặc số điện thoại di động được liên kết với tài khoản
+                    của bạn kèm theo mã đơn hàng của bạn trong thư này. Thông
+                    báo này sẽ được gửi tới: Tinder, Attn: Cancellations, P.O.
+                    Box 25472, Dallas, Texas 75225, Hoa Kỳ.
+                  </p>
+                  <p>
+                    Nếu bạn sử dụng quyền hủy (ngoại trừ các giao dịch mua được
+                    thực hiện thông qua Apple ID do Apple kiểm soát), chúng tôi
+                    sẽ hoàn lại (hoặc yêu cầu Google hoàn lại) tất cả các khoản
+                    thanh toán nhận được từ bạn, không chậm trễ và trong mọi
+                    trường hợp không vượt quá 14 ngày kể từ khi chúng tôi nhận
+                    được thông báo về quyết định hủy Thỏa thuận của bạn. Chúng
+                    tôi sẽ thực hiện việc hoàn trả này bằng cách sử dụng cùng
+                    một phương tiện thanh toán như bạn đã sử dụng trong giao
+                    dịch ban đầu. Trong mọi trường hợp, bạn sẽ không phải chịu
+                    bất kỳ chi phí nào do việc hoàn trả.
+                  </p>
+                  <p>
+                    Nếu bạn đã mua hàng thông qua một nền tảng thanh toán không
+                    được liệt kê ở trên, vui lòng yêu cầu hoàn tiền trực tiếp từ
+                    người bán bên thứ ba, tức người mà bạn đã thông qua để thực
+                    hiện giao dịch mua của mình.
+                  </p>
+                  <p>
+                    Bạn không thể hủy đơn đặt hàng nội dung kỹ thuật số không
+                    được phân phối trên phương tiện thực tế nếu quá trình xử lý
+                    đơn hàng đã bắt đầu với sự đồng ý và xác nhận trước đó rằng
+                    bạn sẽ mất quyền hủy bỏ. Điều này áp dụng, ví dụ, đối với
+                    việc mua Vật Phẩm Ảo. Điều đó có nghĩa là các giao dịch mua
+                    đó là QUYẾT ĐỊNH CUỐI CÙNG VÀ KHÔNG ĐƯỢC HOÀN LẠI.
+                  </p>
+                  <p>
+                    <strong>Định giá.</strong> Tinder hoạt động kinh doanh trên
+                    toàn cầu và hoạt động định giá của chúng tôi thay đổi dựa
+                    trên một số yếu tố. Chúng tôi thường xuyên đưa ra mức giá
+                    khuyến mại. Mức này có thể thay đổi tùy theo khu vực, thời
+                    lượng đăng ký, kích thước gói và nhiều nhân tố khác. Chúng
+                    tôi cũng thường xuyên thử nghiệm các tính năng và các tùy
+                    chọn thanh toán mới.
+                  </p>
+                  <h2>
+                    11. Thông báo và Thủ tục để đưa ra Tuyên bố Vi phạm Bản
+                    quyền.
+                  </h2>
+                  <p>
+                    Nếu bạn cho rằng tác phẩm của mình đã bị sao chép và đăng
+                    tải trên Dịch vụ theo cách cấu thành hành vi vi phạm bản
+                    quyền, vui lòng gửi yêu cầu gỡ xuống theo biểu mẫu
+                    <a
+                      href="https://www.help.tinder.com/hc/requests/new?ticket_form_id=360000234472"
+                      >tại đây</a
+                    >
+                  </p>
+                  <p>
+                    Nếu bạn liên hệ với chúng tôi về việc cáo buộc vi phạm bản
+                    quyền, vui lòng đảm bảo cung cấp các thông tin sau:
+                  </p>
+                  <ul>
+                    <li>
+                      chữ ký điện tử hoặc vật lý của người có thẩm quyền để hành
+                      động thay mặt cho chủ sở hữu bản quyền;
+                    </li>
+                    <li>
+                      mô tả về tác phẩm có bản quyền mà bạn cho rằng đã bị vi
+                      phạm;
+                    </li>
+                    <li>
+                      mô tả nơi mà bạn cho rằng tài liệu vi phạm đang nằm trên
+                      Dịch vụ (và mô tả đó phải đủ hợp lý để cho phép chúng tôi
+                      tìm ra tài liệu bị cáo buộc là vi phạm);
+                    </li>
+                    <li>
+                      thông tin liên hệ của bạn, bao gồm địa chỉ, số điện thoại,
+                      địa chỉ email và danh tính của chủ sở hữu bản quyền;
+                    </li>
+                    <li>
+                      một tuyên bố bằng văn bản của bạn rằng bạn tin tưởng rằng
+                      việc tranh chấp sử dụng không được chủ sở hữu bản quyền,
+                      người đại diện, hoặc pháp luật cho phép; và
+                    </li>
+                    <li>
+                      một tuyên bố của bạn, dưới hình thức bị phạt nếu khai man,
+                      rằng thông tin nói trên trong thông báo của bạn là chính
+                      xác và bạn là chủ sở hữu bản quyền hoặc được ủy quyền để
+                      hành động thay mặt cho chủ sở hữu bản quyền.
+                    </li>
+                  </ul>
+                  <p>Tinder sẽ chấm dứt tài khoản của người tái phạm.</p>
+                  <h2>12. Tuyên bố Miễn trừ trách nhiệm</h2>
+                  <p>
+                    TINDER CUNG CẤP DỊCH VỤ TRÊN CƠ SỞ “GIỮ NGUYÊN TRẠNG” VÀ
+                    “NHƯ HIỆN CÓ” VÀ TRONG PHẠM VI CHO PHÉP CỦA PHÁP LUẬT HIỆN
+                    HÀNH, KHÔNG CUNG CẤP BẢO HÀNH THEO BẤT KỲ HÌNH THỨC NÀO, DÙ
+                    RÕ RÀNG, NGỤ Ý, THEO PHÁP ĐỊNH HOẶC BẰNG CÁCH NÀO KHÁC LIÊN
+                    QUAN ĐẾN DỊCH VỤ (BAO GỒM TẤT CẢ NỘI DUNG TRONG ĐÓ), BAO GỒM
+                    NHƯNG KHÔNG GIỚI HẠN Ở BẤT KỲ BẢO ĐẢM NGỤ Ý NÀO VỀ CHẤT
+                    LƯỢNG, TÍNH THƯƠNG MẠI, TÍNH PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ
+                    HOẶC SỰ KHÔNG VI PHẠM. TINDER KHÔNG CAM KẾT HOẶC ĐẢM BẢO
+                    RẰNG (A) DỊCH VỤ SẼ KHÔNG BỊ GIÁN ĐOẠN, AN TOÀN HOẶC KHÔNG
+                    CÓ LỖI, (B) BẤT KỲ KHIẾM KHUYẾT HOẶC LỖI NÀO TRONG DỊCH VỤ
+                    SẼ ĐƯỢC SỬA CHỮA, HOẶC (C) BẤT KỲ NỘI DUNG HOẶC THÔNG TIN
+                    NÀO BẠN CÓ ĐƯỢC TRÊN HOẶC THÔNG QUA DỊCH VỤ LÀ CHÍNH XÁC.
+                  </p>
+                  <p>
+                    TINDER KHÔNG CHỊU TRÁCH NHIỆM ĐỐI VỚI BẤT KỲ NỘI DUNG NÀO MÀ
+                    BẠN HOẶC NGƯỜI DÙNG KHÁC HOẶC BÊN THỨ BA ĐĂNG TẢI, GỬI HOẶC
+                    NHẬN THÔNG QUA DỊCH VỤ. BẤT KỲ TÀI LIỆU NÀO ĐƯỢC TẢI VỀ HOẶC
+                    LẤY ĐƯỢC THÔNG QUA VIỆC SỬ DỤNG DỊCH VỤ ĐỀU ĐƯỢC TRUY CẬP
+                    THEO Ý CỦA BẠN VÀ BẠN PHẢI CHỊU MỌI RỦI RO.
+                  </p>
+                  <h2>13. Dịch vụ của Bên thứ ba.</h2>
+                  <p>
+                    Dịch vụ có thể chứa các quảng cáo và khuyến mại được cung
+                    cấp bởi các bên thứ ba và các liên kết tới các trang web
+                    hoặc tài nguyên khác. Tinder không chịu trách nhiệm về tính
+                    khả dụng (hoặc không khả dụng) của các trang web hoặc tài
+                    nguyên bên ngoài như vậy. Nếu bạn quyết định tương tác với
+                    các bên thứ ba được tạo sẵn thông qua Dịch vụ của chúng tôi,
+                    thì các điều khoản của bên đó sẽ chi phối mối quan hệ của họ
+                    với bạn. Tinder không chịu trách nhiệm hoặc có nghĩa vụ đối
+                    với các điều khoản hoặc hành động của bên thứ ba.
+                  </p>
+                  <h2>14. Giới hạn Trách nhiệm pháp lý.</h2>
+                  <p>
+                    TRONG PHẠM VI TỐI ĐA ĐƯỢC PHÁP LUẬT HIỆN HÀNH CHO PHÉP,
+                    TRONG MỌI TRƯỜNG HỢP, TINDER, CÁC CHI NHÁNH, NHÂN VIÊN,
+                    NGƯỜI CẤP PHÉP HOẶC NHÀ CUNG CẤP DỊCH VỤ CỦA TINDER ĐỀU SẼ
+                    KHÔNG CHỊU TRÁCH NHIỆM PHÁP LÝ ĐỐI VỚI BẤT KỲ THIỆT HẠI NÀO
+                    CÓ TÍNH GIÁN TIẾP, DO HẬU QUẢ, ĐỂ LÀM GƯƠNG, NGẪU NHIÊN, ĐẶC
+                    BIỆT, MANG TÍNH TRỪNG PHẠT HOẶC TĂNG CƯỜNG, BAO GỒM NHƯNG
+                    KHÔNG GIỚI HẠN Ở CÁC TỔN THẤT VỀ LỢI NHUẬN, DÙ PHÁT SINH
+                    TRỰC TIẾP HAY GIÁN TIẾP, HOẶC BẤT KỲ TỔN THẤT NÀO VỀ DỮ
+                    LIỆU, KHẢ NĂNG SỬ DỤNG, SỰ TÍN NHIỆM HOẶC CÁC TỔN THẤT VÔ
+                    HÌNH KHÁC DO: (I) (I) QUYỀN TRUY CẬP CỦA BẠN VÀO HOẶC KHẢ
+                    NĂNG SỬ DỤNG HOẶC TÌNH TRẠNG KHÔNG THỂ TRUY CẬP HAY SỬ DỤNG
+                    DỊCH VỤ, (II) HÀNH VI HOẶC NỘI DUNG CỦA CÁC THÀNH VIÊN KHÁC
+                    HOẶC CÁC BÊN THỨ BA TRÊN, THÔNG QUA HOẶC SAU KHI SỬ DỤNG
+                    DỊCH VỤ; HOẶC (III) VIỆC TRUY CẬP TRÁI PHÉP, SỬ DỤNG HOẶC
+                    THAY ĐỔI NỘI DUNG CỦA BẠN, NGAY CẢ KHI TINDER ĐÃ ĐƯỢC THÔNG
+                    BÁO VỀ KHẢ NĂNG XẢY RA NHỮNG THIỆT HẠI ĐÓ. TRONG MỌI TRƯỜNG
+                    HỢP, TRÁCH NHIỆM PHÁP LÝ CHUNG CỦA TINDER VỚI BẠN ĐỐI VỚI
+                    TẤT CẢ CÁC KHIẾU NẠI LIÊN QUAN ĐẾN DỊCH VỤ SẼ KHÔNG VƯỢT QUÁ
+                    SỐ TIỀN LỚN HƠN SỐ TIỀN BẠN PHẢI TRẢ CHO TINDER ĐỂ SỬ DỤNG
+                    DỊCH VỤ, NẾU CÓ, VÀ 100 USD TRONG THỜI GIAN BẠN CÓ TÀI
+                    KHOẢN.
+                  </p>
+                  <p>
+                    MỘT SỐ KHU VỰC PHÁP LÝ KHÔNG CHO PHÉP LOẠI TRỪ HOẶC GIỚI HẠN
+                    CÁC BỒI THƯỜNG THIỆT HẠI NHẤT ĐỊNH, VÌ VẬY MỘT SỐ HOẶC TẤT
+                    CẢ CÁC LOẠI TRỪ VÀ GIỚI HẠN TRONG KHOẢN NÀY CÓ THỂ KHÔNG ÁP
+                    DỤNG CHO BẠN.
+                  </p>
+                  <h2>
+                    15. Trọng tài, Miễn trừ Kiện Tập thể, và Miễn trừ Bồi thẩm
+                    đoàn.
+                  </h2>
+                  <p>
+                    Ngoại trừ thành viên cư trú trong Liên minh Châu Âu hoặc Khu
+                    vực Kinh tế Châu Âu và những nơi khác mà bị pháp luật hiện
+                    hành ngăn cấm:
+                  </p>
+                  <ol>
+                    <li>
+                      Các cách thức duy nhất để giải quyết bất kỳ tranh chấp
+                      hoặc khiếu nại nào phát sinh từ hoặc liên quan đến Thỏa
+                      thuận này (bao gồm mọi vi phạm bị cáo buộc) hoặc Dịch vụ
+                      cần được TRỌNG TÀI RÀNG BUỘC do JAMS quản lý theo Quy tắc
+                      Trọng tài &#x26; Các thủ tục hợp lý của JAMS, ngoại trừ
+                      được sửa đổi bởi Thủ tục Trọng tài của chúng tôi. Một
+                      ngoại lệ đối với tính độc quyền của trọng tài là một trong
+                      hai bên có quyền đưa ra khiếu nại cá nhân đối với bên kia
+                      tại một tòa án đặc biệt xử các vụ kiện nhỏ (tòa tiểu tụng)
+                      có thẩm quyền tài phán, hoặc, nếu trình đơn ra trọng tài,
+                      bên phản hồi có thể yêu cầu thực hiện tiến trình giải
+                      quyết tranh chấp tại tòa án như thế nếu khiếu nại đó thuộc
+                      thẩm quyền tài phán của tòa tiểu tụng. Nếu yêu cầu thực
+                      hiện tiến trình giải quyết tại tòa tiểu tụng được đưa ra
+                      trước khi chỉ định một trọng tài viên, thủ tục trọng tài
+                      đó sẽ dừng về mặt hành chính. Nếu yêu cầu thực hiện tiến
+                      trình giải quyết tại tòa tiểu tụng được đưa ra sau khi chỉ
+                      định một trọng tài viên, trọng tài viên sẽ xác định xem
+                      liệu tranh chấp nên tiếp tục thủ tục trọng tài hay nên
+                      được quyết định tại tòa án đó. Việc phân xử đó sẽ chỉ được
+                      thực hiện bằng các tài liệu bằng văn bản, trừ khi bạn hoặc
+                      Tinder chọn đòi quyền sử dụng lời nói trước Trọng tài.
+                      Nhưng dù bạn chọn thủ tục trọng tài hay tòa tiểu tụng, bạn
+                      đều đồng ý rằng, trong mọi trường hợp, bạn sẽ không bắt
+                      đầu, hoặc duy trì, hoặc tham gia hoạt động khởi tố tập
+                      thể, trọng tài tập thể chống lại Công ty hoặc hành động
+                      khởi tố đại diện hoặc thủ tục xúc tiến kiện tụng nào khác
+                      chống lại Tinder.
+                    </li>
+                    <li>
+                      Bằng cách sử dụng Dịch vụ dưới bất kỳ hình thức nào, bạn
+                      đồng ý với thỏa thuận trọng tài nêu trên. Khi làm vậy, BẠN
+                      ĐÃ TỪ BỎ QUYỀN RA TOÀ để đòi quyền hoặc bảo vệ bất kỳ
+                      khiếu nại nào giữa bạn và Công ty (ngoại trừ các vấn đề có
+                      thể được đưa ra tòa tiểu tụng). BẠN CŨNG TỪ BỎ QUYỀN THAM
+                      GIA VÀO HOẠT ĐỘNG KHỞI TỐ TẬP THỂ HOẶC THỦ TỤC XÚC TIẾN
+                      KIỆN TỤNG TẬP THỂ KHÁC CỦA MÌNH. Nếu bạn đòi quyền khiếu
+                      nại chống lại Tinder bên ngoài tòa tiểu tụng (và Tinder
+                      không yêu cầu chuyển khiếu nại tới một tòa án như vậy),
+                      các quyền của bạn sẽ được xác định bởi TRỌNG TÀI VIÊN
+                      TRUNG LẬP, CHỨ KHÔNG PHẢI THẨM PHÁN HAY BỒI THẨM ĐOÀN, và
+                      trọng tài viên sẽ xác định tất cả các khiếu nại và tất cả
+                      các vấn đề liên quan đến thủ tục trọng tài của tranh chấp
+                      đó. Bạn có quyền được xét xử công bằng trước trọng tài
+                      viên. Trọng tài viên nói chung có thể đưa ra mọi sự bồi
+                      thường mà nguyên đơn yêu cầu mà tòa án có thể, bao gồm khả
+                      năng yêu cầu tiến hành phiên điều trần để nghe kiến nghị
+                      bác đơn (có thể bao gồm một kiến nghị bác đơn dựa trên lời
+                      biện hộ của các bên, cũng như một kiến nghị bác đơn dựa
+                      trên lời biện hộ của các bên kèm theo bằng chứng đã nộp),
+                      nhưng bạn cần lưu ý rằng các thủ tục tố tụng trọng tài
+                      thường đơn giản và hợp lý hơn so với các phiên tòa và các
+                      thủ tục tố tụng tư pháp khác. Các quyết định của trọng tài
+                      có thể được thi hành tại tòa án và có thể bị tòa án lật
+                      lại chỉ vì những lý do rất hạn chế. Để biết chi tiết về
+                      thủ tục trọng tài, hãy xem Thủ tục Trọng tài của chúng
+                      tôi.
+                    </li>
+                    <li>
+                      Mọi thủ tục thi hành thỏa thuận trọng tài này, bao gồm bất
+                      kỳ thủ tục nào giúp xác nhận, sửa đổi, hoặc bãi bỏ một
+                      phán quyết trọng tài, có thể được bắt đầu tại bất kỳ tòa
+                      án có thẩm quyền nào. Trong trường hợp thỏa thuận trọng
+                      tài này vì bất kỳ lý do nào bị coi là không thể thi hành,
+                      thì mọi kiện tụng chống lại Công ty (trừ các vụ khiếu kiện
+                      nhỏ) có thể được bắt đầu chỉ ở các tòa án liên bang hoặc
+                      tiểu bang nằm ở Hạt Dallas, Texas. Bằng cách này bạn đồng
+                      ý một cách không thể hủy bỏ được với thẩm quyền của các
+                      tòa án đó vì các mục đích như vậy.
+                    </li>
+                    <li>
+                      Nền tảng giải quyết tranh chấp trực tuyến của Ủy ban Châu
+                      Âu nằm tại
+                      <a href="http://ec.europa.eu/odr"
+                        >http://ec.europa.eu/odr</a
+                      >. Tinder không tham gia vào các thủ tục giải quyết tranh
+                      chấp trước một thực thể trọng tài người tiêu dùng dành cho
+                      các thành viên cư trú trong Khu vực Kinh tế EU hoặc Châu
+                      Âu.
+                    </li>
+                  </ol>
+                  <h2>16. Luật Điều chỉnh.</h2>
+                  <p>
+                    Đối với các thành viên cư trú trong Khu vực Kinh tế EU hoặc
+                    Châu Âu hoặc bất kỳ nơi nào mà thủ tục trọng tài của chúng
+                    tôi bị cấm theo luật, luật pháp của Texas, Hoa Kỳ, ngoại trừ
+                    các quy tắc luật xung đột của Texas, sẽ áp dụng cho mọi
+                    tranh chấp phát sinh từ hoặc liên quan đến Thỏa thuận này
+                    hoặc Dịch vụ. Dù đã đề cập đến ở trên, Thỏa thuận về trọng
+                    tài trong Mục 15 sẽ chịu sự điều chỉnh của Đạo luật Trọng
+                    tài Liên bang. Để tránh nghi ngờ, việc lựa chọn pháp luật
+                    điều chỉnh của Texas sẽ không thay thế cho bất kỳ pháp luật
+                    bảo vệ người tiêu dùng bắt buộc nào trong các khu vực pháp
+                    lý như vậy.
+                  </p>
+                  <h2>17. Địa điểm.</h2>
+                  <p>
+                    Ngoại trừ các thành viên cư trú tại Khu vực Kinh tế EU hoặc
+                    Châu Âu, những người có thể đưa ra yêu cầu bồi thường tại
+                    quốc gia cư trú của họ theo luật hiện hành và ngoại trừ các
+                    khiếu nại có thể được đưa ra tòa tiểu tụng có thẩm quyền phù
+                    hợp, tất cả các khiếu nại phát sinh từ hoặc liên quan Thỏa
+                    thuận này, với Dịch vụ hoặc mối quan hệ của bạn với Tinder
+                    rằng vì bất kỳ lý do gì không được đưa ra phân xử trọng tài
+                    đều sẽ chỉ được tiến hành kiện tụng tại các tòa án liên bang
+                    hoặc tiểu bang của Hạt Dallas, Texas, Hoa Kỳ. Bạn và Tinder
+                    thống nhất việc thực thi thẩm quyền cá nhân tại các tòa án
+                    trong phạm vi bang Texas và miễn trừ bất kỳ yêu cầu bồi
+                    thường nào nơi mà các phiên tòa như vậy biến thành diễn đàn
+                    bất lợi.
+                  </p>
+                  <h2>18. Trách nhiệm Bồi thường của Bạn.</h2>
+                  <p>
+                    Bạn đồng ý, trong phạm vi cho phép theo pháp luật hiện hành,
+                    bồi thường, bảo vệ và giữ cho Tinder, các chi nhánh của
+                    chúng tôi, các viên chức, giám đốc, đại diện, và nhân viên
+                    tương ứng của họ và của chúng tôi khỏi và trước bất kỳ khiếu
+                    nại, yêu cầu, khiếu kiện, thiệt hại, tổn thất, án phí, trách
+                    nhiệm pháp lý và các chi phí, bao gồm phí luật sư, do, phát
+                    sinh từ hoặc liên quan đến bất kỳ cách thức nào giúp bạn
+                    truy cập hoặc sử dụng Dịch vụ, Nội dung của bạn, hoặc việc
+                    bạn vi phạm Thỏa thuận này.
+                  </p>
+                  <h2>19. Điều khoản Toàn bộ thỏa thuận; Khác.</h2>
+                  <p>
+                    Thỏa thuận này, bao gồm
+                    <a href="/privacy">Chính sách Quyền riêng tư</a>,
+                    <a href="/cookie-policy">Chính sách Cookie</a>,
+                    <a href="/safety">Lời khuyên An toàn</a>,
+                    <a href="/community-guidelines">Nguyên tắc Cộng đồng</a> và
+                    Thủ tục Trọng tài (nếu áp dụng cho bạn), và bất kỳ điều
+                    khoản nào mà bạn tiết lộ và đồng ý nếu bạn mua các tính
+                    năng, sản phẩm hoặc dịch vụ bổ sung mà chúng tôi cung cấp
+                    trên Dịch vụ, chứa toàn bộ thỏa thuận giữa bạn và Tinder về
+                    việc sử dụng Dịch vụ này. Nếu bất kỳ điều khoản nào của Thỏa
+                    thuận này không có hiệu lực, phần còn lại của Thỏa thuận này
+                    sẽ tiếp tục có hiệu lực đầy đủ. Việc Công ty không thực hiện
+                    hoặc thực thi bất kỳ quyền hoặc điều khoản nào của Thỏa
+                    thuận này sẽ không cấu thành sự từ bỏ quyền hoặc điều khoản
+                    đó. Bạn đồng ý rằng tài khoản Tinder của bạn là không thể
+                    chuyển nhượng được và tất cả các quyền của bạn đối với tài
+                    khoản và Nội dung liên quan sẽ chấm dứt sau khi bạn qua đời.
+                    Không có đại lý, đối tác, liên doanh, ủy thác hoặc mối quan
+                    hệ đặc biệt khác hoặc việc làm nào được tạo ra theo Thỏa
+                    thuận này và bạn không được đưa ra bất kì hoạt động đại diện
+                    thay mặt cho hoặc ràng buộc Tinder theo bất kỳ cách nào.
+                  </p>
+                </div></span
+              >
+            </main>
+          </div>
+          <div class="Layout__FooterWrapper-u406a5-2 djcEJG">
+            <footer class="Footer-sc-1qyll0s-0 byZvTm">
+              <nav class="LanguagePicker-ohytd3-1 ghaeor">
+                <h3>Ngôn ngữ</h3>
+                <ul class="LanguagePicker__LanguageList-ohytd3-0 egCcio">
+                  <li class="">
+                    <a data-locale="ar" href="/terms/intl/ar/">‏العربية</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="bg" href="/terms/intl/bg/">Български</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ca" href="/terms/intl/ca/">Català</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="cs" href="/terms/intl/cs/">Čeština</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="da" href="/terms/intl/da/">Dansk</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="de" href="/terms/intl/de/">Deutsch</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="el" href="/terms/intl/el/">Ελληνικά</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="en" href="/terms/intl/en/">English</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-ES" href="/terms/intl/es-es/"
+                      >Español(ES)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="es" href="/terms/intl/es/">Español(MX)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="es-AR" href="/terms/intl/es-ar/"
+                      >Español(AR)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="fr" href="/terms/intl/fr/">Français(FR)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="fi" href="/terms/intl/fi/">Suomi</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="he" href="/terms/intl/he/">עברית</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hr" href="/terms/intl/hr/">Hrvatski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="hu" href="/terms/intl/hu/">Magyar</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="id" href="/terms/intl/id/">Indonesia</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ja" href="/terms/intl/ja/">日本語</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ko" href="/terms/intl/ko/">한국어</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lt" href="/terms/intl/lt/">Lietuvių</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="lv" href="/terms/intl/lv/">Latviešu</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ms" href="/terms/intl/ms/">Bahasa Melayu</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="nl" href="/terms/intl/nl/">Nederlands</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pl" href="/terms/intl/pl/">Polski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pt" href="/terms/intl/pt/">Português(BR)</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="pt-PT" href="/terms/intl/pt-pt/"
+                      >Português(PT)</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="ro" href="/terms/intl/ro/">Română</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="ru" href="/terms/intl/ru/">Русский</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sk" href="/terms/intl/sk/">Slovenčina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sl" href="/terms/intl/sl/">Slovenščina</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="sr" href="/terms/intl/sr/">Srpski</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="th" href="/terms/intl/th/">ไทย</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="tr" href="/terms/intl/tr/">Türkçe</a>
+                  </li>
+                  <li class="">
+                    <a data-locale="uk" href="/terms/intl/uk/">Українська</a>
+                  </li>
+                  <li class="current">
+                    <a
+                      aria-current="page"
+                      data-locale="vi"
+                      class=""
+                      href="/terms/intl/vi/"
+                      >Tiếng Việt</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-CN" href="/terms/intl/zh-cn/"
+                      >简体中文</a
+                    >
+                  </li>
+                  <li class="">
+                    <a data-locale="zh-TW" href="/terms/intl/zh-tw/"
+                      >繁體中文</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="Nav-sc-114h8f1-0 iioFOg">
+                <section>
+                  <h3>Công ty</h3>
+                  <ul>
+                    <li><a href="https://tinder.com/jobs">Tuyển dụng</a></li>
+                    <li><a href="/contact">Liên hệ</a></li>
+                    <li><a href="/security">Bảo mật</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Cộng đồng</h3>
+                  <ul>
+                    <li>
+                      <a href="https://tech.gotinder.com">Blog Công nghệ</a>
+                    </li>
+                    <li>
+                      <a href="https://www.tinderpressroom.com/">Báo chí</a>
+                    </li>
+                    <li><a href="https://www.help.tinder.com">Hỗ trợ</a></li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Pháp lý</h3>
+                  <ul>
+                    <li><a href="/privacy">Quyền riêng tư</a></li>
+                    <li><a href="/terms">Điều khoản</a></li>
+                    <li><a href="/cookie-policy">Chính sách Cookie</a></li>
+                    <li>
+                      <a href="/safety-and-policy"
+                        >Trung tâm Chính sách và An toàn</a
+                      >
+                    </li>
+                    <li><a href="/safety">Bí quyết an toàn</a></li>
+                    <li>
+                      <a href="https://www.gotinder.com/community-guidelines"
+                        >Quy tắc cộng đồng</a
+                      >
+                    </li>
+                    <li><a href="/intellectual-property">Sở Hữu Trí Tuệ</a></li>
+                  </ul>
+                </section>
+              </nav>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div
+        id="gatsby-announcer"
+        style="
+          position: absolute;
+          top: 0;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        "
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
+    </div>
+    <script id="gatsby-script-loader">
+      /*<![CDATA[*/ window.pagePath = "/terms/intl/vi/"; /*]]>*/
+    </script>
+    <script id="gatsby-chunk-mapping">
+      /*<![CDATA[*/ window.___chunkMapping = {
+        polyfill: ["/polyfill-8323aa54c0d045626fca.js"],
+        app: ["/app-d011f58ba08167ecf7ec.js"],
+        "component---src-pages-404-jsx": [
+          "/component---src-pages-404-jsx-6ce81b9c1667361c7a96.js",
+        ],
+        "component---src-pages-index-jsx": [
+          "/component---src-pages-index-jsx-f59acd5bce0ff284f38b.js",
+        ],
+        "component---src-templates-policy-page-jsx": [
+          "/component---src-templates-policy-page-jsx-1d79a624d7b684bce9f4.js",
+        ],
+        "component---src-templates-safety-center-page-jsx": [
+          "/component---src-templates-safety-center-page-jsx-47b3027a914fbe42d38c.js",
+        ],
+        "component---src-templates-safety-center-page-web-jsx": [
+          "/component---src-templates-safety-center-page-web-jsx-a3564fe9717d00ea43e4.js",
+        ],
+      }; /*]]>*/
+    </script>
+    <script src="/polyfill-8323aa54c0d045626fca.js" nomodule=""></script>
+    <script
+      src="/component---src-templates-policy-page-jsx-1d79a624d7b684bce9f4.js"
+      async=""
+    ></script>
+    <script
+      src="/41dc7b0c85f0365a3422834ac006c2c46095f4ac-ae8ee0807df86fa27705.js"
+      async=""
+    ></script>
+    <script src="/commons-3de27f5b78bd5d22ff35.js" async=""></script>
+    <script src="/styles-e9d24b1846c7d6eb9685.js" async=""></script>
+    <script src="/app-d011f58ba08167ecf7ec.js" async=""></script>
+    <script src="/framework-90a019f1c20540076580.js" async=""></script>
+    <script src="/webpack-runtime-c4fed93b667701a95788.js" async=""></script>
+  </body>
+</html>
